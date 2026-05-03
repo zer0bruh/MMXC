@@ -1,0 +1,2842 @@
+{
+  "source_root": "C:\\Users\\Francois\\Downloads\\MMXE-main",
+  "summary": {
+    "sprite_count": 82,
+    "tileset_count": 10,
+    "sprite_png_count": 916
+  },
+  "sprites": [
+    {
+      "name": "Briefing_Room",
+      "directory": "sprites/Briefing_Room",
+      "yy_path": "sprites/Briefing_Room/Briefing_Room.yy",
+      "width": 224,
+      "height": 160,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 223,
+        "bottom": 159
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/Briefing_Room/27597369-9061-44a7-b813-e77bf256909e.png"
+      ]
+    },
+    {
+      "name": "checkpint",
+      "directory": "sprites/checkpint",
+      "yy_path": "sprites/checkpint/checkpint.yy",
+      "width": 64,
+      "height": 32,
+      "origin": {
+        "x": 32,
+        "y": 32
+      },
+      "bbox": {
+        "left": 16,
+        "top": 14,
+        "right": 47,
+        "bottom": 16
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/checkpint/99733930-e76d-45f0-b1ab-8bf2181b0001.png"
+      ]
+    },
+    {
+      "name": "gate_tilesert",
+      "directory": "sprites/gate_tilesert",
+      "yy_path": "sprites/gate_tilesert/gate_tilesert.yy",
+      "width": 256,
+      "height": 256,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 239,
+        "bottom": 223
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/gate_tilesert/da46b0f1-6805-4b03-bb54-03e99ed7e3ab.png"
+      ]
+    },
+    {
+      "name": "gravity_point",
+      "directory": "sprites/gravity_point",
+      "yy_path": "sprites/gravity_point/gravity_point.yy",
+      "width": 32,
+      "height": 32,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 31,
+        "bottom": 31
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/gravity_point/17e5e867-cab3-4190-8eb9-59e0068b9fc6.png"
+      ]
+    },
+    {
+      "name": "HQ_test",
+      "directory": "sprites/HQ_test",
+      "yy_path": "sprites/HQ_test/HQ_test.yy",
+      "width": 640,
+      "height": 480,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 639,
+        "bottom": 479
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/HQ_test/27597369-9061-44a7-b813-e77bf256909e.png"
+      ]
+    },
+    {
+      "name": "just_the_hangar_without_the_lights_or_ships__2_",
+      "directory": "sprites/just_the_hangar_without_the_lights_or_ships__2_",
+      "yy_path": "sprites/just_the_hangar_without_the_lights_or_ships__2_/just_the_hangar_without_the_lights_or_ships__2_.yy",
+      "width": 640,
+      "height": 480,
+      "origin": {
+        "x": 0,
+        "y": 256
+      },
+      "bbox": {
+        "left": 0,
+        "top": 256,
+        "right": 639,
+        "bottom": 430
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/just_the_hangar_without_the_lights_or_ships__2_/d2b9b9a4-175d-40e2-8e4a-5e4cd2175368.png"
+      ]
+    },
+    {
+      "name": "just_the_ships",
+      "directory": "sprites/just_the_ships",
+      "yy_path": "sprites/just_the_ships/just_the_ships.yy",
+      "width": 600,
+      "height": 250,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 20,
+        "top": 120,
+        "right": 579,
+        "bottom": 207
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/just_the_ships/c20798f8-4587-4b14-a9ae-b5815a4e50fb.png"
+      ]
+    },
+    {
+      "name": "lift",
+      "directory": "sprites/lift",
+      "yy_path": "sprites/lift/lift.yy",
+      "width": 96,
+      "height": 48,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 95,
+        "bottom": 47
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/lift/0e2dce7c-0d3c-43fc-87db-84e147401881.png"
+      ]
+    },
+    {
+      "name": "MegaManX2_FlameStag_Sheet",
+      "directory": "sprites/MegaManX2_FlameStag_Sheet",
+      "yy_path": "sprites/MegaManX2_FlameStag_Sheet/MegaManX2_FlameStag_Sheet.yy",
+      "width": 304,
+      "height": 304,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 303,
+        "bottom": 303
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/MegaManX2_FlameStag_Sheet/cbafdf70-1f51-4468-8a47-fb2032fc9e08.png"
+      ]
+    },
+    {
+      "name": "metroidset",
+      "directory": "sprites/metroidset",
+      "yy_path": "sprites/metroidset/metroidset.yy",
+      "width": 144,
+      "height": 176,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 143,
+        "bottom": 175
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/metroidset/8c7187ca-2155-46da-a334-c98209539cde.png"
+      ]
+    },
+    {
+      "name": "MMX5_TestBossRoomBG_1x",
+      "directory": "sprites/MMX5_TestBossRoomBG_1x",
+      "yy_path": "sprites/MMX5_TestBossRoomBG_1x/MMX5_TestBossRoomBG_1x.yy",
+      "width": 320,
+      "height": 240,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 319,
+        "bottom": 239
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/MMX5_TestBossRoomBG_1x/78004606-1202-4e9d-99e8-ea8ce548cbda.png"
+      ]
+    },
+    {
+      "name": "MMX5_TestStageForeground_1x",
+      "directory": "sprites/MMX5_TestStageForeground_1x",
+      "yy_path": "sprites/MMX5_TestStageForeground_1x/MMX5_TestStageForeground_1x.yy",
+      "width": 320,
+      "height": 240,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 312,
+        "bottom": 223
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/MMX5_TestStageForeground_1x/d7d8c0c2-9f39-4abc-9ccf-40f16d63dc9f.png"
+      ]
+    },
+    {
+      "name": "MMX5_TestStageTiles_1x",
+      "directory": "sprites/MMX5_TestStageTiles_1x",
+      "yy_path": "sprites/MMX5_TestStageTiles_1x/MMX5_TestStageTiles_1x.yy",
+      "width": 320,
+      "height": 240,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 5,
+        "right": 284,
+        "bottom": 223
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/MMX5_TestStageTiles_1x/a72d61c0-5e78-4e96-8c32-7be07fd84de4.png"
+      ]
+    },
+    {
+      "name": "spr_block",
+      "directory": "sprites/spr_block",
+      "yy_path": "sprites/spr_block/spr_block.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_block/8e40405e-9770-4e67-91b1-1a5a74223cdb.png"
+      ]
+    },
+    {
+      "name": "spr_block1",
+      "directory": "sprites/spr_block1",
+      "yy_path": "sprites/spr_block1/spr_block1.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 1.0,
+      "png_paths": [
+        "sprites/spr_block1/4fa38ab0-7fb1-4955-aafa-cb61b5820b7d.png"
+      ]
+    },
+    {
+      "name": "spr_boss_spawn_zone",
+      "directory": "sprites/spr_boss_spawn_zone",
+      "yy_path": "sprites/spr_boss_spawn_zone/spr_boss_spawn_zone.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_boss_spawn_zone/355629dc-6cc5-4300-afa5-f38cac9bd653.png"
+      ]
+    },
+    {
+      "name": "spr_bright",
+      "directory": "sprites/spr_bright",
+      "yy_path": "sprites/spr_bright/spr_bright.yy",
+      "width": 1024,
+      "height": 1024,
+      "origin": {
+        "x": 512,
+        "y": 512
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 1023,
+        "bottom": 1023
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_bright/a47b812d-6092-4137-acf5-d1d33deaa9e7.png"
+      ]
+    },
+    {
+      "name": "spr_button_bounding",
+      "directory": "sprites/spr_button_bounding",
+      "yy_path": "sprites/spr_button_bounding/spr_button_bounding.yy",
+      "width": 24,
+      "height": 28,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 23,
+        "bottom": 27
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_button_bounding/3ab9a4b5-f5d2-40b3-8d39-f53c5ecdf057.png"
+      ]
+    },
+    {
+      "name": "spr_camera_zone",
+      "directory": "sprites/spr_camera_zone",
+      "yy_path": "sprites/spr_camera_zone/spr_camera_zone.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_camera_zone/aec022d8-b274-4138-b94e-ae809d675754.png"
+      ]
+    },
+    {
+      "name": "spr_checkerboard",
+      "directory": "sprites/spr_checkerboard",
+      "yy_path": "sprites/spr_checkerboard/spr_checkerboard.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 8,
+        "y": 16
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_checkerboard/61531f55-db23-4c92-9861-831e34eb9ea2.png"
+      ]
+    },
+    {
+      "name": "spr_classic_helmet",
+      "directory": "sprites/spr_classic_helmet",
+      "yy_path": "sprites/spr_classic_helmet/spr_classic_helmet.yy",
+      "width": 16,
+      "height": 17,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 16
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_classic_helmet/99b304b5-b3cd-4cfe-b269-ac6e491bce45.png"
+      ]
+    },
+    {
+      "name": "spr_death_square_16",
+      "directory": "sprites/spr_death_square_16",
+      "yy_path": "sprites/spr_death_square_16/spr_death_square_16.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 1.0,
+      "png_paths": [
+        "sprites/spr_death_square_16/40154e5b-4bc3-4ac4-9ff9-834cdffdd066.png"
+      ]
+    },
+    {
+      "name": "spr_diagonal_lines",
+      "directory": "sprites/spr_diagonal_lines",
+      "yy_path": "sprites/spr_diagonal_lines/spr_diagonal_lines.yy",
+      "width": 64,
+      "height": 64,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 63,
+        "bottom": 63
+      },
+      "collision_kind": 1,
+      "frame_count": 64,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_diagonal_lines/7938dc4e-8de7-4178-b9e1-cc7f8833e625.png",
+        "sprites/spr_diagonal_lines/9c12f185-27e0-4a4d-92b0-ffc8305fe0fd.png",
+        "sprites/spr_diagonal_lines/c6b7c951-fc86-4f0b-8b07-e5f1165878f6.png",
+        "sprites/spr_diagonal_lines/f3d9ddea-f96f-4026-aa33-6b0a5700553d.png",
+        "sprites/spr_diagonal_lines/8a676e64-af8c-4d49-a4b2-de3e7af433f9.png",
+        "sprites/spr_diagonal_lines/6a5b685d-c30a-4fe9-ad39-3a9d6d862d74.png",
+        "sprites/spr_diagonal_lines/8b4fc0f6-c2ab-4fa3-911d-26427fd5155e.png",
+        "sprites/spr_diagonal_lines/4b758130-cb10-4f88-bd3c-7a1dd4977856.png",
+        "sprites/spr_diagonal_lines/656aa25c-80fe-4889-8fa7-c9e750317ac2.png",
+        "sprites/spr_diagonal_lines/d583354c-9db9-45e1-9bdf-a65457cc386e.png",
+        "sprites/spr_diagonal_lines/19b6e444-4eb6-482d-b6df-3b67f1718c1f.png",
+        "sprites/spr_diagonal_lines/b8d6017a-3b8b-4c30-9f88-783325b19d78.png",
+        "sprites/spr_diagonal_lines/ba460141-a906-4bd0-a444-ccb529ea6014.png",
+        "sprites/spr_diagonal_lines/23f0fef3-78a9-4ddc-8536-60729b763ccf.png",
+        "sprites/spr_diagonal_lines/e5f8d756-48fa-41d8-b220-6d270a7cfdd6.png",
+        "sprites/spr_diagonal_lines/bb4ceb77-9715-4197-8885-90ebcb65f502.png",
+        "sprites/spr_diagonal_lines/ee2cd31a-3daf-41e9-9614-c9680a27a2d3.png",
+        "sprites/spr_diagonal_lines/5b20b98a-6dbd-4d9e-82f5-8a60a5f290ef.png",
+        "sprites/spr_diagonal_lines/070ccb4d-aaef-4964-acff-bab9a0ebf571.png",
+        "sprites/spr_diagonal_lines/7365623c-c446-436a-881e-39b0cc603175.png",
+        "sprites/spr_diagonal_lines/863990a5-28c5-4d83-a4c8-49ba81af33fd.png",
+        "sprites/spr_diagonal_lines/7ad1003b-7db1-4008-bf3b-a24dcc6ba4b7.png",
+        "sprites/spr_diagonal_lines/5d1190bc-4bbc-491c-87bd-5c74d1e23fa2.png",
+        "sprites/spr_diagonal_lines/4cce7f38-7c15-4a24-bec5-5186b326b90d.png",
+        "sprites/spr_diagonal_lines/81711ec3-c2e2-453a-bc89-0459d1510aa0.png",
+        "sprites/spr_diagonal_lines/19ac0746-7ff2-481e-8ec5-6ace59ed7700.png",
+        "sprites/spr_diagonal_lines/1b90ca0e-5ef1-430b-9598-7278fd139237.png",
+        "sprites/spr_diagonal_lines/355ad1e3-ff38-4d83-9fd5-277a2041b8f3.png",
+        "sprites/spr_diagonal_lines/c2f542d5-2561-4a61-b59c-775019836521.png",
+        "sprites/spr_diagonal_lines/ad90ef01-a26e-477d-bb4e-d147af280678.png",
+        "sprites/spr_diagonal_lines/071f2cc0-23b0-45eb-8231-b472ea3c66ec.png",
+        "sprites/spr_diagonal_lines/d9fdebee-5c05-401c-9426-d5f2c7c5b4db.png",
+        "sprites/spr_diagonal_lines/341b7efe-35b7-4041-9269-a818f524287b.png",
+        "sprites/spr_diagonal_lines/35ecfde8-952b-4e2a-98ba-d323cf4b28f8.png",
+        "sprites/spr_diagonal_lines/6adea5dc-3c2e-423e-88db-7dc3de38cf4a.png",
+        "sprites/spr_diagonal_lines/65a2c073-5cd2-47d4-bf44-7db9ad383270.png",
+        "sprites/spr_diagonal_lines/884810be-a7e9-4a56-9fdc-39bd8e488092.png",
+        "sprites/spr_diagonal_lines/263ab0a3-ded8-4be3-90bc-563bc43df114.png",
+        "sprites/spr_diagonal_lines/b4d9f950-d76e-4598-bd9c-6f955f7a4169.png",
+        "sprites/spr_diagonal_lines/14b78bee-a487-4684-8cd7-88b27b58402f.png",
+        "sprites/spr_diagonal_lines/ba4acdaf-7574-454c-b778-2e0f8fd3c0cb.png",
+        "sprites/spr_diagonal_lines/71753100-8b2e-47c4-b319-4693f5ddd7d5.png",
+        "sprites/spr_diagonal_lines/576c839b-ded4-40a7-9850-4e07ab5b4d65.png",
+        "sprites/spr_diagonal_lines/f4fd7b36-3f3d-4c34-9271-0adc83475887.png",
+        "sprites/spr_diagonal_lines/4ad78c5b-185c-4356-8726-236c45ec46da.png",
+        "sprites/spr_diagonal_lines/3b5d8dbd-9592-4cfe-a7ce-3a7c116ff39c.png",
+        "sprites/spr_diagonal_lines/ba3ffab2-7ef8-4cf7-a21b-d481e7a0340c.png",
+        "sprites/spr_diagonal_lines/093c1736-fe32-467a-ac86-fb37ac8ef14a.png",
+        "sprites/spr_diagonal_lines/37620f1d-2cbf-4149-9b31-8b5dce3df8d4.png",
+        "sprites/spr_diagonal_lines/2dd0aed0-0cc3-41a8-90d2-723c37f7f8a6.png",
+        "sprites/spr_diagonal_lines/e41d077e-7d90-4386-a627-d98042afff04.png",
+        "sprites/spr_diagonal_lines/7ab5468b-ffc3-44cf-a607-4e121bd98a56.png",
+        "sprites/spr_diagonal_lines/ca20a3b5-5410-41e7-8a70-49e0efb578d7.png",
+        "sprites/spr_diagonal_lines/897cb2e5-435b-46ea-91ec-9d66790c5298.png",
+        "sprites/spr_diagonal_lines/cb667533-1764-48ee-9dce-fe70c3725cbc.png",
+        "sprites/spr_diagonal_lines/81afb180-ec7d-4441-87ac-80fa90751dcf.png",
+        "sprites/spr_diagonal_lines/42ac005e-8d0e-4a46-8f75-66ac74b2b634.png",
+        "sprites/spr_diagonal_lines/4cfdc6e4-bdc8-4560-b70b-ca6559279943.png",
+        "sprites/spr_diagonal_lines/734c9e7f-4fbd-4e29-8110-b6a6171aaa0d.png",
+        "sprites/spr_diagonal_lines/e6780940-80c4-4ff5-b97a-fa6da968c255.png",
+        "sprites/spr_diagonal_lines/fe4bc94f-6c9e-4078-b0fa-ed8dbf4f68bf.png",
+        "sprites/spr_diagonal_lines/056367b7-db6d-4cc5-9d18-1f1cc05490bb.png",
+        "sprites/spr_diagonal_lines/de2468fa-32af-479b-995f-b75fcaa89b18.png",
+        "sprites/spr_diagonal_lines/6e8e115b-5fd9-43f6-a9fd-e559a4d266c7.png"
+      ]
+    },
+    {
+      "name": "spr_editor_icons",
+      "directory": "sprites/spr_editor_icons",
+      "yy_path": "sprites/spr_editor_icons/spr_editor_icons.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 13,
+      "playback_speed": 10.0,
+      "png_paths": [
+        "sprites/spr_editor_icons/e70d113e-38c3-4187-a977-4d9a62059b1d.png",
+        "sprites/spr_editor_icons/a8a7ca5a-6cbe-4c2b-a9ed-1a4a557b1500.png",
+        "sprites/spr_editor_icons/1363b188-ccc3-4c78-b069-fd0c89651674.png",
+        "sprites/spr_editor_icons/b32d4599-e091-4577-991a-21fa0dd9ca32.png",
+        "sprites/spr_editor_icons/4b94d95a-87d0-4159-ba7f-aa715322aafd.png",
+        "sprites/spr_editor_icons/51f35dde-304a-409c-ad92-736eb2187899.png",
+        "sprites/spr_editor_icons/a4afa7f6-9118-42c7-9193-fda4a2d7881f.png",
+        "sprites/spr_editor_icons/4b6fc762-8552-4fe2-8b04-c3ee6ba79953.png",
+        "sprites/spr_editor_icons/f2f0c785-2347-46f2-9c61-d5d4688211ac.png",
+        "sprites/spr_editor_icons/e4de273c-5d82-48b1-a0b2-b736cc66a425.png",
+        "sprites/spr_editor_icons/83acacad-c2f7-4336-8697-a0e5f2e615fa.png",
+        "sprites/spr_editor_icons/4b287620-336c-427d-a3ea-7cf08624d147.png",
+        "sprites/spr_editor_icons/f8dcdfcf-f630-4fa4-8cd8-32a63bf90588.png"
+      ]
+    },
+    {
+      "name": "spr_editor_jut",
+      "directory": "sprites/spr_editor_jut",
+      "yy_path": "sprites/spr_editor_jut/spr_editor_jut.yy",
+      "width": 100,
+      "height": 240,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 16,
+        "top": 80,
+        "right": 31,
+        "bottom": 239
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_editor_jut/a77a7212-1e8f-4a76-8643-d9012a8154e5.png"
+      ]
+    },
+    {
+      "name": "spr_editor_seperation",
+      "directory": "sprites/spr_editor_seperation",
+      "yy_path": "sprites/spr_editor_seperation/spr_editor_seperation.yy",
+      "width": 100,
+      "height": 240,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 32,
+        "top": 0,
+        "right": 39,
+        "bottom": 239
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_editor_seperation/c18c5e06-22d7-46d4-8c96-aa17e1bbaf8d.png"
+      ]
+    },
+    {
+      "name": "spr_fade",
+      "directory": "sprites/spr_fade",
+      "yy_path": "sprites/spr_fade/spr_fade.yy",
+      "width": 1024,
+      "height": 1024,
+      "origin": {
+        "x": 512,
+        "y": 512
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 1023,
+        "bottom": 1023
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_fade/a47b812d-6092-4137-acf5-d1d33deaa9e7.png"
+      ]
+    },
+    {
+      "name": "spr_go_this_way",
+      "directory": "sprites/spr_go_this_way",
+      "yy_path": "sprites/spr_go_this_way/spr_go_this_way.yy",
+      "width": 32,
+      "height": 32,
+      "origin": {
+        "x": 16,
+        "y": 16
+      },
+      "bbox": {
+        "left": 15,
+        "top": 7,
+        "right": 26,
+        "bottom": 24
+      },
+      "collision_kind": 1,
+      "frame_count": 4,
+      "playback_speed": 10.0,
+      "png_paths": [
+        "sprites/spr_go_this_way/23209d7a-0e83-42f2-a55e-24594df55d23.png",
+        "sprites/spr_go_this_way/fc3eec91-e28f-42a1-a0d5-31c11e513d37.png",
+        "sprites/spr_go_this_way/5688c4b0-5ad9-4d9b-b594-2ffca8cfa7c5.png",
+        "sprites/spr_go_this_way/347910fd-4662-4460-bf98-4517c78fd8e5.png"
+      ]
+    },
+    {
+      "name": "spr_grid",
+      "directory": "sprites/spr_grid",
+      "yy_path": "sprites/spr_grid/spr_grid.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_grid/6ec7c714-c853-437a-814a-0c55481d10fa.png"
+      ]
+    },
+    {
+      "name": "spr_gui_debug_9slice",
+      "directory": "sprites/spr_gui_debug_9slice",
+      "yy_path": "sprites/spr_gui_debug_9slice/spr_gui_debug_9slice.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_gui_debug_9slice/13b69198-a40d-445f-af67-c79dd3be5446.png"
+      ]
+    },
+    {
+      "name": "spr_gui_panel",
+      "directory": "sprites/spr_gui_panel",
+      "yy_path": "sprites/spr_gui_panel/spr_gui_panel.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_gui_panel/13b69198-a40d-445f-af67-c79dd3be5446.png"
+      ]
+    },
+    {
+      "name": "spr_gui_panel_009",
+      "directory": "sprites/spr_gui_panel_009",
+      "yy_path": "sprites/spr_gui_panel_009/spr_gui_panel_009.yy",
+      "width": 48,
+      "height": 48,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 47,
+        "bottom": 47
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_gui_panel_009/1819a364-a5f0-4996-8789-695a095be187.png"
+      ]
+    },
+    {
+      "name": "spr_gui_panel_021",
+      "directory": "sprites/spr_gui_panel_021",
+      "yy_path": "sprites/spr_gui_panel_021/spr_gui_panel_021.yy",
+      "width": 48,
+      "height": 48,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 47,
+        "bottom": 47
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_gui_panel_021/a7ed4536-26e6-4fa5-b39f-6055d81921db.png"
+      ]
+    },
+    {
+      "name": "spr_gui_panel_border",
+      "directory": "sprites/spr_gui_panel_border",
+      "yy_path": "sprites/spr_gui_panel_border/spr_gui_panel_border.yy",
+      "width": 48,
+      "height": 48,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 47,
+        "bottom": 47
+      },
+      "collision_kind": 1,
+      "frame_count": 32,
+      "playback_speed": 10.0,
+      "png_paths": [
+        "sprites/spr_gui_panel_border/6eae5b7e-978f-4a11-9e4e-d109d2f97278.png",
+        "sprites/spr_gui_panel_border/e1d1ba34-93f0-4e7a-b4a6-1dff270bce4d.png",
+        "sprites/spr_gui_panel_border/70602943-2421-40e0-bbed-0c3cababacbf.png",
+        "sprites/spr_gui_panel_border/f1e23958-266d-4413-a512-51a99e4ca309.png",
+        "sprites/spr_gui_panel_border/a146930e-3bdd-4db4-ad00-df2716ac2bc7.png",
+        "sprites/spr_gui_panel_border/5442c0e9-f6d4-4880-b956-7853ed139b93.png",
+        "sprites/spr_gui_panel_border/c7856089-cfa5-4b14-bf6a-2c242e1f8ebb.png",
+        "sprites/spr_gui_panel_border/6507ee9e-0fa1-48c7-b7a1-17ed6246233c.png",
+        "sprites/spr_gui_panel_border/25d823c3-d886-4a8b-83a0-72bec00b8e53.png",
+        "sprites/spr_gui_panel_border/c21bff5d-ad02-41f2-a34c-1ad30013c608.png",
+        "sprites/spr_gui_panel_border/e2c3910a-9f1e-4c3a-9e70-f2620bcce2ac.png",
+        "sprites/spr_gui_panel_border/f4c6f2f6-a597-4ae0-af87-1bf77112dce2.png",
+        "sprites/spr_gui_panel_border/7309e45d-7f1b-41ed-af19-7d3ef8a02d97.png",
+        "sprites/spr_gui_panel_border/d879e7df-a78d-4d49-bc4c-443b1f6e6d2c.png",
+        "sprites/spr_gui_panel_border/0a8a616b-6bc8-4a9d-a5a2-841d96c8c7d8.png",
+        "sprites/spr_gui_panel_border/18d7c149-a3de-4b38-82fc-a8e01f87261f.png",
+        "sprites/spr_gui_panel_border/6b1bf6ae-6d79-4cea-8b9b-da4d3375241b.png",
+        "sprites/spr_gui_panel_border/c283360f-a572-40d5-a926-0826cbd69686.png",
+        "sprites/spr_gui_panel_border/88349e11-c906-4b7f-8760-a7128e9f180a.png",
+        "sprites/spr_gui_panel_border/e754a227-6c5b-4023-8bb7-14bacca6906f.png",
+        "sprites/spr_gui_panel_border/24c4a7a6-aff7-4f2c-8d9b-25a771f9fcf0.png",
+        "sprites/spr_gui_panel_border/4882350d-d566-45e1-949f-e78f44a9ecb7.png",
+        "sprites/spr_gui_panel_border/255b8d01-a872-4a47-b1f6-794854df506a.png",
+        "sprites/spr_gui_panel_border/4920648f-7c10-4572-96ef-d244ac1031d6.png",
+        "sprites/spr_gui_panel_border/b260f6a4-f409-4df6-b1f6-80c51d7c249a.png",
+        "sprites/spr_gui_panel_border/105742f4-9363-4d38-9473-68939d377133.png",
+        "sprites/spr_gui_panel_border/476dd75b-171d-4e55-9f91-0c3b58a90030.png",
+        "sprites/spr_gui_panel_border/32e67fc4-967d-474d-9e80-856480f1cbeb.png",
+        "sprites/spr_gui_panel_border/07412813-d16d-40d0-b5f0-8def21689d81.png",
+        "sprites/spr_gui_panel_border/48b3ae3d-5bc9-45a3-afc0-731b996a2ec6.png",
+        "sprites/spr_gui_panel_border/ce3c3d8c-4146-4e20-b721-536d41c48949.png",
+        "sprites/spr_gui_panel_border/fc362ee4-698f-4f63-a5ea-3a40185c4ba3.png"
+      ]
+    },
+    {
+      "name": "spr_gui_panel_fill",
+      "directory": "sprites/spr_gui_panel_fill",
+      "yy_path": "sprites/spr_gui_panel_fill/spr_gui_panel_fill.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_gui_panel_fill/13b69198-a40d-445f-af67-c79dd3be5446.png"
+      ]
+    },
+    {
+      "name": "spr_gui_panel_slim",
+      "directory": "sprites/spr_gui_panel_slim",
+      "yy_path": "sprites/spr_gui_panel_slim/spr_gui_panel_slim.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_gui_panel_slim/13b69198-a40d-445f-af67-c79dd3be5446.png"
+      ]
+    },
+    {
+      "name": "spr_gui_pixel",
+      "directory": "sprites/spr_gui_pixel",
+      "yy_path": "sprites/spr_gui_pixel/spr_gui_pixel.yy",
+      "width": 1,
+      "height": 1,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_gui_pixel/30428137-2bfe-46ed-a3ae-3a8871a9c118.png"
+      ]
+    },
+    {
+      "name": "spr_hurt_zone",
+      "directory": "sprites/spr_hurt_zone",
+      "yy_path": "sprites/spr_hurt_zone/spr_hurt_zone.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_hurt_zone/355629dc-6cc5-4300-afa5-f38cac9bd653.png"
+      ]
+    },
+    {
+      "name": "spr_input_controller",
+      "directory": "sprites/spr_input_controller",
+      "yy_path": "sprites/spr_input_controller/spr_input_controller.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 12,
+      "playback_speed": 10.0,
+      "png_paths": [
+        "sprites/spr_input_controller/c6d9bc37-901a-46b0-82a5-4d400e8322b7.png",
+        "sprites/spr_input_controller/abc88813-b9db-4015-8aa6-836cfbcf36da.png",
+        "sprites/spr_input_controller/4dd5f5a9-fbb7-46dd-b7c8-536c4b4c81f4.png",
+        "sprites/spr_input_controller/1871b531-7bbd-476e-a2bd-ae5f62ff40d0.png",
+        "sprites/spr_input_controller/652b6266-fcd3-4e07-8c11-f363605a90b7.png",
+        "sprites/spr_input_controller/c7f6b0be-658a-4ef3-86f8-9bcc78d84045.png",
+        "sprites/spr_input_controller/4391044f-3854-4ef9-93c9-1f60182275ea.png",
+        "sprites/spr_input_controller/a93b5d1a-4446-45f1-8db2-72fefab7bed0.png",
+        "sprites/spr_input_controller/e4f9d781-0b5a-4235-8b98-5a0967cfa732.png",
+        "sprites/spr_input_controller/85039712-d8f9-4890-b660-a3b2377fedb4.png",
+        "sprites/spr_input_controller/02316197-e92e-4207-99be-97caa1afabe4.png",
+        "sprites/spr_input_controller/0ce0d445-f353-42a4-9737-fe06547cca0e.png"
+      ]
+    },
+    {
+      "name": "spr_lemon_mask",
+      "directory": "sprites/spr_lemon_mask",
+      "yy_path": "sprites/spr_lemon_mask/spr_lemon_mask.yy",
+      "width": 12,
+      "height": 12,
+      "origin": {
+        "x": 6,
+        "y": 6
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 11,
+        "bottom": 11
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_lemon_mask/a47b812d-6092-4137-acf5-d1d33deaa9e7.png"
+      ]
+    },
+    {
+      "name": "spr_npc_mask",
+      "directory": "sprites/spr_npc_mask",
+      "yy_path": "sprites/spr_npc_mask/spr_npc_mask.yy",
+      "width": 48,
+      "height": 32,
+      "origin": {
+        "x": 24,
+        "y": 16
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 47,
+        "bottom": 31
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_npc_mask/a47b812d-6092-4137-acf5-d1d33deaa9e7.png"
+      ]
+    },
+    {
+      "name": "spr_pixel",
+      "directory": "sprites/spr_pixel",
+      "yy_path": "sprites/spr_pixel/spr_pixel.yy",
+      "width": 1,
+      "height": 1,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_pixel/e020ab39-c3e1-40fd-b8c3-d981fff80728.png"
+      ]
+    },
+    {
+      "name": "spr_player_mask",
+      "directory": "sprites/spr_player_mask",
+      "yy_path": "sprites/spr_player_mask/spr_player_mask.yy",
+      "width": 16,
+      "height": 32,
+      "origin": {
+        "x": 8,
+        "y": 16
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 31
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_player_mask/a47b812d-6092-4137-acf5-d1d33deaa9e7.png"
+      ]
+    },
+    {
+      "name": "spr_player_mask_left_slope",
+      "directory": "sprites/spr_player_mask_left_slope",
+      "yy_path": "sprites/spr_player_mask_left_slope/spr_player_mask_left_slope.yy",
+      "width": 16,
+      "height": 32,
+      "origin": {
+        "x": 8,
+        "y": 16
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 24
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_player_mask_left_slope/a4205fa9-d207-49f3-95e4-4d58c8016b46.png"
+      ]
+    },
+    {
+      "name": "spr_player_mask_red",
+      "directory": "sprites/spr_player_mask_red",
+      "yy_path": "sprites/spr_player_mask_red/spr_player_mask_red.yy",
+      "width": 16,
+      "height": 32,
+      "origin": {
+        "x": 8,
+        "y": 16
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 31
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_player_mask_red/a47b812d-6092-4137-acf5-d1d33deaa9e7.png"
+      ]
+    },
+    {
+      "name": "spr_player_mask_right_slope",
+      "directory": "sprites/spr_player_mask_right_slope",
+      "yy_path": "sprites/spr_player_mask_right_slope/spr_player_mask_right_slope.yy",
+      "width": 16,
+      "height": 32,
+      "origin": {
+        "x": 8,
+        "y": 16
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 31
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_player_mask_right_slope/ef00b402-e4f9-4735-9635-4c6f28850386.png"
+      ]
+    },
+    {
+      "name": "spr_player_shield_blue",
+      "directory": "sprites/spr_player_shield_blue",
+      "yy_path": "sprites/spr_player_shield_blue/spr_player_shield_blue.yy",
+      "width": 100,
+      "height": 100,
+      "origin": {
+        "x": 50,
+        "y": 50
+      },
+      "bbox": {
+        "left": 27,
+        "top": 27,
+        "right": 71,
+        "bottom": 71
+      },
+      "collision_kind": 1,
+      "frame_count": 5,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_player_shield_blue/f2f99ed0-f517-45c2-b564-f6ffe7769764.png",
+        "sprites/spr_player_shield_blue/2a3152a4-c35b-4953-929a-bfdc9b3754d0.png",
+        "sprites/spr_player_shield_blue/a1dc669f-ae20-4322-9049-753e99c6542b.png",
+        "sprites/spr_player_shield_blue/ff721661-61bb-4564-8a97-dbc4853691b9.png",
+        "sprites/spr_player_shield_blue/1725f6a0-a5d1-4aef-957a-37917d323bf6.png"
+      ]
+    },
+    {
+      "name": "spr_psx_mask",
+      "directory": "sprites/spr_psx_mask",
+      "yy_path": "sprites/spr_psx_mask/spr_psx_mask.yy",
+      "width": 16,
+      "height": 40,
+      "origin": {
+        "x": 8,
+        "y": 24
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 39
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_psx_mask/a47b812d-6092-4137-acf5-d1d33deaa9e7.png"
+      ]
+    },
+    {
+      "name": "spr_reflect_zone",
+      "directory": "sprites/spr_reflect_zone",
+      "yy_path": "sprites/spr_reflect_zone/spr_reflect_zone.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_reflect_zone/355629dc-6cc5-4300-afa5-f38cac9bd653.png"
+      ]
+    },
+    {
+      "name": "spr_reticle_armor_select",
+      "directory": "sprites/spr_reticle_armor_select",
+      "yy_path": "sprites/spr_reticle_armor_select/spr_reticle_armor_select.yy",
+      "width": 32,
+      "height": 32,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 31,
+        "bottom": 31
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_reticle_armor_select/17640a73-dc50-4af2-90c3-6511d4d911a7.png"
+      ]
+    },
+    {
+      "name": "spr_screen_scale_grid",
+      "directory": "sprites/spr_screen_scale_grid",
+      "yy_path": "sprites/spr_screen_scale_grid/spr_screen_scale_grid.yy",
+      "width": 320,
+      "height": 240,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 319,
+        "bottom": 239
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_screen_scale_grid/a1cdc2f0-b6b1-4755-9a84-df6b80ecd284.png"
+      ]
+    },
+    {
+      "name": "spr_selection",
+      "directory": "sprites/spr_selection",
+      "yy_path": "sprites/spr_selection/spr_selection.yy",
+      "width": 18,
+      "height": 18,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 17,
+        "bottom": 17
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_selection/8e40405e-9770-4e67-91b1-1a5a74223cdb.png"
+      ]
+    },
+    {
+      "name": "spr_semisolid_square",
+      "directory": "sprites/spr_semisolid_square",
+      "yy_path": "sprites/spr_semisolid_square/spr_semisolid_square.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 7
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_semisolid_square/4000bcaf-8d9d-4943-87ad-bf9ffdf3585f.png"
+      ]
+    },
+    {
+      "name": "spr_slide_mask",
+      "directory": "sprites/spr_slide_mask",
+      "yy_path": "sprites/spr_slide_mask/spr_slide_mask.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 8,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_slide_mask/a47b812d-6092-4137-acf5-d1d33deaa9e7.png"
+      ]
+    },
+    {
+      "name": "spr_slope_zone",
+      "directory": "sprites/spr_slope_zone",
+      "yy_path": "sprites/spr_slope_zone/spr_slope_zone.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_slope_zone/355629dc-6cc5-4300-afa5-f38cac9bd653.png"
+      ]
+    },
+    {
+      "name": "spr_slopes_reference",
+      "directory": "sprites/spr_slopes_reference",
+      "yy_path": "sprites/spr_slopes_reference/spr_slopes_reference.yy",
+      "width": 196,
+      "height": 104,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 195,
+        "bottom": 103
+      },
+      "collision_kind": 1,
+      "frame_count": 38,
+      "playback_speed": 10.0,
+      "png_paths": [
+        "sprites/spr_slopes_reference/47afcaed-03e3-4a9f-95f2-cf2d0e22266b.png",
+        "sprites/spr_slopes_reference/ef87bddf-ab21-4bed-852b-ff3bb06371cb.png",
+        "sprites/spr_slopes_reference/ffbc6dbc-ebb8-4b15-af7c-c8e0f5d68006.png",
+        "sprites/spr_slopes_reference/a2e8443a-e7b1-4371-84f1-4b4e80e5cdd4.png",
+        "sprites/spr_slopes_reference/20345b6d-36af-4e31-9f00-02174be818f9.png",
+        "sprites/spr_slopes_reference/fd2af724-5fd1-4ae8-8fd5-e7a7440faf49.png",
+        "sprites/spr_slopes_reference/fff32471-153d-4055-a24b-3de2f24ac84f.png",
+        "sprites/spr_slopes_reference/608e77dc-9edb-43f0-8bc3-c579485745c5.png",
+        "sprites/spr_slopes_reference/f32fe3e1-0e10-426c-b0da-7a1941a0f3fc.png",
+        "sprites/spr_slopes_reference/12e9db0b-2520-446d-b52b-42a36b998d81.png",
+        "sprites/spr_slopes_reference/c283dfbf-674f-43ba-b576-46be0022167b.png",
+        "sprites/spr_slopes_reference/5fc53a21-8b43-4c79-bfcb-23896bd5d9be.png",
+        "sprites/spr_slopes_reference/e71518af-88aa-452a-9eaa-274cff4e733a.png",
+        "sprites/spr_slopes_reference/dcf1277e-2ffe-4c30-bc44-04051de04b6c.png",
+        "sprites/spr_slopes_reference/191b979a-2850-453f-a3ff-c7b61a6d9adc.png",
+        "sprites/spr_slopes_reference/a060f732-d238-4b68-a35e-b128b75d2e62.png",
+        "sprites/spr_slopes_reference/a8c5ce2d-d5f1-4a0b-a114-5349f93bdcc7.png",
+        "sprites/spr_slopes_reference/645d6c90-8097-4609-a659-620bf38aaef7.png",
+        "sprites/spr_slopes_reference/7aeebaed-f4c9-4fe6-b40e-0906297b19a1.png",
+        "sprites/spr_slopes_reference/11510cd6-c397-4262-9564-afbe8bd28635.png",
+        "sprites/spr_slopes_reference/9e76ed53-4ddd-4fa7-be34-09ef29c54a65.png",
+        "sprites/spr_slopes_reference/6f868eb6-339e-4389-bf58-3819f0d2751b.png",
+        "sprites/spr_slopes_reference/7a7fc170-ee59-4cfa-8f06-637d78128463.png",
+        "sprites/spr_slopes_reference/372ae9ad-5c9a-46dc-a077-fe79292a666c.png",
+        "sprites/spr_slopes_reference/513e9b3d-a3b2-4ae6-99c2-216c638aa6bf.png",
+        "sprites/spr_slopes_reference/d3fd5a38-eb62-4a5e-82ef-a841b8719415.png",
+        "sprites/spr_slopes_reference/1ea5d5b5-ba34-4dc2-81d9-172d64c033d8.png",
+        "sprites/spr_slopes_reference/c76b0426-bdf3-46db-8b12-f628f4895c2c.png",
+        "sprites/spr_slopes_reference/2fa71505-66a9-4e38-ac0e-db0568344fd7.png",
+        "sprites/spr_slopes_reference/a0ab1440-a425-413a-a200-b8b8073add3a.png",
+        "sprites/spr_slopes_reference/56a02551-3377-4ae6-a207-5e88b47936ba.png",
+        "sprites/spr_slopes_reference/d52cb504-d40f-4b28-a514-11ae0f558906.png",
+        "sprites/spr_slopes_reference/fafc5c6f-3970-40ab-93d0-bb6fa4b76745.png",
+        "sprites/spr_slopes_reference/36336585-2c7a-468a-82c9-212016de0ed7.png",
+        "sprites/spr_slopes_reference/10025ca2-b458-46d5-9e48-5424f176cef3.png",
+        "sprites/spr_slopes_reference/cd1a43f9-c2c8-4d59-8853-43658b6d28ef.png",
+        "sprites/spr_slopes_reference/b0b36df7-071a-445d-a7a0-88e0e9f6b5a6.png",
+        "sprites/spr_slopes_reference/f36e7e34-64f8-4221-97bf-6a1408b9044d.png"
+      ]
+    },
+    {
+      "name": "spr_small_mask",
+      "directory": "sprites/spr_small_mask",
+      "yy_path": "sprites/spr_small_mask/spr_small_mask.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 8,
+        "y": 8
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_small_mask/a47b812d-6092-4137-acf5-d1d33deaa9e7.png"
+      ]
+    },
+    {
+      "name": "spr_square_16",
+      "directory": "sprites/spr_square_16",
+      "yy_path": "sprites/spr_square_16/spr_square_16.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 1.0,
+      "png_paths": [
+        "sprites/spr_square_16/fc1fd2f0-9490-4dab-866c-a541e81fc5ca.png"
+      ]
+    },
+    {
+      "name": "spr_start_menu",
+      "directory": "sprites/spr_start_menu",
+      "yy_path": "sprites/spr_start_menu/spr_start_menu.yy",
+      "width": 228,
+      "height": 113,
+      "origin": {
+        "x": 114,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 227,
+        "bottom": 112
+      },
+      "collision_kind": 1,
+      "frame_count": 22,
+      "playback_speed": 10.0,
+      "png_paths": [
+        "sprites/spr_start_menu/1c0096a3-2bd7-4788-a6db-06c1e0b5b813.png",
+        "sprites/spr_start_menu/565ebbb8-607d-4e6d-889d-b182688ec49f.png",
+        "sprites/spr_start_menu/fbfb7647-b51f-43dd-a49e-84dbbafdef42.png",
+        "sprites/spr_start_menu/4040e17b-5e59-4a78-a726-fe6539a49d59.png",
+        "sprites/spr_start_menu/f5fa34c6-aeae-4155-975d-31adfac1c304.png",
+        "sprites/spr_start_menu/17b805ac-9af3-4588-9b5e-788f04c19b35.png",
+        "sprites/spr_start_menu/50bf9946-3ead-433e-b9ca-c27869ecd335.png",
+        "sprites/spr_start_menu/e6ebe2e9-306f-48a7-8961-48e9a97bd34c.png",
+        "sprites/spr_start_menu/e2e9b77a-3e9c-41d8-b5a1-5364a5f478cc.png",
+        "sprites/spr_start_menu/9ca69d32-b910-46b4-91fe-c5fbc82559ac.png",
+        "sprites/spr_start_menu/9e5b3f2e-7b92-4154-ad11-123f57ec7cd7.png",
+        "sprites/spr_start_menu/7e91140e-9d28-4f22-9e0d-e724cece1671.png",
+        "sprites/spr_start_menu/7594b2e1-9a91-488e-be5c-2ca5c15c1a38.png",
+        "sprites/spr_start_menu/c2ac7bdb-0f2d-406b-a8ea-243f5edf0366.png",
+        "sprites/spr_start_menu/50dc0ac7-a583-4f1a-8ce0-7e21e90aaae9.png",
+        "sprites/spr_start_menu/8a1dd019-b088-4313-9f24-8c906d44eec3.png",
+        "sprites/spr_start_menu/b1418a76-99de-4526-8aba-b0d342386c83.png",
+        "sprites/spr_start_menu/29e0e15a-2ce7-4afa-a0fa-ad83f2dc301e.png",
+        "sprites/spr_start_menu/eced3e93-a2ec-4dc9-b1dc-0e2f5765d21d.png",
+        "sprites/spr_start_menu/808e36a5-acdd-4f1c-8d1f-b213733266c2.png",
+        "sprites/spr_start_menu/637e7ebd-fc53-4d59-b0e7-dfc344db3e11.png",
+        "sprites/spr_start_menu/56be626c-fa47-45f2-bbf0-8439c8e07a13.png"
+      ]
+    },
+    {
+      "name": "spr_start_menu2",
+      "directory": "sprites/spr_start_menu2",
+      "yy_path": "sprites/spr_start_menu2/spr_start_menu2.yy",
+      "width": 228,
+      "height": 113,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 10.0,
+      "png_paths": [
+        "sprites/spr_start_menu2/1c0096a3-2bd7-4788-a6db-06c1e0b5b813.png"
+      ]
+    },
+    {
+      "name": "spr_test_bg",
+      "directory": "sprites/spr_test_bg",
+      "yy_path": "sprites/spr_test_bg/spr_test_bg.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_test_bg/c5076094-42bf-4c7c-9608-1b5b3c2ee798.png"
+      ]
+    },
+    {
+      "name": "spr_text_font_normal",
+      "directory": "sprites/spr_text_font_normal",
+      "yy_path": "sprites/spr_text_font_normal/spr_text_font_normal.yy",
+      "width": 14,
+      "height": 14,
+      "origin": {
+        "x": 4,
+        "y": 4
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 13,
+        "bottom": 13
+      },
+      "collision_kind": 1,
+      "frame_count": 218,
+      "playback_speed": 10.0,
+      "png_paths": [
+        "sprites/spr_text_font_normal/c918f995-3c49-4fdc-b720-c71be5835fe4.png",
+        "sprites/spr_text_font_normal/e683c539-15b4-4423-b9ce-ea930e11976b.png",
+        "sprites/spr_text_font_normal/77f8d2f4-bff7-428e-8f9a-381edc74064c.png",
+        "sprites/spr_text_font_normal/97358a0a-01c2-4e25-a0ec-1bdc646029ea.png",
+        "sprites/spr_text_font_normal/8c1ed23b-3167-46d7-9bb8-7d44229a4392.png",
+        "sprites/spr_text_font_normal/7823923d-5a9e-47ba-9407-d9738d6ee301.png",
+        "sprites/spr_text_font_normal/ca6a029b-8ae3-44f2-8cd8-13b626028803.png",
+        "sprites/spr_text_font_normal/a90d739b-999d-4ee1-b574-e272ce9ff406.png",
+        "sprites/spr_text_font_normal/9498a1be-10f3-49df-8022-6703caf7658b.png",
+        "sprites/spr_text_font_normal/986921ec-f97d-4d38-a07b-66f848ecef93.png",
+        "sprites/spr_text_font_normal/82a3fae0-9604-474e-afbf-92d46d2711c1.png",
+        "sprites/spr_text_font_normal/9461b002-b4df-43c9-bcd9-5bc2cffdd42b.png",
+        "sprites/spr_text_font_normal/3fe4e01f-5007-44cd-baa9-f171950646b6.png",
+        "sprites/spr_text_font_normal/89c4fc9f-85af-4c33-a9a5-efa82271aecc.png",
+        "sprites/spr_text_font_normal/1d2c3858-ac37-4065-b6aa-3441134e2e44.png",
+        "sprites/spr_text_font_normal/48b9b44e-6791-476c-8f36-691a1d7c82d6.png",
+        "sprites/spr_text_font_normal/6b8ecba3-51a6-482f-9b5a-1e9c35b37033.png",
+        "sprites/spr_text_font_normal/eb19f431-ced0-4cfa-9a19-c1ac0c8cbc13.png",
+        "sprites/spr_text_font_normal/a1e54327-5f5a-4881-9575-ea50c8210d0e.png",
+        "sprites/spr_text_font_normal/07989374-fda9-4463-b5eb-4a6388991e73.png",
+        "sprites/spr_text_font_normal/6934c809-9e64-4663-9e84-704a16daf230.png",
+        "sprites/spr_text_font_normal/341b3039-2282-4c4e-a143-37205933f705.png",
+        "sprites/spr_text_font_normal/e2d46bf1-1c4c-4337-a7f8-f07653fc770e.png",
+        "sprites/spr_text_font_normal/e80f0cbb-01aa-41f8-a287-25ad7babb348.png",
+        "sprites/spr_text_font_normal/f0691c23-5c05-4bd2-a8bb-c7f0c02ba635.png",
+        "sprites/spr_text_font_normal/bf403ead-cedd-4777-8867-e58657ff7bf5.png",
+        "sprites/spr_text_font_normal/ce5ebccd-04fb-4eb6-8ca7-b6ca18b31d16.png",
+        "sprites/spr_text_font_normal/472bb852-a462-4b15-8aa0-0f9c84b9c4cc.png",
+        "sprites/spr_text_font_normal/bea6aba9-4ea0-4e82-bbf5-565a29dc1a2d.png",
+        "sprites/spr_text_font_normal/9cc14c46-2da8-451d-bc4e-d439cf2c0c4b.png",
+        "sprites/spr_text_font_normal/d24703cf-82a1-461a-9ae5-d04182af1608.png",
+        "sprites/spr_text_font_normal/c0dd72da-b92b-4a09-a742-bee55e1e0d13.png",
+        "sprites/spr_text_font_normal/45a37554-e447-4d39-84db-52438b134d56.png",
+        "sprites/spr_text_font_normal/89d28dff-2bfb-445b-8b44-0a4f14c444a5.png",
+        "sprites/spr_text_font_normal/1d7e0152-35f1-40b3-9cf4-abdeab8df1ff.png",
+        "sprites/spr_text_font_normal/1017d8b1-8c22-46a2-89b0-11b07fb35ce0.png",
+        "sprites/spr_text_font_normal/7489efa7-44b4-4f11-9171-14b4cf5ac369.png",
+        "sprites/spr_text_font_normal/e31fb460-da2b-4962-a463-fd5349761494.png",
+        "sprites/spr_text_font_normal/d262619f-bcfa-41fd-808f-6845f3a739e3.png",
+        "sprites/spr_text_font_normal/a92fa8bc-3fdb-4e1e-8068-4656a15e838a.png",
+        "sprites/spr_text_font_normal/93efdefa-6e13-4fa0-9af7-eee2f1335836.png",
+        "sprites/spr_text_font_normal/573c96d1-e027-49dd-8a0d-4f13a05f389b.png",
+        "sprites/spr_text_font_normal/f715b108-f6c4-4b2e-9a88-c118024dac85.png",
+        "sprites/spr_text_font_normal/79bddc35-d64c-4fa7-a4c7-159a069249ea.png",
+        "sprites/spr_text_font_normal/3d90597a-0383-409c-b7b6-cb53c7127a15.png",
+        "sprites/spr_text_font_normal/3bdc4891-8388-4067-9379-207ae317f908.png",
+        "sprites/spr_text_font_normal/b2c6bc8e-c7e1-4e3c-ae6c-46758966de1e.png",
+        "sprites/spr_text_font_normal/5549e9d0-3184-4db4-bdd4-a2366c150748.png",
+        "sprites/spr_text_font_normal/9eb2fb30-3802-4404-acfb-d8176d7b017e.png",
+        "sprites/spr_text_font_normal/ccc3a26e-2dff-44d9-96e5-e708ffe40ecb.png",
+        "sprites/spr_text_font_normal/6a53ccf1-3641-4d54-805a-97865e2b8394.png",
+        "sprites/spr_text_font_normal/718b4553-5a57-4211-b926-ae0c28b4a543.png",
+        "sprites/spr_text_font_normal/469fa98d-86fc-4fdc-9946-c7d437713f29.png",
+        "sprites/spr_text_font_normal/6819a01d-ccfd-4a22-9e6b-fb170a9aa024.png",
+        "sprites/spr_text_font_normal/839596b2-e104-4d71-9c1a-0864ecece058.png",
+        "sprites/spr_text_font_normal/7578bbfe-a565-4550-be7e-f2beda2172a3.png",
+        "sprites/spr_text_font_normal/acf9d115-b3bd-41ed-9d4c-8a9c2aa955d1.png",
+        "sprites/spr_text_font_normal/5013bf27-94f9-47c3-bd0e-3c373c50ea84.png",
+        "sprites/spr_text_font_normal/5ea2a158-51b1-4329-94aa-5c7859dc44bb.png",
+        "sprites/spr_text_font_normal/61e1cb06-0c16-4b9f-a4c7-efa28cc7ab8d.png",
+        "sprites/spr_text_font_normal/187fdbbb-1bee-40ad-b441-75f1d1ba48cb.png",
+        "sprites/spr_text_font_normal/f527ce5e-296c-4f15-b48f-4bd736989b0b.png",
+        "sprites/spr_text_font_normal/4355d8dc-34db-45ce-bcab-b8010296b41e.png",
+        "sprites/spr_text_font_normal/2461a13c-0fb7-43f7-9816-271f28bc9089.png",
+        "sprites/spr_text_font_normal/2735ca0c-6009-496a-850b-b425fc2e99f0.png",
+        "sprites/spr_text_font_normal/be565a7f-2b1a-4eca-9772-b9cccbe37905.png",
+        "sprites/spr_text_font_normal/4e5b9b03-5485-43cf-8456-4e002d571bfb.png",
+        "sprites/spr_text_font_normal/35bd2718-17e6-4d21-b039-2916bcb0fbc2.png",
+        "sprites/spr_text_font_normal/6542660a-1212-4acc-855b-2b3e3ddafdf5.png",
+        "sprites/spr_text_font_normal/3565b543-bfd9-497c-9ee9-77b012e77813.png",
+        "sprites/spr_text_font_normal/34e6203d-16dc-4aa8-b63e-3e867f21f366.png",
+        "sprites/spr_text_font_normal/034b50a6-6d86-42b0-8ff4-32c26de71d39.png",
+        "sprites/spr_text_font_normal/7efe08af-fa97-4fb4-8264-ba8413964c66.png",
+        "sprites/spr_text_font_normal/f84fa3da-045d-40f1-8c3e-8c5e2420eedc.png",
+        "sprites/spr_text_font_normal/0ad6ad0b-e1a7-46bc-b020-be1210d23ac2.png",
+        "sprites/spr_text_font_normal/1444f5aa-9423-4e75-a75c-4fd532640483.png",
+        "sprites/spr_text_font_normal/feb6a605-3edf-47a5-b2a8-9caf16d6d0e2.png",
+        "sprites/spr_text_font_normal/3c7e6679-9452-4a1d-b9a1-2392ab71d95b.png",
+        "sprites/spr_text_font_normal/5f4562dc-7dc9-48c7-9165-7aeb6194d858.png",
+        "sprites/spr_text_font_normal/31ce05fd-9e31-4f5e-97bc-9ca618edbd47.png",
+        "sprites/spr_text_font_normal/f190653a-103a-473e-bf8c-25d9a4a089aa.png",
+        "sprites/spr_text_font_normal/c177480e-f204-4f1f-bf52-cd6b948c45a7.png",
+        "sprites/spr_text_font_normal/0fae7a2d-51d0-481c-9176-b6d998912110.png",
+        "sprites/spr_text_font_normal/1f572ffc-60ce-4ec0-b611-3480ea8c7e54.png",
+        "sprites/spr_text_font_normal/5a4f1c00-9626-45b2-ae00-e8d11b259e3a.png",
+        "sprites/spr_text_font_normal/39c86cba-680a-4a33-9445-8e5afce7b961.png",
+        "sprites/spr_text_font_normal/90d4e636-1457-491a-802f-6037e1629c29.png",
+        "sprites/spr_text_font_normal/e1bec610-b253-4c7f-a5a1-6782c326d139.png",
+        "sprites/spr_text_font_normal/e30d75b0-0c9f-43cb-86e6-4fdf32fb9f96.png",
+        "sprites/spr_text_font_normal/24186db6-b6ef-4f51-8e99-63ec6d93ae1b.png",
+        "sprites/spr_text_font_normal/db97f6e7-152c-47e0-97f9-dfe7dd751ec7.png",
+        "sprites/spr_text_font_normal/812af45e-5dd4-4562-bb5b-d6e887b5f488.png",
+        "sprites/spr_text_font_normal/fb436baa-b304-432c-9e84-e6a031f6ae07.png",
+        "sprites/spr_text_font_normal/5763f0a8-fe6c-489d-89f7-d264bd721005.png",
+        "sprites/spr_text_font_normal/90c4828d-2a61-46cb-883b-3943502edad7.png",
+        "sprites/spr_text_font_normal/3f8f058b-c3d4-40cb-851e-77ee045a12fd.png",
+        "sprites/spr_text_font_normal/7b9b0b52-c73a-446a-9d3d-c546b448277d.png",
+        "sprites/spr_text_font_normal/5b90087f-8d56-47b7-af81-d2bd01b7ef65.png",
+        "sprites/spr_text_font_normal/7d6791ae-b950-4873-9add-a5a60354a545.png",
+        "sprites/spr_text_font_normal/121ef490-e7a5-4bed-b5cb-990296d0b47a.png",
+        "sprites/spr_text_font_normal/d6135308-af33-4f10-9715-c4b754f1ae6d.png",
+        "sprites/spr_text_font_normal/16f5d073-98cc-4b5f-9229-81900a200180.png",
+        "sprites/spr_text_font_normal/fea09bf8-75bd-460d-9699-0acd41ca96ff.png",
+        "sprites/spr_text_font_normal/9bd13756-fc67-43c7-984c-1426797aa3a7.png",
+        "sprites/spr_text_font_normal/a20fcf32-15f3-4c15-a4cc-10a92a03b245.png",
+        "sprites/spr_text_font_normal/b8897101-f64e-4f10-ad5e-ca3ba7140472.png",
+        "sprites/spr_text_font_normal/e935cc9c-79f9-432a-b12c-c365d09dbfd6.png",
+        "sprites/spr_text_font_normal/efa7d62d-8961-4c12-9512-0a0e609c8260.png",
+        "sprites/spr_text_font_normal/94f8c7bc-a121-46a9-bd60-88413d40a7d6.png",
+        "sprites/spr_text_font_normal/7c27911d-6ddb-492e-b1c1-a16cada3f17f.png",
+        "sprites/spr_text_font_normal/80003c7d-92fa-4d3e-9cdd-97158e96ca9e.png",
+        "sprites/spr_text_font_normal/6b5bec0c-aa17-4339-9cad-57d63ecbc286.png",
+        "sprites/spr_text_font_normal/b2bccf1a-c712-4005-9e29-3721a5a76d9f.png",
+        "sprites/spr_text_font_normal/405e717b-0972-4fa4-9929-62cbe87b86d6.png",
+        "sprites/spr_text_font_normal/03c09a4c-e7eb-4f5a-82f0-bd19e3d41271.png",
+        "sprites/spr_text_font_normal/e25dc09d-68c8-4210-89d1-1934c41466ea.png",
+        "sprites/spr_text_font_normal/83c6a885-b566-4c1d-8121-1238165d1aa5.png",
+        "sprites/spr_text_font_normal/6b2aa75e-190a-4cae-8fc3-0a6eebf19e84.png",
+        "sprites/spr_text_font_normal/317c9946-c6ad-4717-b938-ce48be0a336e.png",
+        "sprites/spr_text_font_normal/f55787e5-6036-4ee4-9217-1bab34b168e7.png",
+        "sprites/spr_text_font_normal/00ad12d3-b005-43b1-b9ce-248f44529c16.png",
+        "sprites/spr_text_font_normal/2d4b8a27-d35f-403a-a0cb-6caca92bb13e.png",
+        "sprites/spr_text_font_normal/e5715d39-cbc5-4731-a2ce-554189d19cc3.png",
+        "sprites/spr_text_font_normal/dc2ea3d1-2e40-46bc-a86f-76dd4f2f0b35.png",
+        "sprites/spr_text_font_normal/0fd63990-efe1-432d-b6ad-7fd0f1c0da42.png",
+        "sprites/spr_text_font_normal/ec17bf59-beb4-411e-abf3-9fddb2c73c51.png",
+        "sprites/spr_text_font_normal/b3344d25-b6ac-4184-a447-2fadb46314bb.png",
+        "sprites/spr_text_font_normal/4b775adf-69df-49ba-94fe-98a752c7ae5f.png",
+        "sprites/spr_text_font_normal/e74a5191-cb79-4bb2-8b4d-141a227fd508.png",
+        "sprites/spr_text_font_normal/2779124f-6915-4b0a-a23e-25b22e679f12.png",
+        "sprites/spr_text_font_normal/e5315a32-2ed1-4a60-89ca-fb7a7a9170ef.png",
+        "sprites/spr_text_font_normal/4eb2f965-999e-47de-a18f-c96de89065b9.png",
+        "sprites/spr_text_font_normal/d047d23f-5cf5-4dcb-9f52-1d469de79a56.png",
+        "sprites/spr_text_font_normal/86d27540-bf9d-4f4f-803e-fd3af614207b.png",
+        "sprites/spr_text_font_normal/9b7e46a6-7fab-4972-b7a5-5c60ca0787ac.png",
+        "sprites/spr_text_font_normal/139dcd78-d468-46ee-bf1a-df9cb4ee4c08.png",
+        "sprites/spr_text_font_normal/10571c6c-7a07-4fdd-90d3-15d9ced6c9a7.png",
+        "sprites/spr_text_font_normal/5a2f96e3-1e6a-4187-b6fe-d2e9d2221e1d.png",
+        "sprites/spr_text_font_normal/f6747cc6-252f-4f65-b18c-8bf0eeb4c294.png",
+        "sprites/spr_text_font_normal/0277c2fe-670d-47b5-ae60-d49f12aec0d7.png",
+        "sprites/spr_text_font_normal/ce84baaa-65ce-4b23-b493-ae8ae177fae4.png",
+        "sprites/spr_text_font_normal/f0379142-99d3-4dbd-9cd9-6c9e9aab6f91.png",
+        "sprites/spr_text_font_normal/4817cad6-09b5-4011-b901-2654a5eb8042.png",
+        "sprites/spr_text_font_normal/122188fa-ea53-4ac1-928d-c652ec780dda.png",
+        "sprites/spr_text_font_normal/0416e65e-69c6-481f-9a3c-7fc2a6b7de73.png",
+        "sprites/spr_text_font_normal/81bb8fd9-fae7-4762-a004-a2f3f3b4bdc2.png",
+        "sprites/spr_text_font_normal/5a96ca5b-8099-4a36-88a9-a6a3cb9cef5e.png",
+        "sprites/spr_text_font_normal/a34bcef2-3376-4466-a8d6-bf8dec86aeb8.png",
+        "sprites/spr_text_font_normal/0e8e8822-db12-4e1e-a120-08ed1919997a.png",
+        "sprites/spr_text_font_normal/513ee40b-5d07-4070-a44a-0169d585944b.png",
+        "sprites/spr_text_font_normal/524e9335-c90c-49da-8c32-903346d07e35.png",
+        "sprites/spr_text_font_normal/3b159527-070e-4fc0-bad5-a9dd29432199.png",
+        "sprites/spr_text_font_normal/29b32eb1-e085-4ccf-9406-06c243af578e.png",
+        "sprites/spr_text_font_normal/b3566c76-d269-492e-8f28-d602e7a0b69a.png",
+        "sprites/spr_text_font_normal/215d777d-a587-4eb0-9539-ff9ec2fa725a.png",
+        "sprites/spr_text_font_normal/642d1b64-73a2-4e67-ac93-28950b6c0112.png",
+        "sprites/spr_text_font_normal/60c37789-0d13-45fe-b517-e307bd98ecbf.png",
+        "sprites/spr_text_font_normal/f87e7e85-0222-4bd3-b466-25f530f2d8c0.png",
+        "sprites/spr_text_font_normal/6d05668f-417a-40a6-baab-976573c6fba4.png",
+        "sprites/spr_text_font_normal/2e0565cb-e7c7-4b89-a00c-3ef1f0e4e9f7.png",
+        "sprites/spr_text_font_normal/b6470aa6-b743-47a0-bdf4-008c9491da40.png",
+        "sprites/spr_text_font_normal/cca25b14-4faa-4fbb-ac24-e459390a0827.png",
+        "sprites/spr_text_font_normal/15c721b4-1445-4034-be74-f7eb66cfc7d4.png",
+        "sprites/spr_text_font_normal/354b8a41-eebe-43d2-ae02-9e2aa2db278a.png",
+        "sprites/spr_text_font_normal/4d0a5d35-2572-4f1a-abad-6b841e9cc5d2.png",
+        "sprites/spr_text_font_normal/46e9136f-0009-42c1-8d30-dedd9e2da9f3.png",
+        "sprites/spr_text_font_normal/1b0ccf88-bd35-48ad-8a67-f829d413a79b.png",
+        "sprites/spr_text_font_normal/ad66adb6-8cbd-4bfe-b61d-0dd5530f7bab.png",
+        "sprites/spr_text_font_normal/c0b8a2e2-5802-4d3f-8a15-37ce83058dfb.png",
+        "sprites/spr_text_font_normal/dddac547-4da2-4dcf-8433-acbae42f60c0.png",
+        "sprites/spr_text_font_normal/26b41f9d-cb70-4042-83dc-cad7302a5e5c.png",
+        "sprites/spr_text_font_normal/01f04633-d840-4aff-adec-9604c8b53cfb.png",
+        "sprites/spr_text_font_normal/8d4c0eaf-8adc-47e4-8def-29e36d4cb5f6.png",
+        "sprites/spr_text_font_normal/8a2f9193-d031-4857-92b2-0bbdc9a932c1.png",
+        "sprites/spr_text_font_normal/5f059ddc-6084-46de-ae79-3e40aa5374a2.png",
+        "sprites/spr_text_font_normal/30033863-c0d7-4625-9b0b-5b3e44c90ee2.png",
+        "sprites/spr_text_font_normal/67071d2e-9cfe-4660-9461-1d3fb397e17f.png",
+        "sprites/spr_text_font_normal/a4d3684f-2c9c-4695-9bd7-3caeae2dddf7.png",
+        "sprites/spr_text_font_normal/6f0cfd29-0ef0-405e-bca1-571537e18d83.png",
+        "sprites/spr_text_font_normal/0616908e-c5e1-4168-ab39-54e8619ea3e1.png",
+        "sprites/spr_text_font_normal/f39ec4c2-7dd4-4f25-b36a-905751d43f9b.png",
+        "sprites/spr_text_font_normal/4079307b-84e5-40f6-99ef-18180b0eaff9.png",
+        "sprites/spr_text_font_normal/6b48e828-aad3-45e6-9be9-a1685f719edc.png",
+        "sprites/spr_text_font_normal/1cf06efe-5162-47d6-aff6-b52fabe5d725.png",
+        "sprites/spr_text_font_normal/d36b1663-3a8c-4c5e-9ff1-c27b8aeee456.png",
+        "sprites/spr_text_font_normal/48a019a1-0c21-43a6-bf6e-7c283273543d.png",
+        "sprites/spr_text_font_normal/fcb4cf34-3e73-4d2b-82bc-c8fd06e27380.png",
+        "sprites/spr_text_font_normal/64e0757c-6889-4d8d-ab51-21ffd4b1e2e8.png",
+        "sprites/spr_text_font_normal/ca1dfbf7-1ca2-4850-b19f-6175953c1412.png",
+        "sprites/spr_text_font_normal/11b14b9c-65f9-4998-aa4f-db96ece3b075.png",
+        "sprites/spr_text_font_normal/0d0cf676-49fe-4aca-b5c5-269943b86860.png",
+        "sprites/spr_text_font_normal/379d3b63-2fdb-4a30-bf25-fa9c620f0af4.png",
+        "sprites/spr_text_font_normal/cde84ae7-eb3a-41a9-9c11-257430bff44b.png",
+        "sprites/spr_text_font_normal/1759c612-fb75-497f-a85c-c5d43642471b.png",
+        "sprites/spr_text_font_normal/a5a979c5-81e1-4e97-9ced-678f03fa235e.png",
+        "sprites/spr_text_font_normal/2e629920-1217-417d-bf87-da59a23b8140.png",
+        "sprites/spr_text_font_normal/ddb3489d-0ac5-4048-968d-d0b393bcd133.png",
+        "sprites/spr_text_font_normal/16f2a254-807f-4d8b-b21e-daffa5a4ac00.png",
+        "sprites/spr_text_font_normal/a99cd322-6209-483b-a9f5-2ec98b569e3c.png",
+        "sprites/spr_text_font_normal/07888b90-2d2b-42a4-8a26-6d140d630ede.png",
+        "sprites/spr_text_font_normal/0d9842ab-0e45-4d26-87e9-ee03b1d37388.png",
+        "sprites/spr_text_font_normal/79db4c30-0ef2-4188-9e38-9f4fb86ab365.png",
+        "sprites/spr_text_font_normal/111d0287-01ea-4d1e-9e00-932b5491b396.png",
+        "sprites/spr_text_font_normal/bfbf4a52-963a-422b-9438-ec366810f7ef.png",
+        "sprites/spr_text_font_normal/ccc4cd30-80f0-4e72-821a-bd76f515e90c.png",
+        "sprites/spr_text_font_normal/fcf08e56-1d7c-4966-99f9-e53ba8f83765.png",
+        "sprites/spr_text_font_normal/879977f1-6e56-4b74-a923-1fac7328f411.png",
+        "sprites/spr_text_font_normal/380825c0-7ce5-4237-83d1-b67328024cbd.png",
+        "sprites/spr_text_font_normal/4e9f31b0-5c40-48e0-ae30-df7b8d6e18e4.png",
+        "sprites/spr_text_font_normal/11e91552-2df1-4a0a-b412-afa867dee340.png",
+        "sprites/spr_text_font_normal/5856c6d8-a6e2-45fb-8c81-09a7ca254a7f.png",
+        "sprites/spr_text_font_normal/f6ad0961-9192-4240-8fd7-219ddaa048e9.png",
+        "sprites/spr_text_font_normal/10110fb6-d577-45ee-ba9b-de88fbdaabed.png",
+        "sprites/spr_text_font_normal/99ad8535-54f5-469a-a2aa-1eaa8e3702b6.png",
+        "sprites/spr_text_font_normal/adc86d10-ce3c-4007-b228-134a6ee6f9c4.png",
+        "sprites/spr_text_font_normal/303918a7-6b9b-4d8a-a480-5c221ff951c5.png",
+        "sprites/spr_text_font_normal/3cb9a634-20de-4a1f-9825-d88deee027db.png",
+        "sprites/spr_text_font_normal/1cfc4b35-255d-452a-8930-e4998383a629.png"
+      ]
+    },
+    {
+      "name": "spr_text_font_orange",
+      "directory": "sprites/spr_text_font_orange",
+      "yy_path": "sprites/spr_text_font_orange/spr_text_font_orange.yy",
+      "width": 14,
+      "height": 14,
+      "origin": {
+        "x": 4,
+        "y": 4
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 11,
+        "bottom": 13
+      },
+      "collision_kind": 1,
+      "frame_count": 218,
+      "playback_speed": 10.0,
+      "png_paths": [
+        "sprites/spr_text_font_orange/c918f995-3c49-4fdc-b720-c71be5835fe4.png",
+        "sprites/spr_text_font_orange/e683c539-15b4-4423-b9ce-ea930e11976b.png",
+        "sprites/spr_text_font_orange/77f8d2f4-bff7-428e-8f9a-381edc74064c.png",
+        "sprites/spr_text_font_orange/97358a0a-01c2-4e25-a0ec-1bdc646029ea.png",
+        "sprites/spr_text_font_orange/8c1ed23b-3167-46d7-9bb8-7d44229a4392.png",
+        "sprites/spr_text_font_orange/7823923d-5a9e-47ba-9407-d9738d6ee301.png",
+        "sprites/spr_text_font_orange/ca6a029b-8ae3-44f2-8cd8-13b626028803.png",
+        "sprites/spr_text_font_orange/a90d739b-999d-4ee1-b574-e272ce9ff406.png",
+        "sprites/spr_text_font_orange/9498a1be-10f3-49df-8022-6703caf7658b.png",
+        "sprites/spr_text_font_orange/986921ec-f97d-4d38-a07b-66f848ecef93.png",
+        "sprites/spr_text_font_orange/82a3fae0-9604-474e-afbf-92d46d2711c1.png",
+        "sprites/spr_text_font_orange/9461b002-b4df-43c9-bcd9-5bc2cffdd42b.png",
+        "sprites/spr_text_font_orange/3fe4e01f-5007-44cd-baa9-f171950646b6.png",
+        "sprites/spr_text_font_orange/89c4fc9f-85af-4c33-a9a5-efa82271aecc.png",
+        "sprites/spr_text_font_orange/1d2c3858-ac37-4065-b6aa-3441134e2e44.png",
+        "sprites/spr_text_font_orange/48b9b44e-6791-476c-8f36-691a1d7c82d6.png",
+        "sprites/spr_text_font_orange/6b8ecba3-51a6-482f-9b5a-1e9c35b37033.png",
+        "sprites/spr_text_font_orange/eb19f431-ced0-4cfa-9a19-c1ac0c8cbc13.png",
+        "sprites/spr_text_font_orange/a1e54327-5f5a-4881-9575-ea50c8210d0e.png",
+        "sprites/spr_text_font_orange/07989374-fda9-4463-b5eb-4a6388991e73.png",
+        "sprites/spr_text_font_orange/6934c809-9e64-4663-9e84-704a16daf230.png",
+        "sprites/spr_text_font_orange/341b3039-2282-4c4e-a143-37205933f705.png",
+        "sprites/spr_text_font_orange/e2d46bf1-1c4c-4337-a7f8-f07653fc770e.png",
+        "sprites/spr_text_font_orange/e80f0cbb-01aa-41f8-a287-25ad7babb348.png",
+        "sprites/spr_text_font_orange/f0691c23-5c05-4bd2-a8bb-c7f0c02ba635.png",
+        "sprites/spr_text_font_orange/bf403ead-cedd-4777-8867-e58657ff7bf5.png",
+        "sprites/spr_text_font_orange/ce5ebccd-04fb-4eb6-8ca7-b6ca18b31d16.png",
+        "sprites/spr_text_font_orange/472bb852-a462-4b15-8aa0-0f9c84b9c4cc.png",
+        "sprites/spr_text_font_orange/bea6aba9-4ea0-4e82-bbf5-565a29dc1a2d.png",
+        "sprites/spr_text_font_orange/9cc14c46-2da8-451d-bc4e-d439cf2c0c4b.png",
+        "sprites/spr_text_font_orange/d24703cf-82a1-461a-9ae5-d04182af1608.png",
+        "sprites/spr_text_font_orange/c0dd72da-b92b-4a09-a742-bee55e1e0d13.png",
+        "sprites/spr_text_font_orange/45a37554-e447-4d39-84db-52438b134d56.png",
+        "sprites/spr_text_font_orange/89d28dff-2bfb-445b-8b44-0a4f14c444a5.png",
+        "sprites/spr_text_font_orange/1d7e0152-35f1-40b3-9cf4-abdeab8df1ff.png",
+        "sprites/spr_text_font_orange/1017d8b1-8c22-46a2-89b0-11b07fb35ce0.png",
+        "sprites/spr_text_font_orange/7489efa7-44b4-4f11-9171-14b4cf5ac369.png",
+        "sprites/spr_text_font_orange/e31fb460-da2b-4962-a463-fd5349761494.png",
+        "sprites/spr_text_font_orange/d262619f-bcfa-41fd-808f-6845f3a739e3.png",
+        "sprites/spr_text_font_orange/a92fa8bc-3fdb-4e1e-8068-4656a15e838a.png",
+        "sprites/spr_text_font_orange/93efdefa-6e13-4fa0-9af7-eee2f1335836.png",
+        "sprites/spr_text_font_orange/573c96d1-e027-49dd-8a0d-4f13a05f389b.png",
+        "sprites/spr_text_font_orange/f715b108-f6c4-4b2e-9a88-c118024dac85.png",
+        "sprites/spr_text_font_orange/79bddc35-d64c-4fa7-a4c7-159a069249ea.png",
+        "sprites/spr_text_font_orange/3d90597a-0383-409c-b7b6-cb53c7127a15.png",
+        "sprites/spr_text_font_orange/3bdc4891-8388-4067-9379-207ae317f908.png",
+        "sprites/spr_text_font_orange/b2c6bc8e-c7e1-4e3c-ae6c-46758966de1e.png",
+        "sprites/spr_text_font_orange/5549e9d0-3184-4db4-bdd4-a2366c150748.png",
+        "sprites/spr_text_font_orange/9eb2fb30-3802-4404-acfb-d8176d7b017e.png",
+        "sprites/spr_text_font_orange/ccc3a26e-2dff-44d9-96e5-e708ffe40ecb.png",
+        "sprites/spr_text_font_orange/6a53ccf1-3641-4d54-805a-97865e2b8394.png",
+        "sprites/spr_text_font_orange/718b4553-5a57-4211-b926-ae0c28b4a543.png",
+        "sprites/spr_text_font_orange/469fa98d-86fc-4fdc-9946-c7d437713f29.png",
+        "sprites/spr_text_font_orange/6819a01d-ccfd-4a22-9e6b-fb170a9aa024.png",
+        "sprites/spr_text_font_orange/839596b2-e104-4d71-9c1a-0864ecece058.png",
+        "sprites/spr_text_font_orange/7578bbfe-a565-4550-be7e-f2beda2172a3.png",
+        "sprites/spr_text_font_orange/acf9d115-b3bd-41ed-9d4c-8a9c2aa955d1.png",
+        "sprites/spr_text_font_orange/5013bf27-94f9-47c3-bd0e-3c373c50ea84.png",
+        "sprites/spr_text_font_orange/5ea2a158-51b1-4329-94aa-5c7859dc44bb.png",
+        "sprites/spr_text_font_orange/61e1cb06-0c16-4b9f-a4c7-efa28cc7ab8d.png",
+        "sprites/spr_text_font_orange/187fdbbb-1bee-40ad-b441-75f1d1ba48cb.png",
+        "sprites/spr_text_font_orange/f527ce5e-296c-4f15-b48f-4bd736989b0b.png",
+        "sprites/spr_text_font_orange/4355d8dc-34db-45ce-bcab-b8010296b41e.png",
+        "sprites/spr_text_font_orange/2461a13c-0fb7-43f7-9816-271f28bc9089.png",
+        "sprites/spr_text_font_orange/2735ca0c-6009-496a-850b-b425fc2e99f0.png",
+        "sprites/spr_text_font_orange/be565a7f-2b1a-4eca-9772-b9cccbe37905.png",
+        "sprites/spr_text_font_orange/4e5b9b03-5485-43cf-8456-4e002d571bfb.png",
+        "sprites/spr_text_font_orange/35bd2718-17e6-4d21-b039-2916bcb0fbc2.png",
+        "sprites/spr_text_font_orange/6542660a-1212-4acc-855b-2b3e3ddafdf5.png",
+        "sprites/spr_text_font_orange/3565b543-bfd9-497c-9ee9-77b012e77813.png",
+        "sprites/spr_text_font_orange/34e6203d-16dc-4aa8-b63e-3e867f21f366.png",
+        "sprites/spr_text_font_orange/034b50a6-6d86-42b0-8ff4-32c26de71d39.png",
+        "sprites/spr_text_font_orange/7efe08af-fa97-4fb4-8264-ba8413964c66.png",
+        "sprites/spr_text_font_orange/f84fa3da-045d-40f1-8c3e-8c5e2420eedc.png",
+        "sprites/spr_text_font_orange/0ad6ad0b-e1a7-46bc-b020-be1210d23ac2.png",
+        "sprites/spr_text_font_orange/1444f5aa-9423-4e75-a75c-4fd532640483.png",
+        "sprites/spr_text_font_orange/feb6a605-3edf-47a5-b2a8-9caf16d6d0e2.png",
+        "sprites/spr_text_font_orange/3c7e6679-9452-4a1d-b9a1-2392ab71d95b.png",
+        "sprites/spr_text_font_orange/5f4562dc-7dc9-48c7-9165-7aeb6194d858.png",
+        "sprites/spr_text_font_orange/31ce05fd-9e31-4f5e-97bc-9ca618edbd47.png",
+        "sprites/spr_text_font_orange/f190653a-103a-473e-bf8c-25d9a4a089aa.png",
+        "sprites/spr_text_font_orange/c177480e-f204-4f1f-bf52-cd6b948c45a7.png",
+        "sprites/spr_text_font_orange/0fae7a2d-51d0-481c-9176-b6d998912110.png",
+        "sprites/spr_text_font_orange/1f572ffc-60ce-4ec0-b611-3480ea8c7e54.png",
+        "sprites/spr_text_font_orange/5a4f1c00-9626-45b2-ae00-e8d11b259e3a.png",
+        "sprites/spr_text_font_orange/39c86cba-680a-4a33-9445-8e5afce7b961.png",
+        "sprites/spr_text_font_orange/90d4e636-1457-491a-802f-6037e1629c29.png",
+        "sprites/spr_text_font_orange/e1bec610-b253-4c7f-a5a1-6782c326d139.png",
+        "sprites/spr_text_font_orange/e30d75b0-0c9f-43cb-86e6-4fdf32fb9f96.png",
+        "sprites/spr_text_font_orange/24186db6-b6ef-4f51-8e99-63ec6d93ae1b.png",
+        "sprites/spr_text_font_orange/db97f6e7-152c-47e0-97f9-dfe7dd751ec7.png",
+        "sprites/spr_text_font_orange/812af45e-5dd4-4562-bb5b-d6e887b5f488.png",
+        "sprites/spr_text_font_orange/fb436baa-b304-432c-9e84-e6a031f6ae07.png",
+        "sprites/spr_text_font_orange/5763f0a8-fe6c-489d-89f7-d264bd721005.png",
+        "sprites/spr_text_font_orange/90c4828d-2a61-46cb-883b-3943502edad7.png",
+        "sprites/spr_text_font_orange/3f8f058b-c3d4-40cb-851e-77ee045a12fd.png",
+        "sprites/spr_text_font_orange/7b9b0b52-c73a-446a-9d3d-c546b448277d.png",
+        "sprites/spr_text_font_orange/5b90087f-8d56-47b7-af81-d2bd01b7ef65.png",
+        "sprites/spr_text_font_orange/7d6791ae-b950-4873-9add-a5a60354a545.png",
+        "sprites/spr_text_font_orange/121ef490-e7a5-4bed-b5cb-990296d0b47a.png",
+        "sprites/spr_text_font_orange/d6135308-af33-4f10-9715-c4b754f1ae6d.png",
+        "sprites/spr_text_font_orange/16f5d073-98cc-4b5f-9229-81900a200180.png",
+        "sprites/spr_text_font_orange/fea09bf8-75bd-460d-9699-0acd41ca96ff.png",
+        "sprites/spr_text_font_orange/9bd13756-fc67-43c7-984c-1426797aa3a7.png",
+        "sprites/spr_text_font_orange/a20fcf32-15f3-4c15-a4cc-10a92a03b245.png",
+        "sprites/spr_text_font_orange/b8897101-f64e-4f10-ad5e-ca3ba7140472.png",
+        "sprites/spr_text_font_orange/e935cc9c-79f9-432a-b12c-c365d09dbfd6.png",
+        "sprites/spr_text_font_orange/efa7d62d-8961-4c12-9512-0a0e609c8260.png",
+        "sprites/spr_text_font_orange/94f8c7bc-a121-46a9-bd60-88413d40a7d6.png",
+        "sprites/spr_text_font_orange/7c27911d-6ddb-492e-b1c1-a16cada3f17f.png",
+        "sprites/spr_text_font_orange/80003c7d-92fa-4d3e-9cdd-97158e96ca9e.png",
+        "sprites/spr_text_font_orange/6b5bec0c-aa17-4339-9cad-57d63ecbc286.png",
+        "sprites/spr_text_font_orange/b2bccf1a-c712-4005-9e29-3721a5a76d9f.png",
+        "sprites/spr_text_font_orange/405e717b-0972-4fa4-9929-62cbe87b86d6.png",
+        "sprites/spr_text_font_orange/03c09a4c-e7eb-4f5a-82f0-bd19e3d41271.png",
+        "sprites/spr_text_font_orange/e25dc09d-68c8-4210-89d1-1934c41466ea.png",
+        "sprites/spr_text_font_orange/83c6a885-b566-4c1d-8121-1238165d1aa5.png",
+        "sprites/spr_text_font_orange/6b2aa75e-190a-4cae-8fc3-0a6eebf19e84.png",
+        "sprites/spr_text_font_orange/317c9946-c6ad-4717-b938-ce48be0a336e.png",
+        "sprites/spr_text_font_orange/f55787e5-6036-4ee4-9217-1bab34b168e7.png",
+        "sprites/spr_text_font_orange/00ad12d3-b005-43b1-b9ce-248f44529c16.png",
+        "sprites/spr_text_font_orange/2d4b8a27-d35f-403a-a0cb-6caca92bb13e.png",
+        "sprites/spr_text_font_orange/e5715d39-cbc5-4731-a2ce-554189d19cc3.png",
+        "sprites/spr_text_font_orange/dc2ea3d1-2e40-46bc-a86f-76dd4f2f0b35.png",
+        "sprites/spr_text_font_orange/0fd63990-efe1-432d-b6ad-7fd0f1c0da42.png",
+        "sprites/spr_text_font_orange/ec17bf59-beb4-411e-abf3-9fddb2c73c51.png",
+        "sprites/spr_text_font_orange/b3344d25-b6ac-4184-a447-2fadb46314bb.png",
+        "sprites/spr_text_font_orange/4b775adf-69df-49ba-94fe-98a752c7ae5f.png",
+        "sprites/spr_text_font_orange/e74a5191-cb79-4bb2-8b4d-141a227fd508.png",
+        "sprites/spr_text_font_orange/2779124f-6915-4b0a-a23e-25b22e679f12.png",
+        "sprites/spr_text_font_orange/e5315a32-2ed1-4a60-89ca-fb7a7a9170ef.png",
+        "sprites/spr_text_font_orange/4eb2f965-999e-47de-a18f-c96de89065b9.png",
+        "sprites/spr_text_font_orange/d047d23f-5cf5-4dcb-9f52-1d469de79a56.png",
+        "sprites/spr_text_font_orange/86d27540-bf9d-4f4f-803e-fd3af614207b.png",
+        "sprites/spr_text_font_orange/9b7e46a6-7fab-4972-b7a5-5c60ca0787ac.png",
+        "sprites/spr_text_font_orange/139dcd78-d468-46ee-bf1a-df9cb4ee4c08.png",
+        "sprites/spr_text_font_orange/10571c6c-7a07-4fdd-90d3-15d9ced6c9a7.png",
+        "sprites/spr_text_font_orange/5a2f96e3-1e6a-4187-b6fe-d2e9d2221e1d.png",
+        "sprites/spr_text_font_orange/f6747cc6-252f-4f65-b18c-8bf0eeb4c294.png",
+        "sprites/spr_text_font_orange/0277c2fe-670d-47b5-ae60-d49f12aec0d7.png",
+        "sprites/spr_text_font_orange/ce84baaa-65ce-4b23-b493-ae8ae177fae4.png",
+        "sprites/spr_text_font_orange/f0379142-99d3-4dbd-9cd9-6c9e9aab6f91.png",
+        "sprites/spr_text_font_orange/4817cad6-09b5-4011-b901-2654a5eb8042.png",
+        "sprites/spr_text_font_orange/122188fa-ea53-4ac1-928d-c652ec780dda.png",
+        "sprites/spr_text_font_orange/0416e65e-69c6-481f-9a3c-7fc2a6b7de73.png",
+        "sprites/spr_text_font_orange/81bb8fd9-fae7-4762-a004-a2f3f3b4bdc2.png",
+        "sprites/spr_text_font_orange/5a96ca5b-8099-4a36-88a9-a6a3cb9cef5e.png",
+        "sprites/spr_text_font_orange/a34bcef2-3376-4466-a8d6-bf8dec86aeb8.png",
+        "sprites/spr_text_font_orange/0e8e8822-db12-4e1e-a120-08ed1919997a.png",
+        "sprites/spr_text_font_orange/513ee40b-5d07-4070-a44a-0169d585944b.png",
+        "sprites/spr_text_font_orange/524e9335-c90c-49da-8c32-903346d07e35.png",
+        "sprites/spr_text_font_orange/3b159527-070e-4fc0-bad5-a9dd29432199.png",
+        "sprites/spr_text_font_orange/29b32eb1-e085-4ccf-9406-06c243af578e.png",
+        "sprites/spr_text_font_orange/b3566c76-d269-492e-8f28-d602e7a0b69a.png",
+        "sprites/spr_text_font_orange/215d777d-a587-4eb0-9539-ff9ec2fa725a.png",
+        "sprites/spr_text_font_orange/642d1b64-73a2-4e67-ac93-28950b6c0112.png",
+        "sprites/spr_text_font_orange/60c37789-0d13-45fe-b517-e307bd98ecbf.png",
+        "sprites/spr_text_font_orange/f87e7e85-0222-4bd3-b466-25f530f2d8c0.png",
+        "sprites/spr_text_font_orange/6d05668f-417a-40a6-baab-976573c6fba4.png",
+        "sprites/spr_text_font_orange/2e0565cb-e7c7-4b89-a00c-3ef1f0e4e9f7.png",
+        "sprites/spr_text_font_orange/b6470aa6-b743-47a0-bdf4-008c9491da40.png",
+        "sprites/spr_text_font_orange/cca25b14-4faa-4fbb-ac24-e459390a0827.png",
+        "sprites/spr_text_font_orange/15c721b4-1445-4034-be74-f7eb66cfc7d4.png",
+        "sprites/spr_text_font_orange/354b8a41-eebe-43d2-ae02-9e2aa2db278a.png",
+        "sprites/spr_text_font_orange/4d0a5d35-2572-4f1a-abad-6b841e9cc5d2.png",
+        "sprites/spr_text_font_orange/46e9136f-0009-42c1-8d30-dedd9e2da9f3.png",
+        "sprites/spr_text_font_orange/1b0ccf88-bd35-48ad-8a67-f829d413a79b.png",
+        "sprites/spr_text_font_orange/ad66adb6-8cbd-4bfe-b61d-0dd5530f7bab.png",
+        "sprites/spr_text_font_orange/c0b8a2e2-5802-4d3f-8a15-37ce83058dfb.png",
+        "sprites/spr_text_font_orange/dddac547-4da2-4dcf-8433-acbae42f60c0.png",
+        "sprites/spr_text_font_orange/26b41f9d-cb70-4042-83dc-cad7302a5e5c.png",
+        "sprites/spr_text_font_orange/01f04633-d840-4aff-adec-9604c8b53cfb.png",
+        "sprites/spr_text_font_orange/8d4c0eaf-8adc-47e4-8def-29e36d4cb5f6.png",
+        "sprites/spr_text_font_orange/8a2f9193-d031-4857-92b2-0bbdc9a932c1.png",
+        "sprites/spr_text_font_orange/5f059ddc-6084-46de-ae79-3e40aa5374a2.png",
+        "sprites/spr_text_font_orange/30033863-c0d7-4625-9b0b-5b3e44c90ee2.png",
+        "sprites/spr_text_font_orange/67071d2e-9cfe-4660-9461-1d3fb397e17f.png",
+        "sprites/spr_text_font_orange/a4d3684f-2c9c-4695-9bd7-3caeae2dddf7.png",
+        "sprites/spr_text_font_orange/6f0cfd29-0ef0-405e-bca1-571537e18d83.png",
+        "sprites/spr_text_font_orange/0616908e-c5e1-4168-ab39-54e8619ea3e1.png",
+        "sprites/spr_text_font_orange/f39ec4c2-7dd4-4f25-b36a-905751d43f9b.png",
+        "sprites/spr_text_font_orange/4079307b-84e5-40f6-99ef-18180b0eaff9.png",
+        "sprites/spr_text_font_orange/6b48e828-aad3-45e6-9be9-a1685f719edc.png",
+        "sprites/spr_text_font_orange/1cf06efe-5162-47d6-aff6-b52fabe5d725.png",
+        "sprites/spr_text_font_orange/d36b1663-3a8c-4c5e-9ff1-c27b8aeee456.png",
+        "sprites/spr_text_font_orange/48a019a1-0c21-43a6-bf6e-7c283273543d.png",
+        "sprites/spr_text_font_orange/fcb4cf34-3e73-4d2b-82bc-c8fd06e27380.png",
+        "sprites/spr_text_font_orange/64e0757c-6889-4d8d-ab51-21ffd4b1e2e8.png",
+        "sprites/spr_text_font_orange/ca1dfbf7-1ca2-4850-b19f-6175953c1412.png",
+        "sprites/spr_text_font_orange/11b14b9c-65f9-4998-aa4f-db96ece3b075.png",
+        "sprites/spr_text_font_orange/0d0cf676-49fe-4aca-b5c5-269943b86860.png",
+        "sprites/spr_text_font_orange/379d3b63-2fdb-4a30-bf25-fa9c620f0af4.png",
+        "sprites/spr_text_font_orange/cde84ae7-eb3a-41a9-9c11-257430bff44b.png",
+        "sprites/spr_text_font_orange/1759c612-fb75-497f-a85c-c5d43642471b.png",
+        "sprites/spr_text_font_orange/a5a979c5-81e1-4e97-9ced-678f03fa235e.png",
+        "sprites/spr_text_font_orange/2e629920-1217-417d-bf87-da59a23b8140.png",
+        "sprites/spr_text_font_orange/ddb3489d-0ac5-4048-968d-d0b393bcd133.png",
+        "sprites/spr_text_font_orange/16f2a254-807f-4d8b-b21e-daffa5a4ac00.png",
+        "sprites/spr_text_font_orange/a99cd322-6209-483b-a9f5-2ec98b569e3c.png",
+        "sprites/spr_text_font_orange/07888b90-2d2b-42a4-8a26-6d140d630ede.png",
+        "sprites/spr_text_font_orange/0d9842ab-0e45-4d26-87e9-ee03b1d37388.png",
+        "sprites/spr_text_font_orange/79db4c30-0ef2-4188-9e38-9f4fb86ab365.png",
+        "sprites/spr_text_font_orange/111d0287-01ea-4d1e-9e00-932b5491b396.png",
+        "sprites/spr_text_font_orange/bfbf4a52-963a-422b-9438-ec366810f7ef.png",
+        "sprites/spr_text_font_orange/ccc4cd30-80f0-4e72-821a-bd76f515e90c.png",
+        "sprites/spr_text_font_orange/fcf08e56-1d7c-4966-99f9-e53ba8f83765.png",
+        "sprites/spr_text_font_orange/879977f1-6e56-4b74-a923-1fac7328f411.png",
+        "sprites/spr_text_font_orange/380825c0-7ce5-4237-83d1-b67328024cbd.png",
+        "sprites/spr_text_font_orange/4e9f31b0-5c40-48e0-ae30-df7b8d6e18e4.png",
+        "sprites/spr_text_font_orange/11e91552-2df1-4a0a-b412-afa867dee340.png",
+        "sprites/spr_text_font_orange/5856c6d8-a6e2-45fb-8c81-09a7ca254a7f.png",
+        "sprites/spr_text_font_orange/f6ad0961-9192-4240-8fd7-219ddaa048e9.png",
+        "sprites/spr_text_font_orange/10110fb6-d577-45ee-ba9b-de88fbdaabed.png",
+        "sprites/spr_text_font_orange/99ad8535-54f5-469a-a2aa-1eaa8e3702b6.png",
+        "sprites/spr_text_font_orange/adc86d10-ce3c-4007-b228-134a6ee6f9c4.png",
+        "sprites/spr_text_font_orange/303918a7-6b9b-4d8a-a480-5c221ff951c5.png",
+        "sprites/spr_text_font_orange/3cb9a634-20de-4a1f-9825-d88deee027db.png",
+        "sprites/spr_text_font_orange/1cfc4b35-255d-452a-8930-e4998383a629.png"
+      ]
+    },
+    {
+      "name": "spr_text_font_pause",
+      "directory": "sprites/spr_text_font_pause",
+      "yy_path": "sprites/spr_text_font_pause/spr_text_font_pause.yy",
+      "width": 14,
+      "height": 14,
+      "origin": {
+        "x": 4,
+        "y": 5
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 11,
+        "bottom": 13
+      },
+      "collision_kind": 1,
+      "frame_count": 218,
+      "playback_speed": 10.0,
+      "png_paths": [
+        "sprites/spr_text_font_pause/c918f995-3c49-4fdc-b720-c71be5835fe4.png",
+        "sprites/spr_text_font_pause/e683c539-15b4-4423-b9ce-ea930e11976b.png",
+        "sprites/spr_text_font_pause/77f8d2f4-bff7-428e-8f9a-381edc74064c.png",
+        "sprites/spr_text_font_pause/97358a0a-01c2-4e25-a0ec-1bdc646029ea.png",
+        "sprites/spr_text_font_pause/8c1ed23b-3167-46d7-9bb8-7d44229a4392.png",
+        "sprites/spr_text_font_pause/7823923d-5a9e-47ba-9407-d9738d6ee301.png",
+        "sprites/spr_text_font_pause/ca6a029b-8ae3-44f2-8cd8-13b626028803.png",
+        "sprites/spr_text_font_pause/a90d739b-999d-4ee1-b574-e272ce9ff406.png",
+        "sprites/spr_text_font_pause/9498a1be-10f3-49df-8022-6703caf7658b.png",
+        "sprites/spr_text_font_pause/986921ec-f97d-4d38-a07b-66f848ecef93.png",
+        "sprites/spr_text_font_pause/82a3fae0-9604-474e-afbf-92d46d2711c1.png",
+        "sprites/spr_text_font_pause/9461b002-b4df-43c9-bcd9-5bc2cffdd42b.png",
+        "sprites/spr_text_font_pause/3fe4e01f-5007-44cd-baa9-f171950646b6.png",
+        "sprites/spr_text_font_pause/89c4fc9f-85af-4c33-a9a5-efa82271aecc.png",
+        "sprites/spr_text_font_pause/1d2c3858-ac37-4065-b6aa-3441134e2e44.png",
+        "sprites/spr_text_font_pause/48b9b44e-6791-476c-8f36-691a1d7c82d6.png",
+        "sprites/spr_text_font_pause/6b8ecba3-51a6-482f-9b5a-1e9c35b37033.png",
+        "sprites/spr_text_font_pause/eb19f431-ced0-4cfa-9a19-c1ac0c8cbc13.png",
+        "sprites/spr_text_font_pause/a1e54327-5f5a-4881-9575-ea50c8210d0e.png",
+        "sprites/spr_text_font_pause/07989374-fda9-4463-b5eb-4a6388991e73.png",
+        "sprites/spr_text_font_pause/6934c809-9e64-4663-9e84-704a16daf230.png",
+        "sprites/spr_text_font_pause/341b3039-2282-4c4e-a143-37205933f705.png",
+        "sprites/spr_text_font_pause/e2d46bf1-1c4c-4337-a7f8-f07653fc770e.png",
+        "sprites/spr_text_font_pause/e80f0cbb-01aa-41f8-a287-25ad7babb348.png",
+        "sprites/spr_text_font_pause/f0691c23-5c05-4bd2-a8bb-c7f0c02ba635.png",
+        "sprites/spr_text_font_pause/bf403ead-cedd-4777-8867-e58657ff7bf5.png",
+        "sprites/spr_text_font_pause/ce5ebccd-04fb-4eb6-8ca7-b6ca18b31d16.png",
+        "sprites/spr_text_font_pause/472bb852-a462-4b15-8aa0-0f9c84b9c4cc.png",
+        "sprites/spr_text_font_pause/bea6aba9-4ea0-4e82-bbf5-565a29dc1a2d.png",
+        "sprites/spr_text_font_pause/9cc14c46-2da8-451d-bc4e-d439cf2c0c4b.png",
+        "sprites/spr_text_font_pause/d24703cf-82a1-461a-9ae5-d04182af1608.png",
+        "sprites/spr_text_font_pause/c0dd72da-b92b-4a09-a742-bee55e1e0d13.png",
+        "sprites/spr_text_font_pause/45a37554-e447-4d39-84db-52438b134d56.png",
+        "sprites/spr_text_font_pause/89d28dff-2bfb-445b-8b44-0a4f14c444a5.png",
+        "sprites/spr_text_font_pause/1d7e0152-35f1-40b3-9cf4-abdeab8df1ff.png",
+        "sprites/spr_text_font_pause/1017d8b1-8c22-46a2-89b0-11b07fb35ce0.png",
+        "sprites/spr_text_font_pause/7489efa7-44b4-4f11-9171-14b4cf5ac369.png",
+        "sprites/spr_text_font_pause/e31fb460-da2b-4962-a463-fd5349761494.png",
+        "sprites/spr_text_font_pause/d262619f-bcfa-41fd-808f-6845f3a739e3.png",
+        "sprites/spr_text_font_pause/a92fa8bc-3fdb-4e1e-8068-4656a15e838a.png",
+        "sprites/spr_text_font_pause/93efdefa-6e13-4fa0-9af7-eee2f1335836.png",
+        "sprites/spr_text_font_pause/573c96d1-e027-49dd-8a0d-4f13a05f389b.png",
+        "sprites/spr_text_font_pause/f715b108-f6c4-4b2e-9a88-c118024dac85.png",
+        "sprites/spr_text_font_pause/79bddc35-d64c-4fa7-a4c7-159a069249ea.png",
+        "sprites/spr_text_font_pause/3d90597a-0383-409c-b7b6-cb53c7127a15.png",
+        "sprites/spr_text_font_pause/3bdc4891-8388-4067-9379-207ae317f908.png",
+        "sprites/spr_text_font_pause/b2c6bc8e-c7e1-4e3c-ae6c-46758966de1e.png",
+        "sprites/spr_text_font_pause/5549e9d0-3184-4db4-bdd4-a2366c150748.png",
+        "sprites/spr_text_font_pause/9eb2fb30-3802-4404-acfb-d8176d7b017e.png",
+        "sprites/spr_text_font_pause/ccc3a26e-2dff-44d9-96e5-e708ffe40ecb.png",
+        "sprites/spr_text_font_pause/6a53ccf1-3641-4d54-805a-97865e2b8394.png",
+        "sprites/spr_text_font_pause/718b4553-5a57-4211-b926-ae0c28b4a543.png",
+        "sprites/spr_text_font_pause/469fa98d-86fc-4fdc-9946-c7d437713f29.png",
+        "sprites/spr_text_font_pause/6819a01d-ccfd-4a22-9e6b-fb170a9aa024.png",
+        "sprites/spr_text_font_pause/839596b2-e104-4d71-9c1a-0864ecece058.png",
+        "sprites/spr_text_font_pause/7578bbfe-a565-4550-be7e-f2beda2172a3.png",
+        "sprites/spr_text_font_pause/acf9d115-b3bd-41ed-9d4c-8a9c2aa955d1.png",
+        "sprites/spr_text_font_pause/5013bf27-94f9-47c3-bd0e-3c373c50ea84.png",
+        "sprites/spr_text_font_pause/5ea2a158-51b1-4329-94aa-5c7859dc44bb.png",
+        "sprites/spr_text_font_pause/61e1cb06-0c16-4b9f-a4c7-efa28cc7ab8d.png",
+        "sprites/spr_text_font_pause/187fdbbb-1bee-40ad-b441-75f1d1ba48cb.png",
+        "sprites/spr_text_font_pause/f527ce5e-296c-4f15-b48f-4bd736989b0b.png",
+        "sprites/spr_text_font_pause/4355d8dc-34db-45ce-bcab-b8010296b41e.png",
+        "sprites/spr_text_font_pause/2461a13c-0fb7-43f7-9816-271f28bc9089.png",
+        "sprites/spr_text_font_pause/2735ca0c-6009-496a-850b-b425fc2e99f0.png",
+        "sprites/spr_text_font_pause/be565a7f-2b1a-4eca-9772-b9cccbe37905.png",
+        "sprites/spr_text_font_pause/4e5b9b03-5485-43cf-8456-4e002d571bfb.png",
+        "sprites/spr_text_font_pause/35bd2718-17e6-4d21-b039-2916bcb0fbc2.png",
+        "sprites/spr_text_font_pause/6542660a-1212-4acc-855b-2b3e3ddafdf5.png",
+        "sprites/spr_text_font_pause/3565b543-bfd9-497c-9ee9-77b012e77813.png",
+        "sprites/spr_text_font_pause/34e6203d-16dc-4aa8-b63e-3e867f21f366.png",
+        "sprites/spr_text_font_pause/034b50a6-6d86-42b0-8ff4-32c26de71d39.png",
+        "sprites/spr_text_font_pause/7efe08af-fa97-4fb4-8264-ba8413964c66.png",
+        "sprites/spr_text_font_pause/f84fa3da-045d-40f1-8c3e-8c5e2420eedc.png",
+        "sprites/spr_text_font_pause/0ad6ad0b-e1a7-46bc-b020-be1210d23ac2.png",
+        "sprites/spr_text_font_pause/1444f5aa-9423-4e75-a75c-4fd532640483.png",
+        "sprites/spr_text_font_pause/feb6a605-3edf-47a5-b2a8-9caf16d6d0e2.png",
+        "sprites/spr_text_font_pause/3c7e6679-9452-4a1d-b9a1-2392ab71d95b.png",
+        "sprites/spr_text_font_pause/5f4562dc-7dc9-48c7-9165-7aeb6194d858.png",
+        "sprites/spr_text_font_pause/31ce05fd-9e31-4f5e-97bc-9ca618edbd47.png",
+        "sprites/spr_text_font_pause/f190653a-103a-473e-bf8c-25d9a4a089aa.png",
+        "sprites/spr_text_font_pause/c177480e-f204-4f1f-bf52-cd6b948c45a7.png",
+        "sprites/spr_text_font_pause/0fae7a2d-51d0-481c-9176-b6d998912110.png",
+        "sprites/spr_text_font_pause/1f572ffc-60ce-4ec0-b611-3480ea8c7e54.png",
+        "sprites/spr_text_font_pause/5a4f1c00-9626-45b2-ae00-e8d11b259e3a.png",
+        "sprites/spr_text_font_pause/39c86cba-680a-4a33-9445-8e5afce7b961.png",
+        "sprites/spr_text_font_pause/90d4e636-1457-491a-802f-6037e1629c29.png",
+        "sprites/spr_text_font_pause/e1bec610-b253-4c7f-a5a1-6782c326d139.png",
+        "sprites/spr_text_font_pause/e30d75b0-0c9f-43cb-86e6-4fdf32fb9f96.png",
+        "sprites/spr_text_font_pause/24186db6-b6ef-4f51-8e99-63ec6d93ae1b.png",
+        "sprites/spr_text_font_pause/db97f6e7-152c-47e0-97f9-dfe7dd751ec7.png",
+        "sprites/spr_text_font_pause/812af45e-5dd4-4562-bb5b-d6e887b5f488.png",
+        "sprites/spr_text_font_pause/fb436baa-b304-432c-9e84-e6a031f6ae07.png",
+        "sprites/spr_text_font_pause/5763f0a8-fe6c-489d-89f7-d264bd721005.png",
+        "sprites/spr_text_font_pause/90c4828d-2a61-46cb-883b-3943502edad7.png",
+        "sprites/spr_text_font_pause/3f8f058b-c3d4-40cb-851e-77ee045a12fd.png",
+        "sprites/spr_text_font_pause/7b9b0b52-c73a-446a-9d3d-c546b448277d.png",
+        "sprites/spr_text_font_pause/5b90087f-8d56-47b7-af81-d2bd01b7ef65.png",
+        "sprites/spr_text_font_pause/7d6791ae-b950-4873-9add-a5a60354a545.png",
+        "sprites/spr_text_font_pause/121ef490-e7a5-4bed-b5cb-990296d0b47a.png",
+        "sprites/spr_text_font_pause/d6135308-af33-4f10-9715-c4b754f1ae6d.png",
+        "sprites/spr_text_font_pause/16f5d073-98cc-4b5f-9229-81900a200180.png",
+        "sprites/spr_text_font_pause/fea09bf8-75bd-460d-9699-0acd41ca96ff.png",
+        "sprites/spr_text_font_pause/9bd13756-fc67-43c7-984c-1426797aa3a7.png",
+        "sprites/spr_text_font_pause/a20fcf32-15f3-4c15-a4cc-10a92a03b245.png",
+        "sprites/spr_text_font_pause/b8897101-f64e-4f10-ad5e-ca3ba7140472.png",
+        "sprites/spr_text_font_pause/e935cc9c-79f9-432a-b12c-c365d09dbfd6.png",
+        "sprites/spr_text_font_pause/efa7d62d-8961-4c12-9512-0a0e609c8260.png",
+        "sprites/spr_text_font_pause/94f8c7bc-a121-46a9-bd60-88413d40a7d6.png",
+        "sprites/spr_text_font_pause/7c27911d-6ddb-492e-b1c1-a16cada3f17f.png",
+        "sprites/spr_text_font_pause/80003c7d-92fa-4d3e-9cdd-97158e96ca9e.png",
+        "sprites/spr_text_font_pause/6b5bec0c-aa17-4339-9cad-57d63ecbc286.png",
+        "sprites/spr_text_font_pause/b2bccf1a-c712-4005-9e29-3721a5a76d9f.png",
+        "sprites/spr_text_font_pause/405e717b-0972-4fa4-9929-62cbe87b86d6.png",
+        "sprites/spr_text_font_pause/03c09a4c-e7eb-4f5a-82f0-bd19e3d41271.png",
+        "sprites/spr_text_font_pause/e25dc09d-68c8-4210-89d1-1934c41466ea.png",
+        "sprites/spr_text_font_pause/83c6a885-b566-4c1d-8121-1238165d1aa5.png",
+        "sprites/spr_text_font_pause/6b2aa75e-190a-4cae-8fc3-0a6eebf19e84.png",
+        "sprites/spr_text_font_pause/317c9946-c6ad-4717-b938-ce48be0a336e.png",
+        "sprites/spr_text_font_pause/f55787e5-6036-4ee4-9217-1bab34b168e7.png",
+        "sprites/spr_text_font_pause/00ad12d3-b005-43b1-b9ce-248f44529c16.png",
+        "sprites/spr_text_font_pause/2d4b8a27-d35f-403a-a0cb-6caca92bb13e.png",
+        "sprites/spr_text_font_pause/e5715d39-cbc5-4731-a2ce-554189d19cc3.png",
+        "sprites/spr_text_font_pause/dc2ea3d1-2e40-46bc-a86f-76dd4f2f0b35.png",
+        "sprites/spr_text_font_pause/0fd63990-efe1-432d-b6ad-7fd0f1c0da42.png",
+        "sprites/spr_text_font_pause/ec17bf59-beb4-411e-abf3-9fddb2c73c51.png",
+        "sprites/spr_text_font_pause/b3344d25-b6ac-4184-a447-2fadb46314bb.png",
+        "sprites/spr_text_font_pause/4b775adf-69df-49ba-94fe-98a752c7ae5f.png",
+        "sprites/spr_text_font_pause/e74a5191-cb79-4bb2-8b4d-141a227fd508.png",
+        "sprites/spr_text_font_pause/2779124f-6915-4b0a-a23e-25b22e679f12.png",
+        "sprites/spr_text_font_pause/e5315a32-2ed1-4a60-89ca-fb7a7a9170ef.png",
+        "sprites/spr_text_font_pause/4eb2f965-999e-47de-a18f-c96de89065b9.png",
+        "sprites/spr_text_font_pause/d047d23f-5cf5-4dcb-9f52-1d469de79a56.png",
+        "sprites/spr_text_font_pause/86d27540-bf9d-4f4f-803e-fd3af614207b.png",
+        "sprites/spr_text_font_pause/9b7e46a6-7fab-4972-b7a5-5c60ca0787ac.png",
+        "sprites/spr_text_font_pause/139dcd78-d468-46ee-bf1a-df9cb4ee4c08.png",
+        "sprites/spr_text_font_pause/10571c6c-7a07-4fdd-90d3-15d9ced6c9a7.png",
+        "sprites/spr_text_font_pause/5a2f96e3-1e6a-4187-b6fe-d2e9d2221e1d.png",
+        "sprites/spr_text_font_pause/f6747cc6-252f-4f65-b18c-8bf0eeb4c294.png",
+        "sprites/spr_text_font_pause/0277c2fe-670d-47b5-ae60-d49f12aec0d7.png",
+        "sprites/spr_text_font_pause/ce84baaa-65ce-4b23-b493-ae8ae177fae4.png",
+        "sprites/spr_text_font_pause/f0379142-99d3-4dbd-9cd9-6c9e9aab6f91.png",
+        "sprites/spr_text_font_pause/4817cad6-09b5-4011-b901-2654a5eb8042.png",
+        "sprites/spr_text_font_pause/122188fa-ea53-4ac1-928d-c652ec780dda.png",
+        "sprites/spr_text_font_pause/0416e65e-69c6-481f-9a3c-7fc2a6b7de73.png",
+        "sprites/spr_text_font_pause/81bb8fd9-fae7-4762-a004-a2f3f3b4bdc2.png",
+        "sprites/spr_text_font_pause/5a96ca5b-8099-4a36-88a9-a6a3cb9cef5e.png",
+        "sprites/spr_text_font_pause/a34bcef2-3376-4466-a8d6-bf8dec86aeb8.png",
+        "sprites/spr_text_font_pause/0e8e8822-db12-4e1e-a120-08ed1919997a.png",
+        "sprites/spr_text_font_pause/513ee40b-5d07-4070-a44a-0169d585944b.png",
+        "sprites/spr_text_font_pause/524e9335-c90c-49da-8c32-903346d07e35.png",
+        "sprites/spr_text_font_pause/3b159527-070e-4fc0-bad5-a9dd29432199.png",
+        "sprites/spr_text_font_pause/29b32eb1-e085-4ccf-9406-06c243af578e.png",
+        "sprites/spr_text_font_pause/b3566c76-d269-492e-8f28-d602e7a0b69a.png",
+        "sprites/spr_text_font_pause/215d777d-a587-4eb0-9539-ff9ec2fa725a.png",
+        "sprites/spr_text_font_pause/642d1b64-73a2-4e67-ac93-28950b6c0112.png",
+        "sprites/spr_text_font_pause/60c37789-0d13-45fe-b517-e307bd98ecbf.png",
+        "sprites/spr_text_font_pause/f87e7e85-0222-4bd3-b466-25f530f2d8c0.png",
+        "sprites/spr_text_font_pause/6d05668f-417a-40a6-baab-976573c6fba4.png",
+        "sprites/spr_text_font_pause/2e0565cb-e7c7-4b89-a00c-3ef1f0e4e9f7.png",
+        "sprites/spr_text_font_pause/b6470aa6-b743-47a0-bdf4-008c9491da40.png",
+        "sprites/spr_text_font_pause/cca25b14-4faa-4fbb-ac24-e459390a0827.png",
+        "sprites/spr_text_font_pause/15c721b4-1445-4034-be74-f7eb66cfc7d4.png",
+        "sprites/spr_text_font_pause/354b8a41-eebe-43d2-ae02-9e2aa2db278a.png",
+        "sprites/spr_text_font_pause/4d0a5d35-2572-4f1a-abad-6b841e9cc5d2.png",
+        "sprites/spr_text_font_pause/46e9136f-0009-42c1-8d30-dedd9e2da9f3.png",
+        "sprites/spr_text_font_pause/1b0ccf88-bd35-48ad-8a67-f829d413a79b.png",
+        "sprites/spr_text_font_pause/ad66adb6-8cbd-4bfe-b61d-0dd5530f7bab.png",
+        "sprites/spr_text_font_pause/c0b8a2e2-5802-4d3f-8a15-37ce83058dfb.png",
+        "sprites/spr_text_font_pause/dddac547-4da2-4dcf-8433-acbae42f60c0.png",
+        "sprites/spr_text_font_pause/26b41f9d-cb70-4042-83dc-cad7302a5e5c.png",
+        "sprites/spr_text_font_pause/01f04633-d840-4aff-adec-9604c8b53cfb.png",
+        "sprites/spr_text_font_pause/8d4c0eaf-8adc-47e4-8def-29e36d4cb5f6.png",
+        "sprites/spr_text_font_pause/8a2f9193-d031-4857-92b2-0bbdc9a932c1.png",
+        "sprites/spr_text_font_pause/5f059ddc-6084-46de-ae79-3e40aa5374a2.png",
+        "sprites/spr_text_font_pause/30033863-c0d7-4625-9b0b-5b3e44c90ee2.png",
+        "sprites/spr_text_font_pause/67071d2e-9cfe-4660-9461-1d3fb397e17f.png",
+        "sprites/spr_text_font_pause/a4d3684f-2c9c-4695-9bd7-3caeae2dddf7.png",
+        "sprites/spr_text_font_pause/6f0cfd29-0ef0-405e-bca1-571537e18d83.png",
+        "sprites/spr_text_font_pause/0616908e-c5e1-4168-ab39-54e8619ea3e1.png",
+        "sprites/spr_text_font_pause/f39ec4c2-7dd4-4f25-b36a-905751d43f9b.png",
+        "sprites/spr_text_font_pause/4079307b-84e5-40f6-99ef-18180b0eaff9.png",
+        "sprites/spr_text_font_pause/6b48e828-aad3-45e6-9be9-a1685f719edc.png",
+        "sprites/spr_text_font_pause/1cf06efe-5162-47d6-aff6-b52fabe5d725.png",
+        "sprites/spr_text_font_pause/d36b1663-3a8c-4c5e-9ff1-c27b8aeee456.png",
+        "sprites/spr_text_font_pause/48a019a1-0c21-43a6-bf6e-7c283273543d.png",
+        "sprites/spr_text_font_pause/fcb4cf34-3e73-4d2b-82bc-c8fd06e27380.png",
+        "sprites/spr_text_font_pause/64e0757c-6889-4d8d-ab51-21ffd4b1e2e8.png",
+        "sprites/spr_text_font_pause/ca1dfbf7-1ca2-4850-b19f-6175953c1412.png",
+        "sprites/spr_text_font_pause/11b14b9c-65f9-4998-aa4f-db96ece3b075.png",
+        "sprites/spr_text_font_pause/0d0cf676-49fe-4aca-b5c5-269943b86860.png",
+        "sprites/spr_text_font_pause/379d3b63-2fdb-4a30-bf25-fa9c620f0af4.png",
+        "sprites/spr_text_font_pause/cde84ae7-eb3a-41a9-9c11-257430bff44b.png",
+        "sprites/spr_text_font_pause/1759c612-fb75-497f-a85c-c5d43642471b.png",
+        "sprites/spr_text_font_pause/a5a979c5-81e1-4e97-9ced-678f03fa235e.png",
+        "sprites/spr_text_font_pause/2e629920-1217-417d-bf87-da59a23b8140.png",
+        "sprites/spr_text_font_pause/ddb3489d-0ac5-4048-968d-d0b393bcd133.png",
+        "sprites/spr_text_font_pause/16f2a254-807f-4d8b-b21e-daffa5a4ac00.png",
+        "sprites/spr_text_font_pause/a99cd322-6209-483b-a9f5-2ec98b569e3c.png",
+        "sprites/spr_text_font_pause/07888b90-2d2b-42a4-8a26-6d140d630ede.png",
+        "sprites/spr_text_font_pause/0d9842ab-0e45-4d26-87e9-ee03b1d37388.png",
+        "sprites/spr_text_font_pause/79db4c30-0ef2-4188-9e38-9f4fb86ab365.png",
+        "sprites/spr_text_font_pause/111d0287-01ea-4d1e-9e00-932b5491b396.png",
+        "sprites/spr_text_font_pause/bfbf4a52-963a-422b-9438-ec366810f7ef.png",
+        "sprites/spr_text_font_pause/ccc4cd30-80f0-4e72-821a-bd76f515e90c.png",
+        "sprites/spr_text_font_pause/fcf08e56-1d7c-4966-99f9-e53ba8f83765.png",
+        "sprites/spr_text_font_pause/879977f1-6e56-4b74-a923-1fac7328f411.png",
+        "sprites/spr_text_font_pause/380825c0-7ce5-4237-83d1-b67328024cbd.png",
+        "sprites/spr_text_font_pause/4e9f31b0-5c40-48e0-ae30-df7b8d6e18e4.png",
+        "sprites/spr_text_font_pause/11e91552-2df1-4a0a-b412-afa867dee340.png",
+        "sprites/spr_text_font_pause/5856c6d8-a6e2-45fb-8c81-09a7ca254a7f.png",
+        "sprites/spr_text_font_pause/f6ad0961-9192-4240-8fd7-219ddaa048e9.png",
+        "sprites/spr_text_font_pause/10110fb6-d577-45ee-ba9b-de88fbdaabed.png",
+        "sprites/spr_text_font_pause/99ad8535-54f5-469a-a2aa-1eaa8e3702b6.png",
+        "sprites/spr_text_font_pause/adc86d10-ce3c-4007-b228-134a6ee6f9c4.png",
+        "sprites/spr_text_font_pause/303918a7-6b9b-4d8a-a480-5c221ff951c5.png",
+        "sprites/spr_text_font_pause/3cb9a634-20de-4a1f-9825-d88deee027db.png",
+        "sprites/spr_text_font_pause/1cfc4b35-255d-452a-8930-e4998383a629.png"
+      ]
+    },
+    {
+      "name": "spr_tile_hornet",
+      "directory": "sprites/spr_tile_hornet",
+      "yy_path": "sprites/spr_tile_hornet/spr_tile_hornet.yy",
+      "width": 416,
+      "height": 416,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 415,
+        "bottom": 415
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_tile_hornet/1f4ed5e7-6d96-453e-9deb-d716997c15ba.png"
+      ]
+    },
+    {
+      "name": "spr_tile_x1_sigma_4",
+      "directory": "sprites/spr_tile_x1_sigma_4",
+      "yy_path": "sprites/spr_tile_x1_sigma_4/spr_tile_x1_sigma_4.yy",
+      "width": 128,
+      "height": 112,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 127,
+        "bottom": 111
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_tile_x1_sigma_4/00b69ffd-b78b-4cf5-90be-4a3c1d2983aa.png"
+      ]
+    },
+    {
+      "name": "spr_tiles_engine",
+      "directory": "sprites/spr_tiles_engine",
+      "yy_path": "sprites/spr_tiles_engine/spr_tiles_engine.yy",
+      "width": 256,
+      "height": 128,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 239,
+        "bottom": 127
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_tiles_engine/eff806cf-6d24-4db6-a47d-3543833c4188.png"
+      ]
+    },
+    {
+      "name": "spr_tiles_engine_1",
+      "directory": "sprites/spr_tiles_engine_1",
+      "yy_path": "sprites/spr_tiles_engine_1/spr_tiles_engine_1.yy",
+      "width": 256,
+      "height": 128,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 255,
+        "bottom": 127
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_tiles_engine_1/eff806cf-6d24-4db6-a47d-3543833c4188.png"
+      ]
+    },
+    {
+      "name": "spr_tiles_generic",
+      "directory": "sprites/spr_tiles_generic",
+      "yy_path": "sprites/spr_tiles_generic/spr_tiles_generic.yy",
+      "width": 320,
+      "height": 448,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 319,
+        "bottom": 447
+      },
+      "collision_kind": 1,
+      "frame_count": 2,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_tiles_generic/633faedd-83ec-4104-962a-b39a2e4f7821.png",
+        "sprites/spr_tiles_generic/b8e5addd-5a45-4228-91a9-585925580499.png"
+      ]
+    },
+    {
+      "name": "spr_undefined",
+      "directory": "sprites/spr_undefined",
+      "yy_path": "sprites/spr_undefined/spr_undefined.yy",
+      "width": 40,
+      "height": 40,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 39,
+        "bottom": 39
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/spr_undefined/966cd4d8-c797-4142-b7be-46273d987898.png"
+      ]
+    },
+    {
+      "name": "Sprite20",
+      "directory": "sprites/Sprite20",
+      "yy_path": "sprites/Sprite20/Sprite20.yy",
+      "width": 64,
+      "height": 64,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 63,
+        "bottom": 63
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/Sprite20/40400009-019c-4ab9-ad83-440a57e81add.png"
+      ]
+    },
+    {
+      "name": "Sprite20_1",
+      "directory": "sprites/Sprite20_1",
+      "yy_path": "sprites/Sprite20_1/Sprite20_1.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 0,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/Sprite20_1/40400009-019c-4ab9-ad83-440a57e81add.png"
+      ]
+    },
+    {
+      "name": "Sprite47",
+      "directory": "sprites/Sprite47",
+      "yy_path": "sprites/Sprite47/Sprite47.yy",
+      "width": 32,
+      "height": 48,
+      "origin": {
+        "x": 16,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 31,
+        "bottom": 47
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/Sprite47/5fe6d429-c184-4a7f-8b3d-bd9b3c606c96.png"
+      ]
+    },
+    {
+      "name": "Sprite50",
+      "directory": "sprites/Sprite50",
+      "yy_path": "sprites/Sprite50/Sprite50.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/Sprite50/a93befb1-5306-43f4-b2cf-51a3409031ed.png"
+      ]
+    },
+    {
+      "name": "Sprite72",
+      "directory": "sprites/Sprite72",
+      "yy_path": "sprites/Sprite72/Sprite72.yy",
+      "width": 16,
+      "height": 16,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 1,
+        "top": 0,
+        "right": 15,
+        "bottom": 15
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/Sprite72/49ba265d-695d-481a-b204-f6b6f0088bfe.png"
+      ]
+    },
+    {
+      "name": "stag_bg_2",
+      "directory": "sprites/stag_bg_2",
+      "yy_path": "sprites/stag_bg_2/stag_bg_2.yy",
+      "width": 128,
+      "height": 256,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 56,
+        "right": 127,
+        "bottom": 212
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/stag_bg_2/e7eaf97f-b3a2-43cd-9d63-179765286a7f.png"
+      ]
+    },
+    {
+      "name": "stag_bg_3",
+      "directory": "sprites/stag_bg_3",
+      "yy_path": "sprites/stag_bg_3/stag_bg_3.yy",
+      "width": 256,
+      "height": 512,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 255,
+        "bottom": 511
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/stag_bg_3/fb6391ba-5578-461b-b789-bd52acb8d63a.png"
+      ]
+    },
+    {
+      "name": "stars",
+      "directory": "sprites/stars",
+      "yy_path": "sprites/stars/stars.yy",
+      "width": 128,
+      "height": 32,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 127,
+        "bottom": 31
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/stars/db8ecd92-0ac4-4734-9741-a5fac060b130.png"
+      ]
+    },
+    {
+      "name": "test_strip",
+      "directory": "sprites/test_strip",
+      "yy_path": "sprites/test_strip/test_strip.yy",
+      "width": 240,
+      "height": 49,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 239,
+        "bottom": 48
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/test_strip/39c36ef1-e5bd-4029-aa24-bc2f32e4a787.png"
+      ]
+    },
+    {
+      "name": "waterfall",
+      "directory": "sprites/waterfall",
+      "yy_path": "sprites/waterfall/waterfall.yy",
+      "width": 16,
+      "height": 32,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 14,
+        "bottom": 31
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/waterfall/e929fa21-2f76-46c3-b53f-aa1507378669.png"
+      ]
+    },
+    {
+      "name": "wider_empty_Dev_room_wip",
+      "directory": "sprites/wider_empty_Dev_room_wip",
+      "yy_path": "sprites/wider_empty_Dev_room_wip/wider_empty_Dev_room_wip.yy",
+      "width": 320,
+      "height": 240,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 319,
+        "bottom": 239
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/wider_empty_Dev_room_wip/031e24d5-7099-43a0-ad01-275f04207b47.png"
+      ]
+    },
+    {
+      "name": "wily_2_tileset",
+      "directory": "sprites/wily_2_tileset",
+      "yy_path": "sprites/wily_2_tileset/wily_2_tileset.yy",
+      "width": 64,
+      "height": 64,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bbox": {
+        "left": 0,
+        "top": 0,
+        "right": 63,
+        "bottom": 63
+      },
+      "collision_kind": 1,
+      "frame_count": 1,
+      "playback_speed": 30.0,
+      "png_paths": [
+        "sprites/wily_2_tileset/d76719f4-380a-4bda-bb0b-041ad2736b6c.png"
+      ]
+    }
+  ],
+  "tilesets": [
+    {
+      "name": "tile_generic",
+      "directory": "tilesets/tile_generic",
+      "yy_path": "tilesets/tile_generic/tile_generic.yy",
+      "tile_width": 16,
+      "tile_height": 16,
+      "tile_count": 560,
+      "columns": 24,
+      "sprite_name": "spr_tiles_generic",
+      "output_tileset_path": "tilesets/tile_generic/output_tileset.png"
+    },
+    {
+      "name": "tiles_metroidset",
+      "directory": "tilesets/tiles_metroidset",
+      "yy_path": "tilesets/tiles_metroidset/tiles_metroidset.yy",
+      "tile_width": 16,
+      "tile_height": 16,
+      "tile_count": 99,
+      "columns": 10,
+      "sprite_name": "metroidset",
+      "output_tileset_path": "tilesets/tiles_metroidset/output_tileset.png"
+    },
+    {
+      "name": "TileSet9",
+      "directory": "tilesets/TileSet9",
+      "yy_path": "tilesets/TileSet9/TileSet9.yy",
+      "tile_width": 16,
+      "tile_height": 16,
+      "tile_count": 361,
+      "columns": 19,
+      "sprite_name": "MegaManX2_FlameStag_Sheet",
+      "output_tileset_path": "tilesets/TileSet9/output_tileset.png"
+    },
+    {
+      "name": "ts_engine",
+      "directory": "tilesets/ts_engine",
+      "yy_path": "tilesets/ts_engine/ts_engine.yy",
+      "tile_width": 16,
+      "tile_height": 16,
+      "tile_count": 128,
+      "columns": 11,
+      "sprite_name": "spr_tiles_engine",
+      "output_tileset_path": "tilesets/ts_engine/output_tileset.png"
+    },
+    {
+      "name": "ts_explose_horneck",
+      "directory": "tilesets/ts_explose_horneck",
+      "yy_path": "tilesets/ts_explose_horneck/ts_explose_horneck.yy",
+      "tile_width": 16,
+      "tile_height": 16,
+      "tile_count": 676,
+      "columns": 26,
+      "sprite_name": "spr_tile_hornet",
+      "output_tileset_path": "tilesets/ts_explose_horneck/output_tileset.png"
+    },
+    {
+      "name": "ts_gate_2",
+      "directory": "tilesets/ts_gate_2",
+      "yy_path": "tilesets/ts_gate_2/ts_gate_2.yy",
+      "tile_width": 16,
+      "tile_height": 16,
+      "tile_count": 256,
+      "columns": 16,
+      "sprite_name": "gate_tilesert",
+      "output_tileset_path": "tilesets/ts_gate_2/output_tileset.png"
+    },
+    {
+      "name": "ts_sigma_4",
+      "directory": "tilesets/ts_sigma_4",
+      "yy_path": "tilesets/ts_sigma_4/ts_sigma_4.yy",
+      "tile_width": 16,
+      "tile_height": 16,
+      "tile_count": 56,
+      "columns": 7,
+      "sprite_name": "spr_tile_x1_sigma_4",
+      "output_tileset_path": "tilesets/ts_sigma_4/output_tileset.png"
+    },
+    {
+      "name": "ts_training_background",
+      "directory": "tilesets/ts_training_background",
+      "yy_path": "tilesets/ts_training_background/ts_training_background.yy",
+      "tile_width": 16,
+      "tile_height": 16,
+      "tile_count": 300,
+      "columns": 17,
+      "sprite_name": "MMX5_TestStageForeground_1x",
+      "output_tileset_path": "tilesets/ts_training_background/output_tileset.png"
+    },
+    {
+      "name": "ts_training_stage",
+      "directory": "tilesets/ts_training_stage",
+      "yy_path": "tilesets/ts_training_stage/ts_training_stage.yy",
+      "tile_width": 16,
+      "tile_height": 16,
+      "tile_count": 300,
+      "columns": 17,
+      "sprite_name": "MMX5_TestStageTiles_1x",
+      "output_tileset_path": "tilesets/ts_training_stage/output_tileset.png"
+    },
+    {
+      "name": "ts_wily_2_mm2",
+      "directory": "tilesets/ts_wily_2_mm2",
+      "yy_path": "tilesets/ts_wily_2_mm2/ts_wily_2_mm2.yy",
+      "tile_width": 16,
+      "tile_height": 16,
+      "tile_count": 16,
+      "columns": 4,
+      "sprite_name": "wily_2_tileset",
+      "output_tileset_path": "tilesets/ts_wily_2_mm2/output_tileset.png"
+    }
+  ]
+}

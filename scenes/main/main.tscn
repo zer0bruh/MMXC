@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c1le8cq13vgs4"]
+
+[ext_resource type="Script" uid="uid://dsd5li4s3tig0" path="res://scripts/main/main.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://csr2vck5ydbwp" path="res://scenes/test/movement_test.tscn" id="2"]
+
+[node name="Main" type="Node2D" unique_id=103118680]
+script = ExtResource("1")
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="." unique_id=234358584]
+layer = -10
+
+[node name="Background" type="ColorRect" parent="BackgroundLayer" unique_id=388036673]
+offset_right = 384.0
+offset_bottom = 224.0
+color = Color(0.0470588, 0.0745098, 0.113725, 1)
+
+[node name="World" type="Node2D" parent="." unique_id=1666428173]
+
+[node name="MovementTest" parent="World" unique_id=568378033 instance=ExtResource("2")]
