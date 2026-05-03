@@ -15,11 +15,9 @@ shape = SubResource("1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=257908144]
 z_index = 1
-position = Vector2(-1, -21)
+position = Vector2(0, -21)
 sprite_frames = ExtResource("2")
-animation = &"dash"
-frame = 1
-frame_progress = 0.98424804
+animation = &"wall_shoot"
 
 [node name="ChargeGlowSprite" type="AnimatedSprite2D" parent="." unique_id=181245812]
 visible = false

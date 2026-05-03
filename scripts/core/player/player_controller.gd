@@ -15,6 +15,10 @@ const WALL_LAUNCH_LOCK_FRAMES := 11
 const MMXE_DASH_ON_LAND := false
 const DASH_JUMP_PRESS_GRACE_FRAMES := 2
 
+const HURT_SPEED := -138.0 / 256.0
+const HURT_VERTICAL := -2.0
+const LADDER_SPEED := 376.0 / 256.0
+
 const DOUBLE_TAP_WINDOW := 15
 const INPUT_BUFFER_LENGTH := 3
 const SHOOT_COOLDOWN_FRAMES := 8
@@ -121,6 +125,8 @@ const INPUT_ACTIONS := {
 	"jump": "jump",
 	"dash": "dash",
 	"shoot": "shoot",
+	"move_up": "move_up",
+	"move_down": "move_down",
 }
 
 const INPUT_BUFFER_ACTIVE := {
@@ -191,6 +197,8 @@ var animation_ended_last_tick := false
 var current_animation_frame := 0
 var current_shot_offset := Vector2(12.0, -3.0)
 
+var is_on_ladder := false
+
 
 func _ready() -> void:
 	spawn_position = global_position
@@ -251,6 +259,7 @@ func reset_to_spawn() -> void:
 	animation_ended_last_tick = false
 	current_animation_frame = 0
 	current_shot_offset = _to_local_shot_offset(Vector2(12.0, -3.0))
+	is_on_ladder = false
 	_reset_input_tracking()
 	state_name = ""
 	previous_state = ""
@@ -266,6 +275,15 @@ func get_debug_summary() -> String:
 		current_animation_frame,
 		charge_stage,
 	]
+
+
+func set_on_ladder(on_ladder: bool) -> void:
+	is_on_ladder = on_ladder
+
+
+func apply_hurt() -> void:
+	if state_name != "hurt":
+		_change_state("hurt")
 
 
 func _simulate_tick() -> void:
@@ -315,7 +333,7 @@ func _tick_counters() -> void:
 
 func _update_axes() -> void:
 	hdir = int(_get_input("right")) - int(_get_input("left"))
-	vdir = 0
+	vdir = int(_get_input("move_down")) - int(_get_input("move_up"))
 
 
 func _reset_input_tracking() -> void:
@@ -489,9 +507,7 @@ func _trigger_jump() -> void:
 
 
 func _trigger_dash() -> void:
-	var candidate_dir := dash_dir
-	if candidate_dir == 0:
-		candidate_dir = dir if dir != 0 else hdir
+	var candidate_dir := dir if dir != 0 else hdir
 	if candidate_dir == 0:
 		return
 	if _check_wall(candidate_dir):
@@ -517,6 +533,11 @@ func _trigger_animation_end() -> void:
 	match state_name:
 		"land", "dash_end":
 			_change_state("idle")
+		"hurt":
+			if _is_on_floor():
+				_change_state("idle")
+			else:
+				_change_state("fall")
 
 
 func _trigger_transition() -> void:
@@ -524,22 +545,32 @@ func _trigger_transition() -> void:
 		"idle":
 			if not _is_on_floor(GROUND_DISTANCE):
 				_change_state("fall")
+			elif vdir != 0 and is_on_ladder:
+				_change_state("ladder_idle")
 		"walk":
 			if not _is_on_floor(GROUND_DISTANCE):
 				_change_state("fall")
 			elif hdir == 0 or _check_wall(hdir):
 				_change_state("idle")
+			elif vdir != 0 and is_on_ladder:
+				_change_state("ladder_idle")
 		"jump":
 			if not _get_input("jump") or _is_on_ceil() or vspd >= 0.0:
 				_change_state("fall")
+			elif vdir != 0 and is_on_ladder:
+				_change_state("ladder_idle")
 		"fall":
 			if _is_on_floor():
 				_change_state("land")
 			elif _wall_slide_possible():
 				_change_state("wall_slide")
+			elif vdir != 0 and is_on_ladder:
+				_change_state("ladder_idle")
 		"dash":
 			if (hdir != dash_dir and (hdir != 0 or dash_tapped)) or timer <= frame_counter or (not dash_tapped and not _get_input("dash")):
 				_change_state("dash_end")
+			elif vdir != 0 and is_on_ladder:
+				_change_state("ladder_idle")
 		"wall_slide":
 			if _is_on_floor():
 				_change_state("land")
@@ -550,6 +581,20 @@ func _trigger_transition() -> void:
 				_change_state("land")
 			elif (((not _get_input("jump")) or _is_on_ceil()) and frame_counter - timer > 10) or vspd > 0.0:
 				_change_state("fall")
+			elif vdir != 0 and is_on_ladder:
+				_change_state("ladder_idle")
+		"ladder_idle":
+			if vdir != 0:
+				_change_state("ladder_move")
+			elif not is_on_ladder or _is_on_floor():
+				_change_state("fall" if not _is_on_floor() else "idle")
+		"ladder_move":
+			if vdir == 0:
+				_change_state("ladder_idle")
+			elif not is_on_ladder:
+				_change_state("fall")
+			elif _is_on_floor() and vdir > 0:
+				_change_state("idle")
 
 
 func _change_state(new_state: String) -> void:
@@ -594,9 +639,6 @@ func _enter_state(new_state: String) -> void:
 				hspd = 0.0
 		"dash":
 			timer = frame_counter + DASH_INTERVAL
-			dash_dir = dir
-			if dash_dir == 0:
-				dash_dir = hdir
 			_play_animation("dash")
 		"dash_end":
 			timer = 0
@@ -622,6 +664,19 @@ func _enter_state(new_state: String) -> void:
 			hspd = 0.0
 			vspd = 0.0
 			_play_animation("wall_jump")
+		"hurt":
+			_play_animation("hurt")
+			hspd = dir * HURT_SPEED
+			vspd = HURT_VERTICAL
+			gravity_strength = DEFAULT_GRAVITY
+		"ladder_idle":
+			hspd = 0.0
+			vspd = 0.0
+			gravity_strength = 0.0
+			_play_animation("ladder_idle")
+		"ladder_move":
+			gravity_strength = 0.0
+			_play_animation("ladder_move")
 
 	_apply_animation_pose()
 
@@ -638,6 +693,8 @@ func _leave_state(old_state: String) -> void:
 			gravity_strength = DEFAULT_GRAVITY
 			vspd = 0.0
 		"wall_jump":
+			gravity_strength = DEFAULT_GRAVITY
+		"ladder_idle", "ladder_move":
 			gravity_strength = DEFAULT_GRAVITY
 
 
@@ -670,6 +727,14 @@ func _step_state() -> void:
 					if not _is_on_ceil() or dir != hdir:
 						hspd = WALK_SPEED * dir * -1.0
 				vspd = -WALL_JUMP_STRENGTH
+		"ladder_idle":
+			if _get_input_pressed("jump"):
+				_change_state("jump")
+		"ladder_move":
+			hspd = 0.0
+			vspd = vdir * LADDER_SPEED
+			if _get_input_pressed("jump"):
+				_change_state("jump")
 
 
 func _set_hor_movement(direction_override: int = hdir) -> void:
@@ -797,15 +862,19 @@ func _check_wall(dist: int) -> bool:
 
 
 func _wall_slide_possible() -> bool:
-	return hdir != 0 and not _is_on_floor() and _has_body_wall_contact(hdir)
+	return hdir != 0 and not _is_on_floor() and _check_wall(hdir)
 
 
 func _get_wall_jump_dir() -> int:
 	if _is_on_floor():
 		return 0
-	if hdir == 1 and _has_body_wall_contact(1):
+	var has_right := _check_wall(9)
+	var has_left := _check_wall(-9)
+	if has_right and has_left:
+		return hdir if hdir != 0 else 1
+	if has_right:
 		return 1
-	if hdir == -1 and _has_body_wall_contact(-1):
+	if has_left:
 		return -1
 	return 0
 
