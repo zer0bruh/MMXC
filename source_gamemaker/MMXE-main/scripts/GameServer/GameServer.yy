@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GameServer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GameServer",
+  "parent":{
+    "name":"Sockets",
+    "path":"folders/Scripts/LIbraries/Netcode/Sockets.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

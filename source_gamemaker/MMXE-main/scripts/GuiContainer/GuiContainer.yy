@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GuiContainer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GuiContainer",
+  "parent":{
+    "name":"Base",
+    "path":"folders/Scripts/LIbraries/HazyGUI/Components/Base.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

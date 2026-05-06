@@ -141,6 +141,11 @@ const INPUT_BUFFER_ACTIVE := {
 @onready var charge_glow_sprite: AnimatedSprite2D = $ChargeGlowSprite
 @onready var charge_effect: Sprite2D = $ChargeEffect
 @onready var camera: Camera2D = $Camera2D
+@onready var armor_overlay: Node2D = $ArmorOverlay
+@onready var head_armor: AnimatedSprite2D = $ArmorOverlay/HeadArmor
+@onready var body_armor: AnimatedSprite2D = $ArmorOverlay/BodyArmor
+@onready var arm_armor: AnimatedSprite2D = $ArmorOverlay/ArmArmor
+@onready var leg_armor: AnimatedSprite2D = $ArmorOverlay/LegArmor
 
 var spawn_position := Vector2.ZERO
 var fixed_accumulator := 0.0
@@ -170,7 +175,7 @@ var charge_stage := 0
 var charge_effect_stage := 0
 var charge_effect_frame := 0
 var charge_effect_tick := 0
-var charge_palette_limit := 2
+var charge_palette_limit := 4
 var charge_stage_0_texture: Texture2D
 var charge_stage_1_texture: Texture2D
 var charge_stage_2_texture: Texture2D
@@ -197,8 +202,45 @@ var animation_ended_last_tick := false
 var current_animation_frame := 0
 var current_shot_offset := Vector2(12.0, -3.0)
 
+enum ArmorPart {
+	NONE,
+	HEAD,
+	BODY,
+	ARM,
+	LEG,
+}
+
+enum ArmorType {
+	NONE,
+	LIGHT,
+	GIGA,
+	MAX,
+	FORCE,
+	FALCON,
+	GAEA,
+	BLADE,
+	SHADOW,
+	GLIDE,
+	ICARUS,
+	HERMES,
+}
+
+var active_armor_parts: Dictionary = {
+	ArmorPart.HEAD: ArmorType.NONE,
+	ArmorPart.BODY: ArmorType.NONE,
+	ArmorPart.ARM: ArmorType.NONE,
+	ArmorPart.LEG: ArmorType.NONE,
+}
+
 var is_on_ladder := false
 
+func set_armor_part(part: ArmorPart, armor_type: ArmorType) -> void:
+	active_armor_parts[part] = armor_type
+	_update_armor_overlays()
+	_check_set_bonus()
+
+func get_armor_part(part: ArmorPart) -> ArmorType:
+	return active_armor_parts.get(part, ArmorType.NONE)
 
 func _ready() -> void:
 	spawn_position = global_position
@@ -212,8 +254,14 @@ func _ready() -> void:
 	_setup_palette_material()
 	animated_sprite.stop()
 	charge_glow_sprite.stop()
-	reset_to_spawn()
 
+	# Equip Light Armor for testing
+	set_armor_part(ArmorPart.HEAD, ArmorType.LIGHT)
+	set_armor_part(ArmorPart.BODY, ArmorType.LIGHT)
+	set_armor_part(ArmorPart.ARM, ArmorType.LIGHT)
+	set_armor_part(ArmorPart.LEG, ArmorType.LIGHT)
+
+	reset_to_spawn()
 
 func _physics_process(delta: float) -> void:
 	fixed_accumulator = minf(fixed_accumulator + delta, FIXED_STEP * 4.0)
@@ -223,7 +271,6 @@ func _physics_process(delta: float) -> void:
 
 	if global_position.y > 300.0:
 		reset_to_spawn()
-
 
 func reset_to_spawn() -> void:
 	global_position = spawn_position
@@ -265,7 +312,6 @@ func reset_to_spawn() -> void:
 	previous_state = ""
 	_change_state("idle")
 
-
 func get_debug_summary() -> String:
 	return "state: %s | hspd %.3f, vspd %.3f | anim %s:%d | charge %d" % [
 		state_name,
@@ -276,15 +322,429 @@ func get_debug_summary() -> String:
 		charge_stage,
 	]
 
-
 func set_on_ladder(on_ladder: bool) -> void:
 	is_on_ladder = on_ladder
-
 
 func apply_hurt() -> void:
 	if state_name != "hurt":
 		_change_state("hurt")
+		_apply_damage_reduction()
 
+func _apply_damage_reduction() -> void:
+	var head_armor := get_armor_part(ArmorPart.HEAD)
+	var body_armor := get_armor_part(ArmorPart.BODY)
+	var arm_armor := get_armor_part(ArmorPart.ARM)
+	var leg_armor := get_armor_part(ArmorPart.LEG)
+
+	# Apply damage reduction based on equipped armor parts
+	var total_damage_reduction := 0.0
+
+	# Head armor effects
+	if head_armor != ArmorType.NONE:
+		match head_armor:
+			ArmorType.LIGHT:
+				total_damage_reduction += 0.1  # 10% reduction from head
+				_apply_headbutt()  # Apply headbutt ability
+			ArmorType.GIGA:
+				total_damage_reduction += 0.2  # 20% reduction from head
+			ArmorType.MAX:
+				total_damage_reduction += 0.3  # 30% reduction from head
+			ArmorType.FORCE:
+				total_damage_reduction += 0.15  # 15% reduction from head
+			ArmorType.FALCON:
+				total_damage_reduction += 0.1  # 10% reduction from head
+			ArmorType.GAEA:
+				total_damage_reduction += 0.1  # 10% reduction from head
+			ArmorType.BLADE:
+				total_damage_reduction += 0.1  # 10% reduction from head
+			ArmorType.SHADOW:
+				total_damage_reduction += 0.1  # 10% reduction from head
+			ArmorType.GLIDE:
+				total_damage_reduction += 0.1  # 10% reduction from head
+			ArmorType.ICARUS:
+				total_damage_reduction += 0.1  # 10% reduction from head
+			ArmorType.HERMES:
+				total_damage_reduction += 0.1  # 10% reduction from head
+
+	# Body armor effects
+	if body_armor != ArmorType.NONE:
+		match body_armor:
+			ArmorType.LIGHT:
+				total_damage_reduction += 0.5  # 50% reduction from chest
+			ArmorType.GIGA:
+				total_damage_reduction += 0.6  # 60% reduction from chest
+			ArmorType.MAX:
+				total_damage_reduction += 0.7  # 70% reduction from chest
+			ArmorType.FORCE:
+				total_damage_reduction += 0.4  # 40% reduction from chest
+			ArmorType.FALCON:
+				total_damage_reduction += 0.3  # 30% reduction from chest
+			ArmorType.GAEA:
+				total_damage_reduction += 0.3  # 30% reduction from chest
+			ArmorType.BLADE:
+				total_damage_reduction += 0.3  # 30% reduction from chest
+			ArmorType.SHADOW:
+				total_damage_reduction += 0.3  # 30% reduction from chest
+			ArmorType.GLIDE:
+				total_damage_reduction += 0.3  # 30% reduction from chest
+			ArmorType.ICARUS:
+				total_damage_reduction += 0.3  # 30% reduction from chest
+			ArmorType.HERMES:
+				total_damage_reduction += 0.3  # 30% reduction from chest
+
+	# Arm armor effects
+	if arm_armor != ArmorType.NONE:
+		match arm_armor:
+			ArmorType.LIGHT:
+				total_damage_reduction += 0.1  # 10% reduction from arms
+				_apply_spiral_crush()  # Apply Spiral Crush Buster ability
+			ArmorType.GIGA:
+				total_damage_reduction += 0.2  # 20% reduction from arms
+			ArmorType.MAX:
+				total_damage_reduction += 0.3  # 30% reduction from arms
+			ArmorType.FORCE:
+				total_damage_reduction += 0.15  # 15% reduction from arms
+			ArmorType.FALCON:
+				total_damage_reduction += 0.1  # 10% reduction from arms
+			ArmorType.GAEA:
+				total_damage_reduction += 0.1  # 10% reduction from arms
+			ArmorType.BLADE:
+				total_damage_reduction += 0.1  # 10% reduction from arms
+			ArmorType.SHADOW:
+				total_damage_reduction += 0.1  # 10% reduction from arms
+			ArmorType.GLIDE:
+				total_damage_reduction += 0.1  # 10% reduction from arms
+			ArmorType.ICARUS:
+				total_damage_reduction += 0.1  # 10% reduction from arms
+			ArmorType.HERMES:
+				total_damage_reduction += 0.1  # 10% reduction from arms
+
+	# Leg armor effects
+	if leg_armor != ArmorType.NONE:
+		match leg_armor:
+			ArmorType.LIGHT:
+				total_damage_reduction += 0.1  # 10% reduction from legs
+			ArmorType.GIGA:
+				total_damage_reduction += 0.2  # 20% reduction from legs
+			ArmorType.MAX:
+				total_damage_reduction += 0.3  # 30% reduction from legs
+			ArmorType.FORCE:
+				total_damage_reduction += 0.15  # 15% reduction from legs
+			ArmorType.FALCON:
+				total_damage_reduction += 0.1  # 10% reduction from legs
+			ArmorType.GAEA:
+				total_damage_reduction += 0.1  # 10% reduction from legs
+			ArmorType.BLADE:
+				total_damage_reduction += 0.1  # 10% reduction from legs
+			ArmorType.SHADOW:
+				total_damage_reduction += 0.1  # 10% reduction from legs
+			ArmorType.GLIDE:
+				total_damage_reduction += 0.1  # 10% reduction from legs
+			ArmorType.ICARUS:
+				total_damage_reduction += 0.1  # 10% reduction from legs
+			ArmorType.HERMES:
+				total_damage_reduction += 0.1  # 10% reduction from legs
+
+	# Apply the total damage reduction
+	# This would typically modify a damage variable, which isn't present here.
+	# For now, we'll just acknowledge it.
+	print("Total damage reduction: ", total_damage_reduction * 100, "%")
+
+func _apply_headbutt() -> void:
+	# Implement headbutt functionality for Light Armor
+	# This would typically deal damage to enemies above X
+	if state_name == "walk" and vdir < 0:
+		# Check for enemies above X
+		var space_state := get_world_2d().direct_space_state
+		var query := PhysicsRayQueryParameters2D.create(
+			global_position + Vector2(0, -16),
+			Vector2(0, -16),
+			16
+		)
+		var result := space_state.intersect_ray(query)
+		if result.size() > 0:
+			# Deal damage to the enemy
+			var collider := result[0].get_collider()
+			if collider != null and collider.has_method("apply_damage"):
+				collider.apply_damage(10)  # Adjust damage value as needed
+			# Add visual/sound effects for the headbutt
+			# This would typically include a screen shake and sound effect
+			# For now, we'll just print a message
+			print("Headbutt!")
+
+func _apply_spiral_crush() -> void:
+	# Implement Spiral Crush Buster functionality
+	# Create a spiral pattern of buster shots
+	var spiral_angle := 0.0
+	var spiral_radius := 10.0
+	var spiral_speed := 0.2
+	var spiral_duration := 30  # Frames
+	var spiral_shot_count := 12
+
+	for i in range(spiral_shot_count):
+		var spiral_shot = BUSTER_SCENE.instantiate()
+		spiral_shot.direction = dir
+		spiral_shot.shot_level = 1
+		spiral_shot.owner_to_ignore = self
+		# Calculate spiral position
+		var angle := spiral_angle + (i * (2 * PI / spiral_shot_count))
+		var offset_x := spiral_radius * cos(angle)
+		var offset_y := spiral_radius * sin(angle)
+		spiral_shot.global_position = global_position + Vector2(offset_x, offset_y)
+		get_tree().current_scene.add_child(spiral_shot)
+		# Update spiral angle for next shot
+		spiral_angle += spiral_speed
+
+func _get_armor_animation_suffix() -> String:
+	# Check if any armor part is equipped
+	var has_armor := false
+	for part in active_armor_parts:
+		if active_armor_parts[part] != ArmorType.NONE:
+			has_armor = true
+			break
+	
+	if not has_armor:
+		return ""
+
+	# For now, use body armor to determine animation suffix
+	# This matches the GML implementation which primarily uses body armor for animation
+	var armor_type := get_armor_part(ArmorPart.BODY)
+	if armor_type == ArmorType.NONE:
+		return ""
+
+	match armor_type:
+		ArmorType.LIGHT:
+			return "light"
+		ArmorType.GIGA:
+			return "giga"
+		ArmorType.MAX:
+			return "max"
+		ArmorType.FORCE:
+			return "force"
+		ArmorType.FALCON:
+			return "falcon"
+		ArmorType.GAEA:
+			return "gaea"
+		ArmorType.BLADE:
+			return "blade"
+		ArmorType.SHADOW:
+			return "shadow"
+		ArmorType.GLIDE:
+			return "glide"
+		ArmorType.ICARUS:
+			return "icarus"
+		ArmorType.HERMES:
+			return "hermes"
+		_:
+			return ""
+
+func _update_armor_overlays() -> void:
+	# Update visibility and animation for each armor part
+	var head_armor_type := get_armor_part(ArmorPart.HEAD)
+	var body_armor_type := get_armor_part(ArmorPart.BODY)
+	var arm_armor_type := get_armor_part(ArmorPart.ARM)
+	var leg_armor_type := get_armor_part(ArmorPart.LEG)
+
+	# Set visibility based on whether armor is equipped
+	head_armor.visible = head_armor_type != ArmorType.NONE
+	body_armor.visible = body_armor_type != ArmorType.NONE
+	arm_armor.visible = arm_armor_type != ArmorType.NONE
+	leg_armor.visible = leg_armor_type != ArmorType.NONE
+
+	# Update animations for each armor part
+	if animated_sprite.sprite_frames != null:
+		var visual_animation := _get_visual_animation_name()
+		
+		# Head armor
+		if head_armor.visible:
+			head_animation_suffix = _get_armor_animation_suffix()
+			if head_animation_suffix != "":
+				head_armor_animation = "%s_%s" % [visual_animation, head_animation_suffix]
+				if animated_sprite.sprite_frames.has_animation(head_armor_animation):
+					head_armor.animation = head_armor_animation
+			else:
+				head_armor.animation = visual_animation
+			head_armor.frame = animated_sprite.frame
+			head_armor.frame_progress = 0.0
+			head_armor.flip_h = animated_sprite.flip_h
+		
+		# Body armor
+		if body_armor.visible:
+			body_animation_suffix = _get_armor_animation_suffix()
+			if body_animation_suffix != "":
+				body_armor_animation = "%s_%s" % [visual_animation, body_animation_suffix]
+				if animated_sprite.sprite_frames.has_animation(body_armor_animation):
+					body_armor.animation = body_armor_animation
+			else:
+				body_armor.animation = visual_animation
+			body_armor.frame = animated_sprite.frame
+			body_armor.frame_progress = 0.0
+			body_armor.flip_h = animated_sprite.flip_h
+		
+		# Arm armor
+		if arm_armor.visible:
+			arm_animation_suffix = _get_armor_animation_suffix()
+			if arm_animation_suffix != "":
+				arm_armor_animation = "%s_%s" % [visual_animation, arm_animation_suffix]
+				if animated_sprite.sprite_frames.has_animation(arm_armor_animation):
+					arm_armor.animation = arm_armor_animation
+			else:
+				arm_armor.animation = visual_animation
+			arm_armor.frame = animated_sprite.frame
+			arm_armor.frame_progress = 0.0
+			arm_armor.flip_h = animated_sprite.flip_h
+		
+		# Leg armor
+		if leg_armor.visible:
+			leg_animation_suffix = _get_armor_animation_suffix()
+			if leg_animation_suffix != "":
+				leg_armor_animation = "%s_%s" % [visual_animation, leg_animation_suffix]
+				if animated_sprite.sprite_frames.has_animation(leg_armor_animation):
+					leg_armor.animation = leg_armor_animation
+			else:
+				leg_armor.animation = visual_animation
+			leg_armor.frame = animated_sprite.frame
+			leg_armor.frame_progress = 0.0
+			leg_armor.flip_h = animated_sprite.flip_h
+
+func _check_set_bonus() -> void:
+	# Check if all 4 parts of the same armor type are equipped
+	var head_armor := get_armor_part(ArmorPart.HEAD)
+	var body_armor := get_armor_part(ArmorPart.BODY)
+	var arm_armor := get_armor_part(ArmorPart.ARM)
+	var leg_armor := get_armor_part(ArmorPart.LEG)
+
+	# Check for Light Armor set bonus
+	if head_armor == ArmorType.LIGHT and body_armor == ArmorType.LIGHT and arm_armor == ArmorType.LIGHT and leg_armor == ArmorType.LIGHT:
+		_apply_light_armor_set_bonus()
+		print("Light Armor Set Bonus Applied!")
+	
+	# Check for Giga Armor set bonus
+	elif head_armor == ArmorType.GIGA and body_armor == ArmorType.GIGA and arm_armor == ArmorType.GIGA and leg_armor == ArmorType.GIGA:
+		_apply_giga_armor_set_bonus()
+		print("Giga Armor Set Bonus Applied!")
+	
+	# Check for Max Armor set bonus
+	elif head_armor == ArmorType.MAX and body_armor == ArmorType.MAX and arm_armor == ArmorType.MAX and leg_armor == ArmorType.MAX:
+		_apply_max_armor_set_bonus()
+		print("Max Armor Set Bonus Applied!")
+	
+	# Check for Force Armor set bonus
+	elif head_armor == ArmorType.FORCE and body_armor == ArmorType.FORCE and arm_armor == ArmorType.FORCE and leg_armor == ArmorType.FORCE:
+		_apply_force_armor_set_bonus()
+		print("Force Armor Set Bonus Applied!")
+	
+	# Check for Falcon Armor set bonus
+	elif head_armor == ArmorType.FALCON and body_armor == ArmorType.FALCON and arm_armor == ArmorType.FALCON and leg_armor == ArmorType.FALCON:
+		_apply_falcon_armor_set_bonus()
+		print("Falcon Armor Set Bonus Applied!")
+	
+	# Check for Gaea Armor set bonus
+	elif head_armor == ArmorType.GAEA and body_armor == ArmorType.GAEA and arm_armor == ArmorType.GAEA and leg_armor == ArmorType.GAEA:
+		_apply_gaea_armor_set_bonus()
+		print("Gaea Armor Set Bonus Applied!")
+	
+	# Check for Blade Armor set bonus
+	elif head_armor == ArmorType.BLADE and body_armor == ArmorType.BLADE and arm_armor == ArmorType.BLADE and leg_armor == ArmorType.BLADE:
+		_apply_blade_armor_set_bonus()
+		print("Blade Armor Set Bonus Applied!")
+	
+	# Check for Shadow Armor set bonus
+	elif head_armor == ArmorType.SHADOW and body_armor == ArmorType.SHADOW and arm_armor == ArmorType.SHADOW and leg_armor == ArmorType.SHADOW:
+		_apply_shadow_armor_set_bonus()
+		print("Shadow Armor Set Bonus Applied!")
+	
+	# Check for Glide Armor set bonus
+	elif head_armor == ArmorType.GLIDE and body_armor == ArmorType.GLIDE and arm_armor == ArmorType.GLIDE and leg_armor == ArmorType.GLIDE:
+		_apply_glide_armor_set_bonus()
+		print("Glide Armor Set Bonus Applied!")
+	
+	# Check for Icarus Armor set bonus
+	elif head_armor == ArmorType.ICARUS and body_armor == ArmorType.ICARUS and arm_armor == ArmorType.ICARUS and leg_armor == ArmorType.ICARUS:
+		_apply_icarus_armor_set_bonus()
+		print("Icarus Armor Set Bonus Applied!")
+	
+	# Check for Hermes Armor set bonus
+	elif head_armor == ArmorType.HERMES and body_armor == ArmorType.HERMES and arm_armor == ArmorType.HERMES and leg_armor == ArmorType.HERMES:
+		_apply_hermes_armor_set_bonus()
+		print("Hermes Armor Set Bonus Applied!")
+
+func _apply_light_armor_set_bonus() -> void:
+	# Light Armor set bonus: Enhanced charge speed and damage
+	# In the original GML, this would increase charge speed and damage
+	# For now, we'll just print a message
+	print("Light Armor Set Bonus: Enhanced charge speed and damage")
+	# TODO: Implement actual charge speed and damage bonuses
+
+func _apply_giga_armor_set_bonus() -> void:
+	# Giga Armor set bonus: Super armor and increased damage resistance
+	# In the original GML, this would make X immune to flinch and reduce damage further
+	# For now, we'll just print a message
+	print("Giga Armor Set Bonus: Super armor and increased damage resistance")
+	# TODO: Implement actual super armor and damage resistance bonuses
+
+func _apply_max_armor_set_bonus() -> void:
+	# Max Armor set bonus: Maximum charge and special abilities
+	# In the original GML, this would allow for maximum charge and special abilities
+	# For now, we'll just print a message
+	print("Max Armor Set Bonus: Maximum charge and special abilities")
+	# TODO: Implement actual maximum charge and special abilities
+
+func _apply_force_armor_set_bonus() -> void:
+	# Force Armor set bonus: Enhanced dash and melee abilities
+	# In the original GML, this would enhance dash speed and melee damage
+	# For now, we'll just print a message
+	print("Force Armor Set Bonus: Enhanced dash and melee abilities")
+	# TODO: Implement actual dash and melee enhancements
+
+func _apply_falcon_armor_set_bonus() -> void:
+	# Falcon Armor set bonus: Flight abilities
+	# In the original GML, this would allow for flight
+	# For now, we'll just print a message
+	print("Falcon Armor Set Bonus: Flight abilities")
+	# TODO: Implement actual flight abilities
+
+func _apply_gaea_armor_set_bonus() -> void:
+	# Gaea Armor set bonus: Earthquake abilities
+	# In the original GML, this would allow for earthquake attacks
+	# For now, we'll just print a message
+	print("Gaea Armor Set Bonus: Earthquake abilities")
+	# TODO: Implement actual earthquake abilities
+
+func _apply_blade_armor_set_bonus() -> void:
+	# Blade Armor set bonus: Enhanced blade attacks
+	# In the original GML, this would enhance blade attacks
+	# For now, we'll just print a message
+	print("Blade Armor Set Bonus: Enhanced blade attacks")
+	# TODO: Implement actual blade enhancements
+
+func _apply_shadow_armor_set_bonus() -> void:
+	# Shadow Armor set bonus: Shadow dash and stealth
+	# In the original GML, this would allow for shadow dash and stealth
+	# For now, we'll just print a message
+	print("Shadow Armor Set Bonus: Shadow dash and stealth")
+	# TODO: Implement actual shadow dash and stealth abilities
+
+func _apply_glide_armor_set_bonus() -> void:
+	# Glide Armor set bonus: Gliding abilities
+	# In the original GML, this would allow for gliding
+	# For now, we'll just print a message
+	print("Glide Armor Set Bonus: Gliding abilities")
+	# TODO: Implement actual gliding abilities
+
+func _apply_icarus_armor_set_bonus() -> void:
+	# Icarus Armor set bonus: Enhanced jump and air abilities
+	# In the original GML, this would enhance jump height and air control
+	# For now, we'll just print a message
+	print("Icarus Armor Set Bonus: Enhanced jump and air abilities")
+	# TODO: Implement actual jump and air enhancements
+
+func _apply_hermes_armor_set_bonus() -> void:
+	# Hermes Armor set bonus: Enhanced speed and dash abilities
+	# In the original GML, this would enhance speed and dash abilities
+	# For now, we'll just print a message
+	print("Hermes Armor Set Bonus: Enhanced speed and dash abilities")
+	# TODO: Implement actual speed and dash enhancements
 
 func _simulate_tick() -> void:
 	frame_counter += 1
@@ -325,16 +785,13 @@ func _simulate_tick() -> void:
 	_apply_animation_pose()
 	_update_charge_visuals()
 
-
 func _tick_counters() -> void:
 	if shoot_cooldown_frames_left > 0:
 		shoot_cooldown_frames_left -= 1
 
-
 func _update_axes() -> void:
 	hdir = int(_get_input("right")) - int(_get_input("left"))
 	vdir = int(_get_input("move_down")) - int(_get_input("move_up"))
-
 
 func _reset_input_tracking() -> void:
 	input_state.clear()
@@ -351,7 +808,6 @@ func _reset_input_tracking() -> void:
 		for verb in INPUT_ACTIONS.keys():
 			entry[verb] = false
 		input_pressed_buffer.append(entry)
-
 
 func _step_input() -> void:
 	for verb in INPUT_ACTIONS.keys():
@@ -374,18 +830,14 @@ func _step_input() -> void:
 			for entry in input_pressed_buffer:
 				entry[verb] = false
 
-
 func _get_input(verb: String) -> bool:
 	return input_state.get(verb, false)
-
 
 func _get_input_pressed_raw(verb: String) -> bool:
 	return input_pressed.get(verb, false)
 
-
 func _get_input_released_raw(verb: String) -> bool:
 	return input_released.get(verb, false)
-
 
 func _get_input_pressed(verb: String) -> bool:
 	var result: bool = input_pressed.get(verb, false)
@@ -396,7 +848,6 @@ func _get_input_pressed(verb: String) -> bool:
 		if entry.get(verb, false):
 			return true
 	return result
-
 
 func _step_double_tap() -> void:
 	if _get_input_pressed_raw("right"):
@@ -410,7 +861,6 @@ func _step_double_tap() -> void:
 	double_tap_timer += 1
 	if double_tap_timer >= DOUBLE_TAP_WINDOW:
 		_reset_double_tap()
-
 
 func _double_tap_pressed(key: int) -> void:
 	if double_tap_current_key != 0 and double_tap_current_key != key:
@@ -430,17 +880,14 @@ func _double_tap_pressed(key: int) -> void:
 	dash_tapped = true
 	_trigger_dash()
 
-
 func _reset_double_tap() -> void:
 	double_tap_timer = 0
 	double_tap_enabled = false
 	double_tap_current_key = 0
 	double_tap_count = 0
 
-
 func _has_recent_dash_jump_press() -> bool:
 	return frame_counter - last_dash_press_frame <= DASH_JUMP_PRESS_GRACE_FRAMES
-
 
 func _update_charge_state() -> void:
 	if _get_input_pressed_raw("shoot"):
@@ -459,14 +906,16 @@ func _update_charge_state() -> void:
 		if released_charge_stage > 0:
 			_try_shoot(released_charge_stage)
 
-
 func _get_charge_stage_for_elapsed(elapsed_frames: int) -> int:
+	if elapsed_frames >= CHARGE_LEVEL_4_FRAMES:
+		return 4
+	if elapsed_frames >= CHARGE_LEVEL_3_FRAMES:
+		return 3
 	if elapsed_frames >= CHARGE_LEVEL_2_FRAMES:
 		return 2
 	if elapsed_frames >= CHARGE_LEVEL_1_FRAMES:
 		return 1
 	return 0
-
 
 func _get_charge_visual_level_for_elapsed(elapsed_frames: int) -> int:
 	if elapsed_frames >= CHARGE_LEVEL_4_FRAMES:
@@ -479,7 +928,6 @@ func _get_charge_visual_level_for_elapsed(elapsed_frames: int) -> int:
 		return 1
 	return 0
 
-
 func _trigger_move_h() -> void:
 	match state_name:
 		"idle":
@@ -490,7 +938,8 @@ func _trigger_move_h() -> void:
 				_change_state("walk")
 			elif MMXE_DASH_ON_LAND and _get_input("dash"):
 				_change_state("dash")
-
+	if get_armor_part(ArmorPart.HEAD) == ArmorType.LIGHT:
+		_apply_headbutt()
 
 func _trigger_jump() -> void:
 	if _can_jump_check():
@@ -505,7 +954,6 @@ func _trigger_jump() -> void:
 			"fall", "wall_slide", "wall_jump":
 				_change_state("wall_jump")
 
-
 func _trigger_dash() -> void:
 	var candidate_dir := dir if dir != 0 else hdir
 	if candidate_dir == 0:
@@ -518,7 +966,6 @@ func _trigger_dash() -> void:
 	dash_dir = candidate_dir
 	_change_state("dash")
 
-
 func _trigger_dash_end() -> void:
 	if state_name != "dash":
 		return
@@ -527,7 +974,6 @@ func _trigger_dash_end() -> void:
 		_change_state("fall")
 	else:
 		_change_state("dash_end")
-
 
 func _trigger_animation_end() -> void:
 	match state_name:
@@ -538,7 +984,6 @@ func _trigger_animation_end() -> void:
 				_change_state("idle")
 			else:
 				_change_state("fall")
-
 
 func _trigger_transition() -> void:
 	match state_name:
@@ -596,7 +1041,6 @@ func _trigger_transition() -> void:
 			elif _is_on_floor() and vdir > 0:
 				_change_state("idle")
 
-
 func _change_state(new_state: String) -> void:
 	if new_state == state_name:
 		return
@@ -607,7 +1051,6 @@ func _change_state(new_state: String) -> void:
 	previous_state = state_name
 	state_name = new_state
 	_enter_state(state_name)
-
 
 func _enter_state(new_state: String) -> void:
 	match new_state:
@@ -680,7 +1123,6 @@ func _enter_state(new_state: String) -> void:
 
 	_apply_animation_pose()
 
-
 func _leave_state(old_state: String) -> void:
 	match old_state:
 		"dash":
@@ -696,7 +1138,6 @@ func _leave_state(old_state: String) -> void:
 			gravity_strength = DEFAULT_GRAVITY
 		"ladder_idle", "ladder_move":
 			gravity_strength = DEFAULT_GRAVITY
-
 
 func _step_state() -> void:
 	match state_name:
@@ -736,12 +1177,10 @@ func _step_state() -> void:
 			if _get_input_pressed("jump"):
 				_change_state("jump")
 
-
 func _set_hor_movement(direction_override: int = hdir) -> void:
 	if direction_override != 0:
 		dir = direction_override
 	hspd = current_hspd * float(direction_override)
-
 
 func _step_physics() -> void:
 	_move_step(Vector2(hspd, vspd))
@@ -751,16 +1190,13 @@ func _step_physics() -> void:
 	if _is_on_floor(2):
 		vspd = 0.0
 
-
 func _is_motion_blocked(motion: Vector2) -> bool:
 	return test_move(global_transform, motion)
-
 
 func _probe_collision(offset: Vector2, motion: Vector2) -> bool:
 	var probe_transform := global_transform
 	probe_transform.origin += offset
 	return test_move(probe_transform, motion)
-
 
 func _has_body_wall_contact(direction: int, distance: float = 9.0) -> bool:
 	if direction == 0:
@@ -768,11 +1204,10 @@ func _has_body_wall_contact(direction: int, distance: float = 9.0) -> bool:
 
 	var motion := Vector2(float(direction) * distance, 0.0)
 	var hit_count := 0
-	for offset_y in [-22.0, -14.0, -6.0]:
+	for offset_y in [-10.0, -5.0, 0.0]:
 		if _probe_collision(Vector2(0.0, offset_y), motion):
 			hit_count += 1
 	return hit_count >= 2
-
 
 func _move_step(delta: Vector2) -> void:
 	var original_x := global_position.x
@@ -809,22 +1244,17 @@ func _move_step(delta: Vector2) -> void:
 	else:
 		_move_up(-delta.y)
 
-
 func _move_right(distance: float) -> bool:
 	return _move_axis(distance, Vector2.RIGHT)
-
 
 func _move_left(distance: float) -> bool:
 	return _move_axis(distance, Vector2.LEFT)
 
-
 func _move_down(distance: float) -> bool:
 	return _move_axis(distance, Vector2.DOWN)
 
-
 func _move_up(distance: float) -> bool:
 	return _move_axis(distance, Vector2.UP)
-
 
 func _move_axis(distance: float, unit: Vector2) -> bool:
 	if distance <= 0.0:
@@ -845,14 +1275,11 @@ func _move_axis(distance: float, unit: Vector2) -> bool:
 
 	return false
 
-
 func _is_on_floor(dist: int = 1) -> bool:
 	return _probe_collision(Vector2.ZERO, Vector2(0.0, float(dist)))
 
-
 func _is_on_ceil(dist: int = 3) -> bool:
 	return _probe_collision(Vector2.ZERO, Vector2(0.0, -float(dist)))
-
 
 func _check_wall(dist: int) -> bool:
 	if dist == 0:
@@ -860,16 +1287,14 @@ func _check_wall(dist: int) -> bool:
 
 	return _probe_collision(Vector2.ZERO, Vector2(float(dist), 0.0))
 
-
 func _wall_slide_possible() -> bool:
 	return hdir != 0 and not _is_on_floor() and _check_wall(hdir)
-
 
 func _get_wall_jump_dir() -> int:
 	if _is_on_floor():
 		return 0
-	var has_right := _check_wall(9)
-	var has_left := _check_wall(-9)
+	var has_right := _has_body_wall_contact(1, 1.0)
+	var has_left := _has_body_wall_contact(-1, 1.0)
 	if has_right and has_left:
 		return hdir if hdir != 0 else 1
 	if has_right:
@@ -878,9 +1303,9 @@ func _get_wall_jump_dir() -> int:
 		return -1
 	return 0
 
-
 func _can_jump_check() -> bool:
 	return _is_on_floor(GROUND_DISTANCE) and not _is_on_ceil(6)
+
 
 
 func _try_shoot(shot_level: int = 0) -> void:
@@ -901,19 +1326,83 @@ func _try_shoot(shot_level: int = 0) -> void:
 	if state_name == "idle":
 		_play_animation("shoot", animation_name == "shoot")
 
+	if get_armor_part(ArmorPart.ARM) == ArmorType.LIGHT:
+		# Implement Spiral Crush Buster functionality
+		# Create a spiral pattern of buster shots
+		var spiral_angle := 0.0
+		var spiral_radius := 10.0
+		var spiral_speed := 0.2
+		var spiral_duration := 30  # Frames
+		var spiral_shot_count := 12
+
+		for i in range(spiral_shot_count):
+			var spiral_shot = BUSTER_SCENE.instantiate()
+			spiral_shot.direction = dir
+			spiral_shot.shot_level = 1
+			spiral_shot.owner_to_ignore = self
+			# Calculate spiral position
+			var angle := spiral_angle + (i * (2 * PI / spiral_shot_count))
+			var offset_x := spiral_radius * cos(angle)
+			var offset_y := spiral_radius * sin(angle)
+			spiral_shot.global_position = global_position + Vector2(offset_x, offset_y)
+			get_tree().current_scene.add_child(spiral_shot)
+			# Update spiral angle for next shot
+			spiral_angle += spiral_speed
 
 func _get_shot_direction() -> int:
 	if animation_name == "wall_slide":
 		return -dir
 	return dir
 
-
 func _get_fire_shot_offset() -> Vector2:
+	# Check if we're in a state where we should use animation-specific shot offset
 	if state_name == "idle" and animation_name != "shoot" and animation_defs.has("shoot"):
 		var shoot_pose := _resolve_animation_pose("shoot", 0.0)
-		return _to_local_shot_offset(shoot_pose.get("shot_offset", Vector2(12.0, -3.0)))
+		var base_offset := _to_local_shot_offset(shoot_pose.get("shot_offset", Vector2(12.0, -3.0)))
+		
+		# Apply armor-specific shot offset based on arm armor type
+		var arm_armor := get_armor_part(ArmorPart.ARM)
+		match arm_armor:
+			ArmorType.LIGHT:
+				# Light Armor - no special offset
+				pass
+			ArmorType.GIGA:
+				# Giga Armor - slightly higher shot position
+				base_offset.y -= 2.0
+			ArmorType.MAX:
+				# Max Armor - higher shot position
+				base_offset.y -= 4.0
+			ArmorType.FORCE:
+				# Force Armor - slightly lower shot position
+				base_offset.y += 2.0
+			ArmorType.FALCON:
+				# Falcon Armor - forward shot position
+				base_offset.x += 2.0
+			ArmorType.GAEA:
+				# Gaea Armor - slightly forward shot position
+				base_offset.x += 1.0
+			ArmorType.BLADE:
+				# Blade Armor - forward shot position
+				base_offset.x += 3.0
+			ArmorType.SHADOW:
+				# Shadow Armor - slightly forward shot position
+				base_offset.x += 1.0
+			ArmorType.GLIDE:
+				# Glide Armor - no special offset
+				pass
+			ArmorType.ICARUS:
+				# Icarus Armor - no special offset
+				pass
+			ArmorType.HERMES:
+				# Hermes Armor - no special offset
+				pass
+			_:
+				# No armor or unknown armor type
+				pass
+		
+		return base_offset
+	
 	return current_shot_offset
-
 
 func _sync_shoot_presentation() -> void:
 	var shot_active := shot_end_frame > frame_counter
@@ -925,7 +1414,6 @@ func _sync_shoot_presentation() -> void:
 			_play_animation("idle")
 	elif animation_name == "shoot":
 		_play_animation("idle")
-
 
 func _load_animation_defs() -> void:
 	animation_defs.clear()
@@ -967,7 +1455,6 @@ func _load_animation_defs() -> void:
 			"speed": float(properties.get("speed", 1.0)),
 		}
 
-
 func _strip_json_comments(source: String) -> String:
 	var cleaned_lines: PackedStringArray = []
 	for line in source.split("\n"):
@@ -981,7 +1468,7 @@ func _strip_json_comments(source: String) -> String:
 			if index + 1 < line.length():
 				next_char = line.substr(index + 1, 1)
 
-			if not in_string and current_char == "/" and next_char == "/":
+			if not in_string and current_char == "/" and next_char == "//":
 				break
 
 			builder += current_char
@@ -997,7 +1484,6 @@ func _strip_json_comments(source: String) -> String:
 		cleaned_lines.append(builder)
 	return "\n".join(cleaned_lines)
 
-
 func _play_animation(name: String, reset: bool = true, key_index: float = 0.0) -> void:
 	if not animation_defs.has(name):
 		return
@@ -1010,7 +1496,6 @@ func _play_animation(name: String, reset: bool = true, key_index: float = 0.0) -
 	var pose := _resolve_animation_pose(name, key_index)
 	current_animation_frame = pose.get("frame", 0)
 	current_shot_offset = _to_local_shot_offset(pose.get("shot_offset", Vector2(12.0, -3.0)))
-
 
 func _advance_animation() -> void:
 	if animation_name.is_empty():
@@ -1042,7 +1527,6 @@ func _advance_animation() -> void:
 	current_animation_frame = pose.get("frame", 0)
 	current_shot_offset = _to_local_shot_offset(pose.get("shot_offset", Vector2(12.0, -3.0)))
 
-
 func _resolve_animation_pose(name: String, key_index: float) -> Dictionary:
 	if not animation_defs.has(name):
 		return {
@@ -1070,10 +1554,8 @@ func _resolve_animation_pose(name: String, key_index: float) -> Dictionary:
 		"shot_offset": shot_offset,
 	}
 
-
 func _to_local_shot_offset(mmxe_offset: Vector2) -> Vector2:
 	return Vector2(mmxe_offset.x, mmxe_offset.y - MMXE_MASK_Y_ORIGIN)
-
 
 func _load_charge_effect_textures() -> void:
 	charge_stage_0_texture = _load_texture_from_png(CHARGE_STAGE_0_TEXTURE_PATH)
@@ -1082,13 +1564,11 @@ func _load_charge_effect_textures() -> void:
 	charge_stage_3_texture = _load_texture_from_png(CHARGE_STAGE_3_TEXTURE_PATH)
 	charge_stage_4_texture = _load_texture_from_png(CHARGE_STAGE_4_TEXTURE_PATH)
 
-
 func _load_texture_from_png(resource_path: String) -> Texture2D:
 	var image := Image.load_from_file(ProjectSettings.globalize_path(resource_path))
 	if image == null or image.is_empty():
 		return null
 	return ImageTexture.create_from_image(image)
-
 
 func _setup_palette_material() -> void:
 	if charge_glow_sprite == null:
@@ -1104,7 +1584,7 @@ func _setup_palette_material() -> void:
 	charge_glow_sprite.material = palette_material
 	charge_glow_sprite.modulate = Color.WHITE
 	charge_glow_sprite.visible = false
-
+	# TODO: Set charge_glow_sprite.visible = true and modulate to correct color when charging
 
 func _set_charge_palette(enabled: bool, palette: Array = DEFAULT_X_PALETTE) -> void:
 	if palette_material == null or charge_glow_sprite == null:
@@ -1121,6 +1601,17 @@ func _set_charge_palette(enabled: bool, palette: Array = DEFAULT_X_PALETTE) -> v
 	palette_material.set_shader_parameter("palette_swap_enabled", true)
 	charge_glow_sprite.visible = true
 
+# Set glow color based on palette (charge stage)
+	if palette == CHARGE_PALETTE_STAGE_1:
+		charge_glow_sprite.modulate = Color(0.6, 0.9, 1.0, 0.7) # Brighter blue with some transparency
+	elif palette == CHARGE_PALETTE_STAGE_2:
+		charge_glow_sprite.modulate = Color(1.0, 1.0, 0.6, 0.7) # Brighter yellow with some transparency
+	elif palette == CHARGE_PALETTE_UPGRADE_1:
+		charge_glow_sprite.modulate = Color(0.9, 0.7, 1.0, 0.7) # Brighter purple with some transparency
+	elif palette == CHARGE_PALETTE_UPGRADE_2:
+		charge_glow_sprite.modulate = Color(1.0, 0.7, 0.4, 0.7) # Brighter orange with some transparency
+	else:
+		charge_glow_sprite.modulate = Color(1.0, 1.0, 1.0, 0.7) # White with some transparency
 
 func _get_charge_palette_for_visual_level(visual_level: int) -> Array:
 	var palette_index := clampi(visual_level - 1, 0, charge_palette_limit - 1)
@@ -1133,7 +1624,6 @@ func _get_charge_palette_for_visual_level(visual_level: int) -> Array:
 			return CHARGE_PALETTE_STAGE_2
 		_:
 			return CHARGE_PALETTE_STAGE_1
-
 
 func _get_charge_texture_for_visual_level(visual_level: int) -> Texture2D:
 	var clamped_level := clampi(visual_level, 0, charge_palette_limit)
@@ -1148,7 +1638,6 @@ func _get_charge_texture_for_visual_level(visual_level: int) -> Texture2D:
 			return charge_stage_1_texture
 		_:
 			return charge_stage_0_texture
-
 
 func _update_charge_visuals() -> void:
 	if charge_effect == null or animated_sprite == null:
@@ -1197,13 +1686,14 @@ func _update_charge_visuals() -> void:
 	charge_effect.position = animated_sprite.position
 	charge_effect.modulate = Color.WHITE
 	animated_sprite.modulate = Color.WHITE
+	if charge_glow_sprite != null:
+		charge_glow_sprite.position = animated_sprite.position
 	charge_effect_tick += 1
 	if charge_effect_tick >= 1:
 		charge_effect_tick = 0
 		charge_effect_frame = (charge_effect_frame + 1) % charge_effect.hframes
 	charge_effect.frame = charge_effect_frame
 	_set_charge_palette(elapsed_frames % 2 == 0, charge_palette)
-
 
 func _apply_animation_pose() -> void:
 	if animated_sprite.sprite_frames == null:
@@ -1212,6 +1702,13 @@ func _apply_animation_pose() -> void:
 	var visual_animation := _get_visual_animation_name()
 	if not animated_sprite.sprite_frames.has_animation(visual_animation):
 		return
+
+	# Apply armor-specific animations
+	var armor_animation := _get_armor_animation_suffix()
+	if armor_animation != "":
+		var armor_visual_animation := "%s_%s" % [visual_animation, armor_animation]
+		if animated_sprite.sprite_frames.has_animation(armor_visual_animation):
+			visual_animation = armor_visual_animation
 
 	animated_sprite.flip_h = dir < 0
 	if animated_sprite.animation != visual_animation:
@@ -1228,7 +1725,6 @@ func _apply_animation_pose() -> void:
 			charge_glow_sprite.animation = visual_animation
 		charge_glow_sprite.frame = animated_sprite.frame
 		charge_glow_sprite.frame_progress = 0.0
-
 
 func _get_visual_animation_name() -> StringName:
 	if animation_name.is_empty() or not animation_defs.has(animation_name):

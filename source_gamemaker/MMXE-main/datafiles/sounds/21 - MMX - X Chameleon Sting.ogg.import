@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cursi5t22j0y2"
+path="res://.godot/imported/21 - MMX - X Chameleon Sting.ogg-27fcd317e8a2d94ba5409db0eaaa15cd.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/21 - MMX - X Chameleon Sting.ogg"
+dest_files=["res://.godot/imported/21 - MMX - X Chameleon Sting.ogg-27fcd317e8a2d94ba5409db0eaaa15cd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

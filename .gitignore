@@ -1,5 +1,5 @@
-# Godot 4+ specific ignores
+# Godot cache (auto-generated, doesn't need to be tracked)
 .godot/
-/android/
-__pycache__/
-*.pyc
+
+# VS Code settings (optional, personal preference)
+.vscode/

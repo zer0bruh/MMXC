@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ro7m77a25aa8"
+path="res://.godot/imported/113 - MMX - Submarine 2.ogg-68fb0500aac799b20916e33dab2f211c.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/113 - MMX - Submarine 2.ogg"
+dest_files=["res://.godot/imported/113 - MMX - Submarine 2.ogg-68fb0500aac799b20916e33dab2f211c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

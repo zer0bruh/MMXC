@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"__CollageGetName",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__CollageGetName",
+  "parent":{
+    "name":"System",
+    "path":"folders/Scripts/LIbraries/Collage/System.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

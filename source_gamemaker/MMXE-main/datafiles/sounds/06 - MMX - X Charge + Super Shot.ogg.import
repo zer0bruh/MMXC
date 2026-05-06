@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bpf2wx8mf2k8i"
+path="res://.godot/imported/06 - MMX - X Charge + Super Shot.ogg-df7c0f6f3d02383de49b1e666fbb0953.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/06 - MMX - X Charge + Super Shot.ogg"
+dest_files=["res://.godot/imported/06 - MMX - X Charge + Super Shot.ogg-df7c0f6f3d02383de49b1e666fbb0953.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

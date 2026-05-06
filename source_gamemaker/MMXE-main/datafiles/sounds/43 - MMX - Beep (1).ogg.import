@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d0emk4380ax7l"
+path="res://.godot/imported/43 - MMX - Beep (1).ogg-7fbf81c22f3ac288a2302b2a9343c66e.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/43 - MMX - Beep (1).ogg"
+dest_files=["res://.godot/imported/43 - MMX - Beep (1).ogg-7fbf81c22f3ac288a2302b2a9343c66e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

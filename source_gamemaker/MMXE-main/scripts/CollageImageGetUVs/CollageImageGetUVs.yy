@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"CollageImageGetUVs",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CollageImageGetUVs",
+  "parent":{
+    "name":"Image",
+    "path":"folders/Scripts/LIbraries/Collage/Image.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

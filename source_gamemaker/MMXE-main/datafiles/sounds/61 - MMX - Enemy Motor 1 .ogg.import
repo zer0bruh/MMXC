@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dveon8bysvdws"
+path="res://.godot/imported/61 - MMX - Enemy Motor 1 .ogg-726d2516c8f21b1e8067c3042a9eda6b.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/61 - MMX - Enemy Motor 1 .ogg"
+dest_files=["res://.godot/imported/61 - MMX - Enemy Motor 1 .ogg-726d2516c8f21b1e8067c3042a9eda6b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

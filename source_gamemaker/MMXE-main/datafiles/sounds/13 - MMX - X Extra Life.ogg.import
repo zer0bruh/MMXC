@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bi5gskbjd8bxv"
+path="res://.godot/imported/13 - MMX - X Extra Life.ogg-242be76ca5719a970a16f9197b9d6e41.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/13 - MMX - X Extra Life.ogg"
+dest_files=["res://.godot/imported/13 - MMX - X Extra Life.ogg-242be76ca5719a970a16f9197b9d6e41.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

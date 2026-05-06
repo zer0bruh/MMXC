@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://br5f6yx7ni6an"
+path="res://.godot/imported/23 - MMX - X Electric Spark.ogg-548a354c70202f74265a06de4e86c4cd.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/23 - MMX - X Electric Spark.ogg"
+dest_files=["res://.godot/imported/23 - MMX - X Electric Spark.ogg-548a354c70202f74265a06de4e86c4cd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

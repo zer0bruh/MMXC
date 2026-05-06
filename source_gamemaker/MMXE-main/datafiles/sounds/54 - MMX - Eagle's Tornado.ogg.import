@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://jsb7kjkhd6n"
+path="res://.godot/imported/54 - MMX - Eagle's Tornado.ogg-eeaaa39de2e717ed50bd7575c9adb337.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/54 - MMX - Eagle's Tornado.ogg"
+dest_files=["res://.godot/imported/54 - MMX - Eagle's Tornado.ogg-eeaaa39de2e717ed50bd7575c9adb337.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

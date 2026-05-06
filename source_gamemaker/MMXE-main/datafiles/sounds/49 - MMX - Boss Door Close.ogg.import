@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bibb4sn3gqb3l"
+path="res://.godot/imported/49 - MMX - Boss Door Close.ogg-8357f90fe942d91a02bebaf03b58f31b.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/49 - MMX - Boss Door Close.ogg"
+dest_files=["res://.godot/imported/49 - MMX - Boss Door Close.ogg-8357f90fe942d91a02bebaf03b58f31b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

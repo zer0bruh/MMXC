@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d4hcva3cdourv"
+path="res://.godot/imported/40 - MMX - Armadillo Laser.ogg-f05fb8d1b9c9c1b3dcb044c65b9bcc99.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/40 - MMX - Armadillo Laser.ogg"
+dest_files=["res://.godot/imported/40 - MMX - Armadillo Laser.ogg-f05fb8d1b9c9c1b3dcb044c65b9bcc99.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

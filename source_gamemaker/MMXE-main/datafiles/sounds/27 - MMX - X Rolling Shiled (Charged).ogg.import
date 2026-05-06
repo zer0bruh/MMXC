@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c8d2ie7mjmdfl"
+path="res://.godot/imported/27 - MMX - X Rolling Shiled (Charged).ogg-4f688ecc19896e20faeb1a29cc51dc34.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/27 - MMX - X Rolling Shiled (Charged).ogg"
+dest_files=["res://.godot/imported/27 - MMX - X Rolling Shiled (Charged).ogg-4f688ecc19896e20faeb1a29cc51dc34.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

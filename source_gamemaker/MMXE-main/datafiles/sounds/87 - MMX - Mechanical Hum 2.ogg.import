@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dddu2k8d576hm"
+path="res://.godot/imported/87 - MMX - Mechanical Hum 2.ogg-f0d5064fa52139899b68fc4d870b310d.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/87 - MMX - Mechanical Hum 2.ogg"
+dest_files=["res://.godot/imported/87 - MMX - Mechanical Hum 2.ogg-f0d5064fa52139899b68fc4d870b310d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

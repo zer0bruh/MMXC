@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://klxvyi8mcr1k"
+path="res://.godot/imported/32 - MMX - Energy Tank Health.ogg-61a3446110606c11e661ba04eb0022ba.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/32 - MMX - Energy Tank Health.ogg"
+dest_files=["res://.godot/imported/32 - MMX - Energy Tank Health.ogg-61a3446110606c11e661ba04eb0022ba.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

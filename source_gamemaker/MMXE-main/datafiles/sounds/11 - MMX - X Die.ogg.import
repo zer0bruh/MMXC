@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bmx372csg1lee"
+path="res://.godot/imported/11 - MMX - X Die.ogg-50e1dc09e5730fb26a5f6f544130969a.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/11 - MMX - X Die.ogg"
+dest_files=["res://.godot/imported/11 - MMX - X Die.ogg-50e1dc09e5730fb26a5f6f544130969a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

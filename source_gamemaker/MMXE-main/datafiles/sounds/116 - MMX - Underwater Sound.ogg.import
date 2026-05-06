@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://brsq2dwihdmmp"
+path="res://.godot/imported/116 - MMX - Underwater Sound.ogg-f263c47cc4e5f3f183ef37ee9bbd9f39.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/116 - MMX - Underwater Sound.ogg"
+dest_files=["res://.godot/imported/116 - MMX - Underwater Sound.ogg-f263c47cc4e5f3f183ef37ee9bbd9f39.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

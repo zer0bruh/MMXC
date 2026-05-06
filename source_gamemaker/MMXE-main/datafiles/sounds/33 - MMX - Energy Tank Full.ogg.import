@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cvbe8xdd1pnav"
+path="res://.godot/imported/33 - MMX - Energy Tank Full.ogg-009ee6626f82ca5e5d28e2a31805c94c.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/33 - MMX - Energy Tank Full.ogg"
+dest_files=["res://.godot/imported/33 - MMX - Energy Tank Full.ogg-009ee6626f82ca5e5d28e2a31805c94c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"Vec2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Vec2",
+  "parent":{
+    "name":"Utils",
+    "path":"folders/Scripts/Utils.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

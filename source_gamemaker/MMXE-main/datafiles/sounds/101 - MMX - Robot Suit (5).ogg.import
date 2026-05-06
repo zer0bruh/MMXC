@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cauh8jfjnbj8x"
+path="res://.godot/imported/101 - MMX - Robot Suit (5).ogg-7c1d4adb4549939b9d52f53d5a851603.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/101 - MMX - Robot Suit (5).ogg"
+dest_files=["res://.godot/imported/101 - MMX - Robot Suit (5).ogg-7c1d4adb4549939b9d52f53d5a851603.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

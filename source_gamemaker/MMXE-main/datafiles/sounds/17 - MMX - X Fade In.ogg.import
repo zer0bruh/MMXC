@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dotjmcnqssijy"
+path="res://.godot/imported/17 - MMX - X Fade In.ogg-3eb0f977b7683d739809d7d40d55f883.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/17 - MMX - X Fade In.ogg"
+dest_files=["res://.godot/imported/17 - MMX - X Fade In.ogg-3eb0f977b7683d739809d7d40d55f883.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

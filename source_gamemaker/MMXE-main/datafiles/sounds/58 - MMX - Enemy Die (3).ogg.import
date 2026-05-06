@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bq8mu5amg1bvt"
+path="res://.godot/imported/58 - MMX - Enemy Die (3).ogg-8d23c3072ed1e36ba758d38730c1726c.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/58 - MMX - Enemy Die (3).ogg"
+dest_files=["res://.godot/imported/58 - MMX - Enemy Die (3).ogg-8d23c3072ed1e36ba758d38730c1726c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

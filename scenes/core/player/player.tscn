@@ -17,14 +17,17 @@ shape = SubResource("1")
 z_index = 1
 position = Vector2(0, -21)
 sprite_frames = ExtResource("2")
-animation = &"wall_shoot"
+animation = &"idle"
+frame = 3
+frame_progress = 0.551695
 
 [node name="ChargeGlowSprite" type="AnimatedSprite2D" parent="." unique_id=181245812]
 visible = false
 z_index = 1
 position = Vector2(-1, -21)
 sprite_frames = ExtResource("2")
-animation = &"dash"
+animation = &"idle"
+frame_progress = 0.45533195
 
 [node name="ChargeEffect" type="Sprite2D" parent="." unique_id=204810241]
 visible = false
@@ -33,3 +36,26 @@ position = Vector2(-1, -21)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=846071364]
 position = Vector2(0, -48)
+
+[node name="ArmorOverlay" type="Node2D" parent="." unique_id=123456789]
+z_index = 2
+
+[node name="HeadArmor" type="AnimatedSprite2D" parent="ArmorOverlay" unique_id=987654321]
+visible = false
+z_index = 1
+position = Vector2(0, -21)
+
+[node name="BodyArmor" type="AnimatedSprite2D" parent="ArmorOverlay" unique_id=876543210]
+visible = false
+z_index = 1
+position = Vector2(0, -21)
+
+[node name="ArmArmor" type="AnimatedSprite2D" parent="ArmorOverlay" unique_id=765432109]
+visible = false
+z_index = 1
+position = Vector2(0, -21)
+
+[node name="LegArmor" type="AnimatedSprite2D" parent="ArmorOverlay" unique_id=654321098]
+visible = false
+z_index = 1
+position = Vector2(0, -21)

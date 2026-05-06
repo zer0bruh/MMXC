@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cj65apw75stg0"
+path="res://.godot/imported/85 - MMX - Intro Data Screen.ogg-720c64019d7d9f2cb37ff3f9c671c5d9.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/85 - MMX - Intro Data Screen.ogg"
+dest_files=["res://.godot/imported/85 - MMX - Intro Data Screen.ogg-720c64019d7d9f2cb37ff3f9c671c5d9.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

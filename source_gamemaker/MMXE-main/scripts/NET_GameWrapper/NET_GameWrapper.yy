@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"NET_GameWrapper",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"NET_GameWrapper",
+  "parent":{
+    "name":"Wrappers",
+    "path":"folders/Scripts/LIbraries/Netcode/Wrappers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

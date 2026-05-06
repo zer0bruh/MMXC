@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://3y5eabcd1rie"
+path="res://.godot/imported/09 - MMX - X Land.ogg-e91c2bf2d84f33cb6c307228354e17f8.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/09 - MMX - X Land.ogg"
+dest_files=["res://.godot/imported/09 - MMX - X Land.ogg-e91c2bf2d84f33cb6c307228354e17f8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

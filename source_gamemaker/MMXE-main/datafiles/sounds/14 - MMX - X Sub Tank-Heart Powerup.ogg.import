@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dippliopgtn5i"
+path="res://.godot/imported/14 - MMX - X Sub Tank-Heart Powerup.ogg-f59c9a786dd852cd29e44ebf65e4d32a.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/14 - MMX - X Sub Tank-Heart Powerup.ogg"
+dest_files=["res://.godot/imported/14 - MMX - X Sub Tank-Heart Powerup.ogg-f59c9a786dd852cd29e44ebf65e4d32a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

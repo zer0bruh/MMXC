@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b02ocddy58ryj"
+path="res://.godot/imported/41 - MMX - Spark Mandrill Punch.ogg-ea4e6844ba3914fc7d25743a3f84aac8.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/41 - MMX - Spark Mandrill Punch.ogg"
+dest_files=["res://.godot/imported/41 - MMX - Spark Mandrill Punch.ogg-ea4e6844ba3914fc7d25743a3f84aac8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

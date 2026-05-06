@@ -1,0 +1,2 @@
+global.gui.draw();
+

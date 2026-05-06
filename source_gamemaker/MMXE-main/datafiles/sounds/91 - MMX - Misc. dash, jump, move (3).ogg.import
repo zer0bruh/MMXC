@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ny0w8fttdl1"
+path="res://.godot/imported/91 - MMX - Misc. dash, jump, move (3).ogg-b79c782bc92d5d09989a0148485a047b.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/91 - MMX - Misc. dash, jump, move (3).ogg"
+dest_files=["res://.godot/imported/91 - MMX - Misc. dash, jump, move (3).ogg-b79c782bc92d5d09989a0148485a047b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

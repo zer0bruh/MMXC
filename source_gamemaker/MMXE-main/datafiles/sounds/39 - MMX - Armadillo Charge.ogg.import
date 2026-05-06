@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bgdrrl86ygaq6"
+path="res://.godot/imported/39 - MMX - Armadillo Charge.ogg-82c8e25189033ebcd0468192c020540f.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/39 - MMX - Armadillo Charge.ogg"
+dest_files=["res://.godot/imported/39 - MMX - Armadillo Charge.ogg-82c8e25189033ebcd0468192c020540f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

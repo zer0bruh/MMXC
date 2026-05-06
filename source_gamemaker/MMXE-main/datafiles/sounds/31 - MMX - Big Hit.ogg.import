@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c7in40ipsnbok"
+path="res://.godot/imported/31 - MMX - Big Hit.ogg-1d52499a4de6553e36293dee2c726aa6.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/31 - MMX - Big Hit.ogg"
+dest_files=["res://.godot/imported/31 - MMX - Big Hit.ogg-1d52499a4de6553e36293dee2c726aa6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

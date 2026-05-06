@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://0bv2nqxkjtxh"
+path="res://.godot/imported/119 - MMX - Unknown (3).ogg-90896aa734edf6d679c97348f4642962.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/119 - MMX - Unknown (3).ogg"
+dest_files=["res://.godot/imported/119 - MMX - Unknown (3).ogg-90896aa734edf6d679c97348f4642962.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

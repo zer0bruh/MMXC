@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GuiParser",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GuiParser",
+  "parent":{
+    "name":"Parser",
+    "path":"folders/Scripts/LIbraries/HazyGUI/Parser.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

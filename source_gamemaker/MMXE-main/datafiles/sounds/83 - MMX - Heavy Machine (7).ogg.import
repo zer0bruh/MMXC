@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dup5q7ujxijm2"
+path="res://.godot/imported/83 - MMX - Heavy Machine (7).ogg-43599713da287c868b92137c5cfd8e59.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/83 - MMX - Heavy Machine (7).ogg"
+dest_files=["res://.godot/imported/83 - MMX - Heavy Machine (7).ogg-43599713da287c868b92137c5cfd8e59.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://2bugusc0mnqj"
+path="res://.godot/imported/70 - MMX - Enemy Sound (07).ogg-e229076f712f092b6c975ec7ad8872c5.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/70 - MMX - Enemy Sound (07).ogg"
+dest_files=["res://.godot/imported/70 - MMX - Enemy Sound (07).ogg-e229076f712f092b6c975ec7ad8872c5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

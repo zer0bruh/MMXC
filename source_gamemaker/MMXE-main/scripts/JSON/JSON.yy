@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"JSON",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"JSON",
+  "parent":{
+    "name":"Utils",
+    "path":"folders/Scripts/Utils.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"NET_Manager",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"NET_Manager",
+  "parent":{
+    "name":"Manager",
+    "path":"folders/Scripts/LIbraries/Netcode/Util/Manager.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

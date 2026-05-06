@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://2uy3givmv86m"
+path="res://.godot/imported/60 - MMX - Enemy Missle Fire.ogg-d670e88230c5cbf0a2162b2ed103d1a1.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/60 - MMX - Enemy Missle Fire.ogg"
+dest_files=["res://.godot/imported/60 - MMX - Enemy Missle Fire.ogg-d670e88230c5cbf0a2162b2ed103d1a1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

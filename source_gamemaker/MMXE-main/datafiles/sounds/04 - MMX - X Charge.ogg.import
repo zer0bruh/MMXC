@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bc5i6fi7gluv7"
+path="res://.godot/imported/04 - MMX - X Charge.ogg-305d2fb566b5040c5a56f1eadb40e81e.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/04 - MMX - X Charge.ogg"
+dest_files=["res://.godot/imported/04 - MMX - X Charge.ogg-305d2fb566b5040c5a56f1eadb40e81e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

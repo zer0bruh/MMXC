@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"NET_UdpServer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"NET_UdpServer",
+  "parent":{
+    "name":"UDP",
+    "path":"folders/Scripts/LIbraries/Netcode/Protocol/UDP.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

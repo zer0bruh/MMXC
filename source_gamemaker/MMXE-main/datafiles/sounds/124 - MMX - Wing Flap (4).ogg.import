@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d0vprjyjqwi6f"
+path="res://.godot/imported/124 - MMX - Wing Flap (4).ogg-ed17186856dcf43b5afd0e39689ee5fe.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/124 - MMX - Wing Flap (4).ogg"
+dest_files=["res://.godot/imported/124 - MMX - Wing Flap (4).ogg-ed17186856dcf43b5afd0e39689ee5fe.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="AIAssistantResource" format=3 uid="uid://b2xj6qjp0005q"]
+
+[ext_resource type="Resource" uid="uid://c0xq2vafep0gu" path="res://addons/ai_autonomous_agent/llm_providers/ollama.tres" id="1_mf1h6"]
+[ext_resource type="Script" uid="uid://bi0d7x7jkgql8" path="res://addons/ai_autonomous_agent/assistants/ai_assistant_resource.gd" id="2_hmoim"]
+
+[resource]
+script = ExtResource("2_hmoim")
+type_name = "MMXC Agent"
+ai_model = "qwen2.5-coder:7b"
+llm_provider = ExtResource("1_mf1h6")
+ai_description = "You are an expert GDScript programmer specializing in Godot 4.3 game development. 
+You are helping create a Mega Man X collection engine. 
+
+Your expertise includes:
+- CharacterBody2D physics and movement
+- State machines for player controllers
+- Animation systems and sprite management
+- Collision detection and resolution
+- Input buffering and responsive controls
+
+When given a task:
+1. Analyze the existing code structure
+2. Propose minimal, focused changes
+3. Maintain Godot 4.3 best practices
+4. Preserve existing functionality when adding features
+5. Fix bugs with clear explanations"

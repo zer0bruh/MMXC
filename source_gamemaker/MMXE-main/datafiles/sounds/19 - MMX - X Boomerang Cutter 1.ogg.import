@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c87epjcfwaqrm"
+path="res://.godot/imported/19 - MMX - X Boomerang Cutter 1.ogg-62050347a416859e281eb50d56cc6a11.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/19 - MMX - X Boomerang Cutter 1.ogg"
+dest_files=["res://.godot/imported/19 - MMX - X Boomerang Cutter 1.ogg-62050347a416859e281eb50d56cc6a11.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

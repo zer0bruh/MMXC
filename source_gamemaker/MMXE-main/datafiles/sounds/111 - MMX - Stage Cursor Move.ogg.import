@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://niramwv3axn2"
+path="res://.godot/imported/111 - MMX - Stage Cursor Move.ogg-2a4f09efd5137c532e3f1f2fc6ea043a.oggvorbisstr"
+
+[deps]
+
+source_file="res://source_gamemaker/MMXE-main/datafiles/sounds/111 - MMX - Stage Cursor Move.ogg"
+dest_files=["res://.godot/imported/111 - MMX - Stage Cursor Move.ogg-2a4f09efd5137c532e3f1f2fc6ea043a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
