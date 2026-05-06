@@ -464,7 +464,7 @@ func _apply_headbutt() -> void:
 		var result := space_state.intersect_ray(query)
 		if result.size() > 0:
 			# Deal damage to the enemy
-			var collider := result[0].get_collider()
+			var collider = result[0].get_collider()
 			if collider != null and collider.has_method("apply_damage"):
 				collider.apply_damage(10)  # Adjust damage value as needed
 			# Add visual/sound effects for the headbutt
@@ -557,9 +557,9 @@ func _update_armor_overlays() -> void:
 		
 		# Head armor
 		if head_armor.visible:
-			head_animation_suffix = _get_armor_animation_suffix()
+			var head_animation_suffix = _get_armor_animation_suffix()
 			if head_animation_suffix != "":
-				head_armor_animation = "%s_%s" % [visual_animation, head_animation_suffix]
+				var head_armor_animation = "%s_%s" % [visual_animation, head_animation_suffix]
 				if animated_sprite.sprite_frames.has_animation(head_armor_animation):
 					head_armor.animation = head_armor_animation
 			else:
@@ -570,9 +570,9 @@ func _update_armor_overlays() -> void:
 		
 		# Body armor
 		if body_armor.visible:
-			body_animation_suffix = _get_armor_animation_suffix()
+			var body_animation_suffix = _get_armor_animation_suffix()
 			if body_animation_suffix != "":
-				body_armor_animation = "%s_%s" % [visual_animation, body_animation_suffix]
+				var body_armor_animation = "%s_%s" % [visual_animation, body_animation_suffix]
 				if animated_sprite.sprite_frames.has_animation(body_armor_animation):
 					body_armor.animation = body_armor_animation
 			else:
@@ -583,9 +583,9 @@ func _update_armor_overlays() -> void:
 		
 		# Arm armor
 		if arm_armor.visible:
-			arm_animation_suffix = _get_armor_animation_suffix()
+			var arm_animation_suffix = _get_armor_animation_suffix()
 			if arm_animation_suffix != "":
-				arm_armor_animation = "%s_%s" % [visual_animation, arm_animation_suffix]
+				var arm_armor_animation = "%s_%s" % [visual_animation, arm_animation_suffix]
 				if animated_sprite.sprite_frames.has_animation(arm_armor_animation):
 					arm_armor.animation = arm_armor_animation
 			else:
@@ -596,9 +596,9 @@ func _update_armor_overlays() -> void:
 		
 		# Leg armor
 		if leg_armor.visible:
-			leg_animation_suffix = _get_armor_animation_suffix()
+			var leg_animation_suffix = _get_armor_animation_suffix()
 			if leg_animation_suffix != "":
-				leg_armor_animation = "%s_%s" % [visual_animation, leg_animation_suffix]
+				var leg_armor_animation = "%s_%s" % [visual_animation, leg_animation_suffix]
 				if animated_sprite.sprite_frames.has_animation(leg_armor_animation):
 					leg_armor.animation = leg_armor_animation
 			else:
