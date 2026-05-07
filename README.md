@@ -15,7 +15,7 @@ The current plan is to use the GameMaker MMXE project as a reference archive for
 Generate a first-pass inventory from the GameMaker source with:
 
 ```powershell
-python tools/mmxe_inventory.py --source C:\Users\Francois\Downloads\mmxe-main
+python tools/mmxe_inventory.py --source C:\Users\X\Downloads\mmxe-main
 ```
 
 That writes `data/external/mmxe_inventory.json`, which the Godot bootstrap scene will detect.
